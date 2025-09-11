@@ -1,0 +1,682 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import settings from "../../settings";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Commercial HVAC Repair in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Commercial HVAC Repair in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional commercial HVAC repair services in Belton, TX. Our expert technicians provide fast, reliable repairs for all types of commercial heating and cooling systems to minimize downtime and restore comfort."/>
+	<meta name="keywords"
+	      content="commercial HVAC repair Belton TX, business HVAC repair, commercial heating cooling repair, office HVAC service, retail HVAC repair, restaurant HVAC repair, industrial HVAC repair, emergency commercial HVAC, commercial air conditioning repair, Central Texas commercial HVAC repair"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/commercial-hvac/commercial-hvac-repair/"/>
+	<meta property="og:title" content="Commercial HVAC Repair in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional commercial HVAC repair services in Belton, TX. Our expert technicians provide fast, reliable repairs for all types of commercial heating and cooling systems to minimize downtime and restore comfort."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/commercial-hvac-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/commercial-hvac/commercial-hvac-repair/"/>
+	<meta property="twitter:title" content="Commercial HVAC Repair in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional commercial HVAC repair services in Belton, TX. Our expert technicians provide fast, reliable repairs for all types of commercial heating and cooling systems to minimize downtime and restore comfort."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/optimized/commercial-hvac-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/commercial-hvac/commercial-hvac-repair/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Commercial HVAC Repair",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Commercial HVAC Repair",
+			"description": "Professional commercial HVAC repair services for businesses of all sizes. Our comprehensive services include diagnostics, repairs, and maintenance for all types of commercial heating and cooling systems to minimize downtime and restore optimal performance.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Commercial HVAC",
+					"item": "https://www.alltek-services.com/commercial-hvac/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Commercial HVAC Repair",
+					"item": "https://www.alltek-services.com/commercial-hvac/commercial-hvac-repair/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/commercial-hvac" class="text-darkgray hover:text-accent ml-1 md:ml-2">Commercial HVAC</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Commercial HVAC Repair</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">COMMERCIAL HVAC REPAIR</h1>
+				<p class="text-xl mb-8">Fast, reliable commercial heating and cooling system repairs to minimize downtime and
+					keep your business comfortable in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL COMMERCIAL HVAC REPAIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						EXPERT REPAIR SERVICES FOR ALL COMMERCIAL SYSTEMS
+					</h3>
+					<p class="text-darkgray mb-4">
+						When your commercial HVAC system malfunctions, it can disrupt your business operations, affect employee
+						productivity, and impact customer comfort. At Alltek Services, we understand the urgency of commercial HVAC
+						repairs and provide fast, reliable service to get your system back up and running with minimal downtime.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of experienced technicians is trained to diagnose and repair all types of commercial heating and
+						cooling systems, including rooftop units, split systems, VRF/VRV systems, and more. We work with equipment
+						from all major manufacturers and have the expertise to handle even the most complex commercial HVAC issues.
+					</p>
+					<p class="text-darkgray mb-8">
+						From emergency repairs to scheduled service calls, we prioritize your business needs and provide efficient,
+						cost-effective solutions to restore your system's performance and reliability. We also offer recommendations
+						to prevent future issues and extend the life of your equipment.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule HVAC Repair
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="Professional commercial HVAC repair in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Common Commercial HVAC Issues -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">COMMON COMMERCIAL HVAC ISSUES WE REPAIR</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our experienced technicians can diagnose and repair a wide range of commercial HVAC problems to keep your
+					business comfortable.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Cooling Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Cooling System Issues</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Insufficient cooling or warm air
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Refrigerant leaks or low levels
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Compressor failures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Condenser or evaporator coil problems
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Fan motor issues
+						</li>
+					</ul>
+				</div>
+
+				<!-- Heating Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Heating System Issues</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Insufficient heating or cold air
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ignition or pilot light problems
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Burner or heat exchanger issues
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Gas line or valve problems
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Blower motor failures
+						</li>
+					</ul>
+				</div>
+
+				<!-- Control and Electrical Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Control & Electrical Issues</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Thermostat malfunctions
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Control board failures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Wiring issues or electrical failures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Sensor problems
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Relay or contactor failures
+						</li>
+					</ul>
+				</div>
+
+				<!-- Airflow Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Airflow Issues</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Clogged filters or dirty coils
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ductwork leaks or blockages
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Damper malfunctions
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Blower or fan issues
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Improper system balancing
+						</li>
+					</ul>
+				</div>
+
+				<!-- Ventilation Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ventilation Issues</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Poor indoor air quality
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Exhaust fan failures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Makeup air system problems
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ventilation control issues
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Humidity control problems
+						</li>
+					</ul>
+				</div>
+
+				<!-- Water Leaks and Drainage -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Water Leaks & Drainage</h3>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Condensate drain clogs
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Drain pan overflows
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Pump failures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Refrigerant line leaks
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Water valve issues
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Emergency Repair Services -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<img
+						src="/images/services/hvac-replacement/hvac-replacement.jpg"
+						alt="Emergency commercial HVAC repair services in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="608"
+						height="416"
+					/>
+					<div class="mt-8 bg-lightgray p-6 rounded-lg border-l-4 border-accent shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Guarantee</h3>
+						<p class="text-darkgray">
+							We stand behind our commercial HVAC repair services with a 100% satisfaction guarantee. If you're not
+							completely satisfied with our work, we'll make it right at no additional cost.
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">EMERGENCY REPAIR SERVICES</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						24/7 COMMERCIAL HVAC REPAIR SCHEDULING WHEN YOU NEED IT MOST
+					</h3>
+					<p class="text-darkgray mb-4">
+						Our team is always ready to handle critical situations such as complete system failures,
+						refrigerant leaks, electrical issues, or any other problems that could disrupt your business operations or
+						create unsafe conditions.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4">
+						<a
+							href="/contact"
+							class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+						>
+							Schedule Repair
+						</a>
+						<a
+							href={`tel:${settings.phoneRaw}`}
+							class="inline-block bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+						>
+							Emergency Service
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Keep your business running smoothly"
+		text="Don't let HVAC problems disrupt your business operations. Contact Alltek Services today for professional commercial HVAC repair services that you can count on."
+		button="Schedule Service"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

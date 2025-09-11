@@ -1,0 +1,131 @@
+{
+  "cityName": "Zabcikville",
+  "citySlug": "zabcikville-tx",
+  "state": "TX",
+  "zipCodes": [
+    "00000"
+  ],
+  "countyName": "Bell County",
+  "latitude": 31.0557,
+  "longitude": -97.4647,
+  "population": 20000,
+  "description": "Zabcikville is a city in Bell County, Texas, United States.",
+  "services": [
+    {
+      "name": "AC Installation",
+      "slug": "ac-installation",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "AC Repair",
+      "slug": "ac-repair",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "AC Maintenance",
+      "slug": "ac-maintenance",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Emergency AC Repair",
+      "slug": "emergency-ac-repair",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Ductless Mini-Split Systems",
+      "slug": "ductless-mini-split",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Furnace Installation",
+      "slug": "furnace-installation",
+      "category": "heating"
+    },
+    {
+      "name": "Furnace Repair",
+      "slug": "furnace-repair",
+      "category": "heating"
+    },
+    {
+      "name": "Heat Pump Services",
+      "slug": "heat-pump-services",
+      "category": "heating"
+    },
+    {
+      "name": "Emergency Heating Repair",
+      "slug": "emergency-heating-repair",
+      "category": "heating"
+    },
+    {
+      "name": "Heating Maintenance",
+      "slug": "heating-maintenance",
+      "category": "heating"
+    },
+    {
+      "name": "HVAC Installation",
+      "slug": "hvac-installation",
+      "category": "installation"
+    },
+    {
+      "name": "HVAC Replacement",
+      "slug": "hvac-replacement",
+      "category": "installation"
+    },
+    {
+      "name": "Ductwork Installation",
+      "slug": "ductwork-installation",
+      "category": "installation"
+    },
+    {
+      "name": "Thermostat Installation",
+      "slug": "thermostat-installation",
+      "category": "installation"
+    },
+    {
+      "name": "Air Purification Systems",
+      "slug": "air-purification-systems",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Air Quality Testing",
+      "slug": "air-quality-testing",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Humidifiers & Dehumidifiers",
+      "slug": "humidifiers-dehumidifiers",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Duct Cleaning",
+      "slug": "duct-cleaning",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "UV Light Installation",
+      "slug": "uv-light-installation",
+      "category": "indoor-air-quality"
+    }
+  ],
+  "seo": {
+    "title": "HVAC Services in Zabcikville, TX | Alltek Services",
+    "metaDescription": "Professional HVAC services in Zabcikville, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving Zabcikville and surrounding areas.",
+    "keywords": [
+      "HVAC Zabcikville TX",
+      "air conditioning Zabcikville",
+      "heating services Zabcikville",
+      "furnace repair Zabcikville",
+      "AC installation Zabcikville",
+      "indoor air quality Zabcikville",
+      "HVAC contractor Zabcikville"
+    ],
+    "canonicalUrl": "https://www.alltek-services.com/service-areas/zabcikville-tx/",
+    "ogTitle": "HVAC Services in Zabcikville, TX | Alltek Services",
+    "ogDescription": "Professional HVAC services in Zabcikville, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving Zabcikville and surrounding areas.",
+    "ogImage": "https://www.alltek-services.com/images/optimized/fleet/service-fleet.webp",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "HVAC Services in Zabcikville, TX | Alltek Services",
+    "twitterDescription": "Professional HVAC services in Zabcikville, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving Zabcikville and surrounding areas.",
+    "twitterImage": "https://www.alltek-services.com/images/optimized/fleet/service-fleet.webp"
+  }
+}

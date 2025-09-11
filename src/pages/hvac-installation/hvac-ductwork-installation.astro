@@ -1,0 +1,631 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>HVAC Ductwork Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="HVAC Ductwork Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional HVAC ductwork installation services in Belton, TX. Our expert technicians design and install efficient duct systems for optimal airflow, improved comfort, and reduced energy costs."/>
+	<meta name="keywords"
+	      content="HVAC ductwork installation Belton TX, air duct installation, ductwork design, HVAC air distribution, custom ductwork, duct system installation, energy efficient ducts, airflow optimization, Central Texas ductwork, HVAC efficiency"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/hvac-installation/hvac-ductwork-installation/"/>
+	<meta property="og:title" content="HVAC Ductwork Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional HVAC ductwork installation services in Belton, TX. Our expert technicians design and install efficient duct systems for optimal airflow, improved comfort, and reduced energy costs."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/ductwork-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/hvac-installation/hvac-ductwork-installation/"/>
+	<meta property="twitter:title" content="HVAC Ductwork Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional HVAC ductwork installation services in Belton, TX. Our expert technicians design and install efficient duct systems for optimal airflow, improved comfort, and reduced energy costs."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/optimized/ductwork-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/hvac-installation/hvac-ductwork-installation/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "HVAC Ductwork Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "HVAC Ductwork Installation",
+			"description": "Professional design and installation of HVAC ductwork systems for residential and commercial properties. Our services include comprehensive ductwork design, custom fabrication, professional installation, and system balancing to ensure optimal airflow, improved energy efficiency, and enhanced indoor comfort throughout your home or business.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "HVAC Ductwork Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/hvac-ductwork-installation/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/hvac-installation" class="text-darkgray hover:text-accent ml-1 md:ml-2">HVAC Installation</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">HVAC Ductwork Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HVAC DUCTWORK INSTALLATION</h1>
+				<p class="text-xl mb-8">Professional design and installation of efficient duct systems for optimal airflow,
+					improved comfort, and reduced energy costs in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">OPTIMIZE YOUR AIRFLOW</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						CUSTOM DUCTWORK SOLUTIONS FOR YOUR HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						Your HVAC system is only as efficient as the ductwork that distributes the conditioned air throughout your
+						home. Properly designed and installed ductwork ensures that every room receives the right amount of airflow,
+						maintaining consistent temperatures and maximizing your system's efficiency.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, we specialize in custom ductwork design and installation for both new construction and
+						existing homes. Our experienced technicians take a comprehensive approach, considering factors such as your
+						home's layout, insulation, HVAC system capacity, and your specific comfort needs to create a duct system
+						that delivers optimal performance.
+					</p>
+					<p class="text-darkgray mb-8">
+						Whether you're building a new home, renovating, or replacing an aging duct system, our professional ductwork
+						installation services ensure proper airflow distribution, minimal energy loss, and improved indoor comfort.
+						We use quality materials and follow industry best practices to create a durable, efficient duct system that
+						will serve your home for years to come.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/services/hvac-replacement/hvac-replacement.jpg"
+						alt="HVAC ductwork installation in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-64 object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Professional Ductwork Installation -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF PROFESSIONAL DUCTWORK INSTALLATION</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Properly designed and installed ductwork offers numerous advantages for your home's comfort and efficiency.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Improved Energy Efficiency -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Energy Efficiency</h3>
+					<p class="text-darkgray mb-4">
+						Properly sized and sealed ductwork minimizes air leakage and ensures that conditioned air reaches its
+						intended destination rather than being lost in unconditioned spaces like attics or crawl spaces. This can
+						significantly reduce your energy consumption and lower your utility bills.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduced energy consumption
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Lower utility bills
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Minimized air leakage
+						</li>
+					</ul>
+				</div>
+
+				<!-- Enhanced Comfort -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Enhanced Comfort</h3>
+					<p class="text-darkgray mb-4">
+						Well-designed ductwork ensures balanced airflow throughout your home, eliminating hot and cold spots and
+						maintaining consistent temperatures in every room. This creates a more comfortable living environment and
+						allows your HVAC system to operate more efficiently.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Consistent temperatures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Elimination of hot/cold spots
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Balanced airflow
+						</li>
+					</ul>
+				</div>
+
+				<!-- Improved Indoor Air Quality -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Indoor Air Quality</h3>
+					<p class="text-darkgray mb-4">
+						Properly sealed ductwork prevents dust, allergens, and other contaminants from being drawn into your HVAC
+						system and circulated throughout your home. This can significantly improve your indoor air quality and
+						create a healthier living environment, especially for those with allergies or respiratory conditions.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduced dust and allergens
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Healthier living environment
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Prevention of contaminant infiltration
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Ductwork Installation Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR DUCTWORK INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, multi-step process to ensure your ductwork is properly designed and installed.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<!-- Step 1: Comprehensive Assessment -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">1</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Comprehensive Assessment</h3>
+						<p class="text-darkgray mb-4">
+							We begin by thoroughly evaluating your home's layout, insulation, HVAC system, and specific comfort needs.
+							This assessment helps us understand your unique requirements and identify any existing issues that need to
+							be addressed in the ductwork design.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 2: Custom Design -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">2</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Custom Design</h3>
+						<p class="text-darkgray mb-4">
+							Based on our assessment, we create a custom ductwork design that optimizes airflow distribution throughout
+							your home. We consider factors such as duct sizing, routing, register placement, and system balancing to
+							ensure efficient operation and maximum comfort.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 3: Quality Materials -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">3</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Quality Materials</h3>
+						<p class="text-darkgray mb-4">
+							We use only high-quality materials for your ductwork installation, including properly insulated ducts that
+							minimize energy loss and prevent condensation. Our materials are selected for durability, efficiency, and
+							performance to ensure long-lasting results.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 4: Professional Installation -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">4</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Professional Installation</h3>
+						<p class="text-darkgray mb-4">
+							Our experienced technicians carefully install your ductwork according to the custom design, ensuring
+							proper connections, secure fastening, and appropriate support throughout the system. We pay special
+							attention to sealing all joints and connections to prevent air leakage.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 5: System Balancing and Testing -->
+				<div class="flex flex-col md:flex-row items-start">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">5</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Balancing and Testing</h3>
+						<p class="text-darkgray mb-4">
+							After installation, we balance and test your duct system to ensure proper airflow to each room. This
+							critical step verifies that your system is operating efficiently and delivering the right amount of
+							conditioned air throughout your home for optimal comfort and performance.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Types of Ductwork -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">TYPES OF DUCTWORK</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We install various types of ductwork based on your home's specific needs and requirements.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Sheet Metal Ducts -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Sheet Metal Ducts</h3>
+					<p class="text-darkgray mb-4">
+						Sheet metal ducts are the most common type of ductwork, typically made from galvanized steel or aluminum.
+						They are durable, fire-resistant, and less prone to mold growth compared to other materials. Sheet metal
+						ducts can be easily cleaned and are ideal for both supply and return air systems.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Durable and long-lasting
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Fire-resistant
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Easy to clean
+						</li>
+					</ul>
+				</div>
+
+				<!-- Flexible Ducts -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Flexible/Spiral Ducts</h3>
+					<p class="text-darkgray mb-4">
+						Flexible ducts consist of a wire coil covered with flexible plastic and insulation. They are easier to
+						install in tight or awkward spaces and can reduce installation time and costs. Flexible ducts are
+						particularly useful for connecting rigid ductwork to air outlets or for short runs in difficult-to-access
+						areas.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Versatile installation
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Cost-effective
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ideal for difficult spaces
+						</li>
+					</ul>
+				</div>
+
+				<!-- Fiberglass Lined Ducts -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Fiberglass Lined Ducts</h3>
+					<p class="text-darkgray mb-4">
+						Fiberglass lined ducts are sheet metal ducts with internal fiberglass insulation. This insulation helps
+						reduce noise transmission through the ductwork and provides thermal insulation to prevent energy loss. These
+						ducts are particularly beneficial in areas where noise reduction is important or where ducts pass through
+						unconditioned spaces.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Excellent noise reduction
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Thermal insulation
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Energy efficient
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Improve Your Home's Comfort and Efficiency?"
+		text="Contact Alltek Services today to schedule a consultation for professional ductwork installation. Our expert technicians will design and install a custom duct system that optimizes airflow, improves comfort, and reduces energy costs in your Belton, TX home."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

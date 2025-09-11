@@ -1,0 +1,605 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Duct Cleaning Service in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Duct Cleaning Service in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional duct cleaning services in Belton, TX. Our expert technicians use advanced equipment to remove dust, debris, and contaminants from your ductwork for improved indoor air quality and system efficiency."/>
+	<meta name="keywords"
+	      content="duct cleaning Belton TX, air duct cleaning, HVAC duct cleaning, ductwork cleaning, dust removal, allergen removal, indoor air quality, clean ducts, vent cleaning, Central Texas duct cleaning"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/indoor-air-quality/duct-cleaning-service/"/>
+	<meta property="og:title" content="Duct Cleaning Service in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional duct cleaning services in Belton, TX. Our expert technicians use advanced equipment to remove dust, debris, and contaminants from your ductwork for improved indoor air quality and system efficiency."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/air-quality-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/indoor-air-quality/duct-cleaning-service/"/>
+	<meta property="twitter:title" content="Duct Cleaning Service in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional duct cleaning services in Belton, TX. Our expert technicians use advanced equipment to remove dust, debris, and contaminants from your ductwork for improved indoor air quality and system efficiency."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/optimized/air-quality-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/indoor-air-quality/duct-cleaning-service/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Duct Cleaning Service",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Duct Cleaning",
+			"description": "Professional duct cleaning services for residential and commercial properties. Our comprehensive cleaning process removes dust, debris, allergens, and contaminants from your ductwork using advanced equipment and techniques, improving indoor air quality, system efficiency, and the overall health of your indoor environment.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Indoor Air Quality",
+					"item": "https://www.alltek-services.com/indoor-air-quality/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Duct Cleaning Service",
+					"item": "https://www.alltek-services.com/indoor-air-quality/duct-cleaning-service/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/indoor-air-quality" class="text-darkgray hover:text-accent ml-1 md:ml-2">Indoor Air Quality</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Duct Cleaning Service</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">DUCT CLEANING SERVICE</h1>
+				<p class="text-xl mb-8">Professional duct cleaning to remove dust, debris, and contaminants from your HVAC
+					system for improved indoor air quality and system efficiency in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BREATHE CLEANER AIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						PROFESSIONAL DUCT CLEANING FOR A HEALTHIER HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						Over time, dust, debris, allergens, and other contaminants can accumulate in your home's ductwork, reducing
+						indoor air quality and potentially affecting your health and comfort. At Alltek Services, we offer
+						professional duct cleaning services to remove these pollutants and help you breathe cleaner, healthier air.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our certified technicians use advanced equipment and proven techniques to thoroughly clean your entire duct
+						system, including supply and return ducts, registers, grilles, diffusers, heat exchangers, cooling coils,
+						fan motors, and housing. This comprehensive approach ensures that all components of your HVAC system are
+						free from dust and contaminants.
+					</p>
+					<p class="text-darkgray mb-8">
+						We follow industry best practices and guidelines established by the National Air Duct Cleaners Association
+						(NADCA) to deliver exceptional results. Our duct cleaning process not only improves indoor air quality but
+						can also enhance system efficiency, potentially reducing energy costs and extending the life of your HVAC
+						equipment.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Duct Cleaning
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/duct-cleaning_600w.jpg"
+						alt="HVAC technician performing professional duct cleaning service in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Duct Cleaning -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF DUCT CLEANING</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Professional duct cleaning offers numerous benefits for your health, comfort, and HVAC system performance.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Improved Air Quality -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Air Quality</h3>
+					<p class="text-darkgray mb-4">
+						Clean ducts mean cleaner air circulating throughout your home. Professional duct cleaning removes
+						accumulated dust, pollen, pet dander, mold spores, and other allergens that can affect indoor air quality
+						and trigger allergies or respiratory issues.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduces airborne allergens
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Removes dust and debris
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Eliminates mold and bacteria
+						</li>
+					</ul>
+				</div>
+
+				<!-- Health Benefits -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Health Benefits</h3>
+					<p class="text-darkgray mb-4">
+						Clean ducts can help reduce symptoms for those with allergies, asthma, or other respiratory conditions. By
+						removing irritants from your ductwork, you create a healthier indoor environment that can lead to fewer
+						respiratory issues, less frequent allergy symptoms, and better overall health.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduces allergy symptoms
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Alleviates asthma triggers
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Creates a healthier living environment
+						</li>
+					</ul>
+				</div>
+
+				<!-- System Efficiency -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">System Efficiency</h3>
+					<p class="text-darkgray mb-4">
+						Dust and debris in your ductwork can restrict airflow and force your HVAC system to work harder to maintain
+						comfortable temperatures. Clean ducts allow for better airflow, which can improve system efficiency,
+						potentially reduce energy consumption, and extend the life of your HVAC equipment.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Improves airflow
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Potential energy savings
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Extends equipment life
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Duct Cleaning Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR DUCT CLEANING PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, multi-step process to ensure your ductwork is thoroughly cleaned.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<!-- Step 1: Inspection -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">1</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Initial Inspection</h3>
+						<p class="text-darkgray mb-4">
+							Our technicians begin with a thorough inspection of your ductwork and HVAC system to assess the level of
+							contamination and identify any potential issues. We use specialized cameras to examine the interior of
+							your ducts and determine the best cleaning approach.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 2: System Protection -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">2</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Protection</h3>
+						<p class="text-darkgray mb-4">
+							Before cleaning begins, we take steps to protect your home and HVAC system. This includes covering
+							furniture and flooring near vents, sealing off areas not being cleaned, and ensuring that sensitive HVAC
+							components are protected during the cleaning process.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 3: Agitation and Debris Loosening -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">3</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Agitation and Debris Loosening</h3>
+						<p class="text-darkgray mb-4">
+							We use specialized tools, such as brushes, air whips, and compressed air nozzles, to dislodge dust and
+							debris from the interior surfaces of your ductwork. This agitation process helps ensure that contaminants
+							are thoroughly loosened for removal.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 4: Powerful Vacuum Collection -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">4</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Powerful Vacuum Collection</h3>
+						<p class="text-darkgray mb-4">
+							A powerful negative pressure vacuum system is connected to your ductwork to create suction throughout the
+							entire system. As debris is loosened, it's immediately captured by the vacuum and contained in a
+							collection device outside your home, preventing contaminants from escaping into your living space.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 5: Vent and Register Cleaning -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">5</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Vent and Register Cleaning</h3>
+						<p class="text-darkgray mb-4">
+							All supply and return vents, registers, and grilles are removed and thoroughly cleaned to remove built-up
+							dust and debris. This ensures that the air entering your living space is clean and that your system
+							operates efficiently.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 6: Final Inspection -->
+				<div class="flex flex-col md:flex-row items-start">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">6</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Final Inspection</h3>
+						<p class="text-darkgray mb-4">
+							After cleaning is complete, we perform a final inspection to ensure that all contaminants have been
+							removed and your ductwork is thoroughly clean. We'll show you before and after images so you can see the
+							difference our service has made.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to Clean Your Ducts -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">WHEN TO CLEAN YOUR DUCTS</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						SIGNS YOUR DUCTWORK NEEDS PROFESSIONAL CLEANING
+					</h3>
+					<p class="text-darkgray mb-4">
+						While the National Air Duct Cleaners Association (NADCA) recommends having your air ducts cleaned every 3-5
+						years, certain situations may indicate that your ducts need cleaning sooner. Here are some signs to watch
+						for:
+					</p>
+					<ul class="space-y-4 text-darkgray mb-8">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Visible dust or debris blowing from your air vents</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Unexplained increase in allergy symptoms or respiratory issues</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Musty or stale odors when your HVAC system is running</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Recent home renovation or construction work</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Visible mold growth inside ducts or on other components of your HVAC system</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span>Increased energy bills without explanation</span>
+						</li>
+					</ul>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule an Inspection
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/duct-cleaning_600w.jpg"
+						alt="HVAC technician inspecting air ducts for cleaning in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+					<div class="mt-8 bg-white p-6 rounded-lg border-l-4 border-accent shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Guarantee</h3>
+						<p class="text-darkgray">
+							We stand behind our duct cleaning service with a 100% satisfaction guarantee. If you're not completely
+							satisfied with the results, we'll return to address any concerns at no additional cost.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Breathe Cleaner, Healthier Air"
+		text="Contact Alltek Services today to schedule a professional duct cleaning service and improve the air quality in your home or business."
+		button="Schedule Duct Cleaning"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

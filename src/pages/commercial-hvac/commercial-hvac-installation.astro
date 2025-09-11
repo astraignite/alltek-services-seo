@@ -1,0 +1,714 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Commercial HVAC Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Commercial HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional commercial HVAC installation services in Belton, TX. Our expert technicians provide custom heating and cooling solutions for businesses of all sizes to maximize comfort, efficiency, and productivity."/>
+	<meta name="keywords"
+	      content="commercial HVAC installation Belton TX, business HVAC installation, commercial heating cooling, office HVAC systems, retail HVAC installation, restaurant HVAC, industrial HVAC, energy efficient commercial HVAC, commercial air conditioning, Central Texas commercial HVAC"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/commercial-hvac/commercial-hvac-installation/"/>
+	<meta property="og:title" content="Commercial HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional commercial HVAC installation services in Belton, TX. Our expert technicians provide custom heating and cooling solutions for businesses of all sizes to maximize comfort, efficiency, and productivity."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/commercial-hvac-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/commercial-hvac/commercial-hvac-installation/"/>
+	<meta property="twitter:title" content="Commercial HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional commercial HVAC installation services in Belton, TX. Our expert technicians provide custom heating and cooling solutions for businesses of all sizes to maximize comfort, efficiency, and productivity."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/optimized/commercial-hvac-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/commercial-hvac/commercial-hvac-installation/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Commercial HVAC Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Commercial HVAC Installation",
+			"description": "Professional commercial HVAC installation services for businesses of all sizes. Our comprehensive services include system design, equipment selection, installation, and setup for optimal performance, energy efficiency, and indoor comfort.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Commercial HVAC",
+					"item": "https://www.alltek-services.com/commercial-hvac/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Commercial HVAC Installation",
+					"item": "https://www.alltek-services.com/commercial-hvac/commercial-hvac-installation/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/commercial-hvac" class="text-darkgray hover:text-accent ml-1 md:ml-2">Commercial HVAC</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Commercial HVAC Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">COMMERCIAL HVAC INSTALLATION</h1>
+				<p class="text-xl mb-8">Expert commercial heating and cooling system installation services tailored to your
+					business needs in Belton, TX and surrounding areas.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL COMMERCIAL HVAC INSTALLATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						CUSTOM HEATING AND COOLING SOLUTIONS FOR YOUR BUSINESS
+					</h3>
+					<p class="text-darkgray mb-4">
+						Your commercial space requires a reliable, efficient HVAC system to maintain a comfortable environment for
+						employees, customers, and equipment. At Alltek Services, we specialize in designing and installing
+						commercial HVAC systems that meet the unique needs of businesses in Belton and the surrounding areas.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of experienced technicians has extensive knowledge of commercial HVAC equipment and applications,
+						from small retail spaces to large office buildings, restaurants, warehouses, and industrial facilities. We
+						work with leading manufacturers to provide you with high-quality, energy-efficient systems that deliver
+						reliable performance and long-term value.
+					</p>
+					<p class="text-darkgray mb-8">
+						From initial consultation and system design to professional installation and setup, our experts handle every
+						aspect of the process with precision and attention to detail, ensuring your commercial HVAC system meets
+						your specific requirements and operates at peak efficiency.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="Professional commercial HVAC installation in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Commercial HVAC Systems -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">COMMERCIAL HVAC SYSTEMS WE INSTALL</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We offer a wide range of commercial HVAC solutions to meet the specific needs of your business.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Rooftop Units -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Rooftop Units (RTUs)</h3>
+					<p class="text-darkgray mb-4">
+						Packaged rooftop units are ideal for commercial buildings with limited indoor space. These self-contained
+						systems house all components in one unit and can be customized to meet your specific heating and cooling
+						requirements.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Space-saving design
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Easy maintenance access
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Customizable configurations
+						</li>
+					</ul>
+				</div>
+
+				<!-- Split Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Commercial Split Systems</h3>
+					<p class="text-darkgray mb-4">
+						Split systems feature separate indoor and outdoor units, offering flexible installation options for
+						businesses with specific space constraints or architectural requirements.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Flexible installation options
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Quieter indoor operation
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Energy-efficient options
+						</li>
+					</ul>
+				</div>
+
+				<!-- VRF/VRV Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">VRF/VRV Systems</h3>
+					<p class="text-darkgray mb-4">
+						Variable Refrigerant Flow (VRF) or Variable Refrigerant Volume (VRV) systems offer advanced zoning
+						capabilities, allowing different areas of your business to be heated or cooled independently for maximum
+						comfort and efficiency.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Precise temperature control
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Multi-zone capability
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Highly energy efficient
+						</li>
+					</ul>
+				</div>
+
+				<!-- Make-Up Air Units -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Make-Up Air Units</h3>
+					<p class="text-darkgray mb-4">
+						Make-up air units are essential for businesses with commercial kitchens, manufacturing processes, or other
+						operations that exhaust large amounts of air, helping to maintain proper building pressurization and air
+						quality.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Replaces exhausted air
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Maintains building pressure
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Improves indoor air quality
+						</li>
+					</ul>
+				</div>
+
+				<!-- Ductless Mini-Split Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ductless Mini-Split Systems</h3>
+					<p class="text-darkgray mb-4">
+						Ductless mini-split systems provide flexible, zone-based comfort for businesses without existing ductwork or
+						for areas where extending ductwork is impractical.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							No ductwork required
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Individual zone control
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Easy installation
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Installation Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, multi-step process to ensure your commercial HVAC system is properly designed and
+					installed for optimal performance.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<!-- Step 1: Consultation and Assessment -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">1</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Consultation and Assessment</h3>
+						<p class="text-darkgray mb-4">
+							We begin with a thorough consultation to understand your business needs, building layout, and specific
+							requirements. Our experts assess your space, considering factors such as square footage, ceiling height,
+							insulation, window placement, occupancy levels, and existing infrastructure.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 2: System Design -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">2</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Design</h3>
+						<p class="text-darkgray mb-4">
+							Based on our assessment, we design a custom HVAC solution tailored to your specific needs. This includes
+							selecting the appropriate system type, sizing equipment correctly, planning ductwork layout (if
+							applicable), and determining optimal placement of all components for maximum efficiency and performance.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 3: Proposal and Planning -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">3</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Proposal and Planning</h3>
+						<p class="text-darkgray mb-4">
+							We provide a detailed proposal outlining the recommended system, installation timeline, and investment.
+							Once approved, we develop a comprehensive installation plan that minimizes disruption to your business
+							operations while ensuring a smooth and efficient installation process.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 4: Professional Installation -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">4</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Professional Installation</h3>
+						<p class="text-darkgray mb-4">
+							Our experienced technicians handle every aspect of the installation with precision and attention to
+							detail. This includes equipment placement, ductwork installation or modification, electrical connections,
+							refrigerant charging, and system integration. We follow all manufacturer specifications and industry best
+							practices to ensure a quality installation.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 5: System Testing and Commissioning -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">5</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Testing and
+							Commissioning</h3>
+						<p class="text-darkgray mb-4">
+							After installation, we thoroughly test all components to ensure proper operation. This includes checking
+							airflow, temperature differentials, electrical connections, control systems, and overall system
+							performance. We make any necessary adjustments to optimize your system's efficiency and performance.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 6: Training and Handover -->
+				<div class="flex flex-col md:flex-row items-start">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">6</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Training and Handover</h3>
+						<p class="text-darkgray mb-4">
+							We provide comprehensive training on system operation and basic maintenance. Our team explains how to use
+							your new system effectively, program thermostats or control systems, and recognize potential issues. We
+							also provide documentation, warranty information, and recommendations for ongoing maintenance to protect
+							your investment.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Professional Installation -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">WHY CHOOSE PROFESSIONAL INSTALLATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						THE BENEFITS OF EXPERT COMMERCIAL HVAC INSTALLATION
+					</h3>
+					<p class="text-darkgray mb-4">
+						Investing in professional commercial HVAC installation offers numerous benefits for your business, from
+						improved system performance to long-term cost savings.
+					</p>
+					<ul class="space-y-4 text-darkgray mb-8">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Optimal System Performance:</strong> Professional installation ensures your system operates at peak efficiency, providing consistent comfort throughout your commercial space.</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Energy Efficiency:</strong> Properly installed systems consume less energy, reducing your utility bills and environmental impact.</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Extended Equipment Life:</strong> Expert installation helps prevent premature system failures and extends the lifespan of your HVAC equipment.</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Code Compliance:</strong> Our installations meet or exceed all local building codes and regulations, ensuring safety and legal compliance.</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Valid Manufacturer Warranties:</strong> Professional installation ensures your equipment warranties remain valid, protecting your investment.</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span><strong>Proper System Sizing:</strong> We ensure your system is correctly sized for your space, avoiding issues with undersized or oversized equipment.</span>
+						</li>
+					</ul>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Request a Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/belton-tx-home-hvac-system.webp"
+						alt="Professional commercial HVAC installation benefits in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-64 object-cover mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-white p-6 rounded-lg border-l-4 border-accent shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Guarantee</h3>
+						<p class="text-darkgray">
+							We stand behind our commercial HVAC installations with a comprehensive warranty and satisfaction
+							guarantee. Our goal is to provide you with a reliable, efficient system that meets your business needs and
+							exceeds your expectations.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Upgrade Your Commercial HVAC System?"
+		text="Contact Alltek Services today to schedule a consultation and learn how our professional commercial HVAC installation services can benefit your business."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

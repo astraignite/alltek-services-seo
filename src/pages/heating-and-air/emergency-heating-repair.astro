@@ -1,0 +1,595 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+import settings from "../../settings";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Emergency Heating Repair in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Emergency Heating Repair in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="24/7 emergency heating repair in Belton, TX. Our certified technicians respond quickly to restore your heat when you need it most. Available nights, weekends, and holidays with no overtime charges."/>
+	<meta name="keywords"
+	      content="emergency heating repair Belton TX, 24/7 furnace repair, urgent heat pump repair, after hours heating service, heating system emergency, no heat emergency, furnace not working, emergency HVAC service, Central Texas emergency heating, weekend heating repair"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/emergency-heating-repair/"/>
+	<meta property="og:title" content="Emergency Heating Repair in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="24/7 emergency heating repair in Belton, TX. Our certified technicians respond quickly to restore your heat when you need it most. Available nights, weekends, and holidays with no overtime charges."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/emergency-heating-repair/"/>
+	<meta property="twitter:title" content="Emergency Heating Repair in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="24/7 emergency heating repair in Belton, TX. Our certified technicians respond quickly to restore your heat when you need it most. Available nights, weekends, and holidays with no overtime charges."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/emergency-heating-repair/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Emergency Heating Repair",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Emergency Heating Repair",
+			"description": "24/7 emergency heating repair services for all makes and models of furnaces, heat pumps, and boilers. Our certified technicians are available nights, weekends, and holidays to quickly restore your heating system when you need it most.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Heating and Air Services",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Emergency Heating Repair",
+					"item": "https://www.alltek-services.com/heating-and-air/emergency-heating-repair/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/heating-and-air" class="text-darkgray hover:text-accent ml-1 md:ml-2">Heating and Air Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Emergency Heating Repair</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">EMERGENCY HEATING REPAIR</h1>
+				<p class="text-xl mb-8">24/7 emergency heating repair services when you need them most. We're always here to
+					restore your comfort quickly.</p>
+				<div class="flex flex-col sm:flex-row justify-center gap-4">
+					<a
+						href={`tel:${settings.phoneRaw}`}
+						class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Call Now: {settings.phone}
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">24/7 EMERGENCY HEATING REPAIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						FAST RESPONSE WHEN YOUR HEATING SYSTEM FAILS
+					</h3>
+					<p class="text-darkgray mb-4">
+						When your heating system breaks down during the coldest days of winter, it's more than just an
+						inconvenience—it can quickly become a health and safety concern. At Alltek Services, we understand the
+						urgency of heating emergencies, which is why we offer 24/7 emergency heating repair scheduling throughout
+						Belton and Central Texas.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of certified technicians is ready to respond quickly to your emergency call during our normal business hours. We
+						arrive in fully stocked service vehicles equipped with the tools and parts needed to diagnose and repair
+						most heating issues on the spot, minimizing downtime and restoring your comfort as quickly as possible.
+					</p>
+					<p class="text-darkgray mb-8">
+						Don't suffer through the cold waiting for regular business hours. Our emergency heating repair service is
+						available nights, weekends, and holidays with no overtime charges. Your comfort and safety are our top
+						priorities.
+					</p>
+					<a
+						href={`tel:${settings.phoneRaw}`}
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Call for Emergency Service
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="HVAC technician performing emergency heating repair in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Emergency Signs -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">SIGNS YOU NEED EMERGENCY HEATING REPAIR</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Not all heating issues require emergency service, but some situations demand immediate attention. Here are
+					signs that indicate you need emergency heating repair:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- No Heat -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Complete Loss of Heat</h3>
+					<p class="text-darkgray mb-4">
+						If your heating system has completely stopped working and your home is getting dangerously cold, especially
+						during extreme weather conditions, you need emergency service immediately.
+					</p>
+				</div>
+
+				<!-- Burning Smell -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Burning Smell</h3>
+					<p class="text-darkgray mb-4">
+						A burning smell coming from your heating system could indicate an electrical problem or overheating
+						components. Turn off your system immediately and call for emergency service to prevent fire hazards.
+					</p>
+				</div>
+
+				<!-- Unusual Noises -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 017.072 0m-9.9-2.828a9 9 0 0112.728 0"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Loud or Unusual Noises</h3>
+					<p class="text-darkgray mb-4">
+						Grinding, screeching, banging, or other loud noises from your heating system often indicate a serious
+						mechanical problem that could cause further damage if not addressed immediately.
+					</p>
+				</div>
+
+				<!-- Gas Odor -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Gas Odor</h3>
+					<p class="text-darkgray mb-4">
+						If you smell gas near your furnace, leave your home immediately and call both your gas company and our
+						emergency service from a safe location. Gas leaks pose serious safety risks and require immediate
+						professional attention.
+					</p>
+				</div>
+
+				<!-- Carbon Monoxide Alarm -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Carbon Monoxide Alarm</h3>
+					<p class="text-darkgray mb-4">
+						If your carbon monoxide detector is sounding, evacuate your home immediately and call for emergency service.
+						Carbon monoxide is a colorless, odorless gas that can be deadly. A malfunctioning heating system can be a
+						source of carbon monoxide.
+					</p>
+				</div>
+
+				<!-- Electrical Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Electrical Issues</h3>
+					<p class="text-darkgray mb-4">
+						If your heating system is causing circuit breakers to trip repeatedly, or if you notice sparking or other
+						electrical problems, turn off the system and call for emergency service to prevent electrical fires.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Emergency Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR EMERGENCY RESPONSE PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					When you call Alltek Services for emergency heating repair, we follow a systematic process to restore your
+					comfort as quickly as possible.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Immediate Response</h3>
+								<p class="text-darkgray">
+									When you call our emergency line, you'll speak directly with a knowledgeable representative who will
+									gather information about your situation and dispatch the nearest available technician to your
+									location.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Quick Arrival</h3>
+								<p class="text-darkgray">
+									Our technicians are strategically located throughout the Belton area to ensure the fastest possible
+									response times during our business hours. We'll provide you with an estimated arrival time and keep you updated on our progress.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Thorough Diagnosis</h3>
+								<p class="text-darkgray">
+									Upon arrival, our technician will conduct a comprehensive assessment of your heating system to
+									identify the root cause of the problem, not just the symptoms.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Upfront Pricing</h3>
+								<p class="text-darkgray">
+									Before beginning any work, we'll explain the issue and provide a clear, upfront price for the
+									necessary repairs. There are no hidden fees or overtime charges, even for late-night, weekend, or
+									holiday service.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Fast, Effective Repair</h3>
+								<p class="text-darkgray">
+									Our technicians arrive with fully stocked service vehicles, equipped with the tools and parts needed
+									to complete most repairs on the spot, minimizing downtime and restoring your comfort quickly.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"
+						alt="HVAC technician responding to emergency heating repair call in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="500"
+						height="324"
+					/>
+					<div class="mt-8 bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Emergency Guarantee</h3>
+						<p class="text-darkgray">
+							We guarantee that a certified technician will respond during our regular business hours. If we
+							don't arrive within the promised timeframe, we'll waive the emergency service fee.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Preventative Tips -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">PREVENTING HEATING EMERGENCIES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					While we're always ready to respond to heating emergencies, the best emergency is one that never happens. Here
+					are some tips to help prevent heating system emergencies:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4">Regular Maintenance</h3>
+					<p class="text-darkgray mb-4">
+						Schedule annual heating system maintenance before the winter season begins. Regular tune-ups can identify
+						and address potential issues before they become emergencies.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Have your system professionally inspected and tuned up annually</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Replace air filters regularly (every 1-3 months)</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Consider a maintenance plan for priority service and discounts</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4">Monitor Your System</h3>
+					<p class="text-darkgray mb-4">
+						Pay attention to your heating system's performance and address minor issues before they become emergencies.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Listen for unusual noises and address them promptly</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Install carbon monoxide detectors and check batteries regularly</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Keep the area around your heating system clean and free of obstructions</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Know where your gas shutoff valve is located (for gas furnaces)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Emergency Heating Repair"
+		text="Don't wait in the cold. Our heating repair technicians can be scheduled 24/7. Call now for fast, reliable service within our normal hours."
+		button={`Call Now ${settings.phone}`}
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

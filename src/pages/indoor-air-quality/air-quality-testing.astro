@@ -1,0 +1,587 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Air Quality Testing in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Air Quality Testing in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional indoor air quality testing services in Belton, TX. Our comprehensive testing identifies allergens, pollutants, and contaminants in your home to help create a healthier living environment."/>
+	<meta name="keywords"
+	      content="air quality testing Belton TX, indoor air quality assessment, allergen testing, mold testing, VOC testing, air pollution testing, home air quality, air quality inspection, air quality monitoring, healthy home air, indoor air pollution, air quality solutions, Central Texas air testing"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/indoor-air-quality/air-quality-testing/"/>
+	<meta property="og:title" content="Air Quality Testing in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional indoor air quality testing services in Belton, TX. Our comprehensive testing identifies allergens, pollutants, and contaminants in your home to help create a healthier living environment."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/icons/air-quality.png"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/indoor-air-quality/air-quality-testing/"/>
+	<meta property="twitter:title" content="Air Quality Testing in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional indoor air quality testing services in Belton, TX. Our comprehensive testing identifies allergens, pollutants, and contaminants in your home to help create a healthier living environment."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/icons/air-quality.png"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/indoor-air-quality/air-quality-testing/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Air Quality Testing",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Air Quality Testing",
+			"description": "Professional indoor air quality testing services to identify allergens, pollutants, and contaminants in your home or business. Our comprehensive testing helps create a healthier living environment by pinpointing air quality issues and recommending effective solutions.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Indoor Air Quality Services",
+					"item": "https://www.alltek-services.com/indoor-air-quality/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Air Quality Testing",
+					"item": "https://www.alltek-services.com/indoor-air-quality/air-quality-testing/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/indoor-air-quality" class="text-darkgray hover:text-accent ml-1 md:ml-2">Indoor Air Quality
+							Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Air Quality Testing</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">AIR QUALITY TESTING</h1>
+				<p class="text-xl mb-8">Comprehensive indoor air quality testing to identify pollutants and create a healthier
+					living environment for your home or business.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL AIR QUALITY TESTING</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						IDENTIFY INDOOR AIR POLLUTANTS FOR A HEALTHIER HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						The air inside your home can contain a variety of pollutants that affect your health and comfort. At Alltek
+						Services, we offer comprehensive air quality testing to identify these contaminants and help you create a
+						healthier living environment.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our professional air quality testing services use advanced equipment to detect common indoor air pollutants,
+						including allergens, mold spores, volatile organic compounds (VOCs), particulate matter, and other harmful
+						substances that may be present in your home.
+					</p>
+					<p class="text-darkgray mb-8">
+						After conducting thorough testing, our experts will analyze the results and provide you with a detailed
+						report of our findings. We'll explain any air quality issues identified and recommend effective solutions to
+						address these problems, from air purification systems to humidity control and ventilation improvements.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Air Quality Testing
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"
+						alt="Professional air quality testing equipment measuring indoor pollutants in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="500"
+						height="324"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Common Air Quality Issues -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">COMMON INDOOR AIR QUALITY ISSUES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our air quality testing can identify a wide range of pollutants and contaminants that may be affecting your
+					indoor air quality.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Allergens -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Allergens</h3>
+					<p class="text-darkgray mb-4">
+						Common allergens like dust mites, pet dander, and pollen can accumulate in your home, triggering allergic
+						reactions and respiratory issues. Our testing can identify the presence and concentration of these allergens
+						in your indoor air.
+					</p>
+				</div>
+
+				<!-- Mold and Mildew -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Mold and Mildew</h3>
+					<p class="text-darkgray mb-4">
+						Mold spores can cause serious health issues, especially for those with respiratory conditions or compromised
+						immune systems. Our testing can detect mold spores in your air and help identify potential sources of mold
+						growth in your home.
+					</p>
+				</div>
+
+				<!-- Volatile Organic Compounds (VOCs) -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Volatile Organic Compounds</h3>
+					<p class="text-darkgray mb-4">
+						VOCs are chemicals emitted from many household products, including paints, cleaning supplies, and furniture.
+						These compounds can cause both short and long-term health effects. Our testing can measure VOC levels in
+						your home and identify potential sources.
+					</p>
+				</div>
+
+				<!-- Particulate Matter -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Particulate Matter</h3>
+					<p class="text-darkgray mb-4">
+						Tiny particles suspended in the air can penetrate deep into the lungs and even enter the bloodstream,
+						causing respiratory and cardiovascular issues. Our testing can measure the concentration of particulate
+						matter in your indoor air.
+					</p>
+				</div>
+
+				<!-- Carbon Monoxide -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Carbon Monoxide</h3>
+					<p class="text-darkgray mb-4">
+						This odorless, colorless gas can be deadly at high concentrations. Our testing can detect the presence of
+						carbon monoxide in your home and help identify potential sources, such as malfunctioning heating systems or
+						gas appliances.
+					</p>
+				</div>
+
+				<!-- Humidity Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Humidity Issues</h3>
+					<p class="text-darkgray mb-4">
+						Both high and low humidity levels can affect your comfort and health. Excessive humidity can promote mold
+						growth, while low humidity can cause dry skin and respiratory irritation. Our testing can measure humidity
+						levels in your home and help identify potential issues.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Testing Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR AIR QUALITY TESTING PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, step-by-step process to ensure accurate and thorough air quality testing for your
+					home or business.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Initial Consultation</h3>
+								<p class="text-darkgray">
+									We begin with a thorough discussion of your concerns, symptoms, and any specific air quality issues
+									you've noticed in your home.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Visual Inspection</h3>
+								<p class="text-darkgray">
+									Our technicians conduct a visual inspection of your home, looking for signs of mold, water damage,
+									poor ventilation, and other potential air quality issues.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Air Sampling</h3>
+								<p class="text-darkgray">
+									We collect air samples from various locations in your home using specialized equipment to measure the
+									concentration of different pollutants.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Laboratory Analysis</h3>
+								<p class="text-darkgray">
+									The collected samples are sent to a certified laboratory for analysis to identify specific pollutants
+									and their concentrations.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Comprehensive Report</h3>
+								<p class="text-darkgray">
+									We provide you with a detailed report of our findings, explaining any air quality issues identified
+									and their potential health impacts.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								6
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Customized Solutions</h3>
+								<p class="text-darkgray">
+									Based on the test results, we recommend effective solutions to address any air quality issues, from
+									air purification systems to ventilation improvements.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/consulting_600w.jpg"
+						alt="Air quality testing equipment and analysis in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover bg-lightgray p-8 mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Commitment</h3>
+						<p class="text-darkgray">
+							We are committed to providing accurate, thorough air quality testing to help you create a healthier living
+							environment. Our certified technicians use advanced equipment and follow industry best practices to ensure
+							reliable results.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Air Quality Testing -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF AIR QUALITY TESTING</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						WHY AIR QUALITY TESTING IS IMPORTANT FOR YOUR HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						Indoor air quality testing provides valuable insights into the air you breathe every day. By identifying
+						pollutants and contaminants in your home, you can take targeted action to improve your indoor air quality
+						and create a healthier living environment.
+					</p>
+					<p class="text-darkgray mb-4">
+						Poor indoor air quality can contribute to a variety of health issues, from allergies and asthma to more
+						serious respiratory conditions. By addressing air quality issues, you can reduce symptoms, improve overall
+						health, and enhance comfort in your home.
+					</p>
+					<p class="text-darkgray mb-8">
+						Our professional air quality testing services provide accurate, comprehensive results that help you make
+						informed decisions about improving your indoor air quality. With our expert guidance, you can implement
+						effective solutions that address your specific air quality concerns.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Air Quality Testing
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Key Benefits</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Identify specific pollutants affecting your indoor air quality</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Reduce allergy and asthma symptoms by addressing air quality issues</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Improve overall health and well-being for you and your family</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Enhance comfort and create a more pleasant living environment</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Make informed decisions about air quality improvement solutions</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Improve Your Indoor Air Quality?"
+		text="Contact us today to schedule professional air quality testing and take the first step toward creating a healthier living environment for you and your family."
+		button="Schedule Air Quality Testing"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

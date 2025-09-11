@@ -1,0 +1,326 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Ductless Mini-Split Systems in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Ductless Mini-Split Systems in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Expert ductless mini-split installation and service in Belton, TX. Enjoy energy-efficient, zone-specific cooling without ductwork. Call for a free consultation."/>
+	<meta name="keywords"
+	      content="ductless mini-split Belton TX, ductless AC, mini-split installation, zone cooling, no ductwork AC, energy-efficient cooling, ductless heat pump, wall mounted AC, multi-zone cooling, Central Texas ductless AC"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/air-conditioning-services/ductless-mini-split/"/>
+	<meta property="og:title" content="Ductless Mini-Split Systems in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Expert ductless mini-split installation and service in Belton, TX. Enjoy energy-efficient, zone-specific cooling without ductwork. Call for a free consultation."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url"
+	      content="https://www.alltek-services.com/air-conditioning-services/ductless-mini-split/"/>
+	<meta property="twitter:title" content="Ductless Mini-Split Systems in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Expert ductless mini-split installation and service in Belton, TX. Enjoy energy-efficient, zone-specific cooling without ductwork. Call for a free consultation."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/air-conditioning-services/ductless-mini-split/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Ductless Mini-Split Systems",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Ductless Mini-Split Systems",
+			"description": "Professional ductless mini-split installation and service. Our certified technicians install energy-efficient ductless systems for zone-specific cooling without the need for ductwork.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Air Conditioning Services",
+					"item": "https://www.alltek-services.com/air-conditioning-services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Ductless Mini-Split Systems",
+					"item": "https://www.alltek-services.com/air-conditioning-services/ductless-mini-split/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/air-conditioning-services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Air Conditioning
+							Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Ductless Mini-Split Systems</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">DUCTLESS MINI-SPLIT SYSTEMS</h1>
+				<p class="text-xl mb-8">Energy-efficient cooling and heating solutions without the need for ductwork, perfect
+					for home additions, renovations, and zone-specific comfort.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">DUCTLESS COOLING SOLUTIONS</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						FLEXIBLE, EFFICIENT COMFORT FOR ANY SPACE
+					</h3>
+					<p class="text-darkgray mb-4">
+						Ductless mini-split systems offer a versatile and energy-efficient alternative to traditional ducted HVAC
+						systems. These innovative systems consist of an outdoor compressor unit connected to one or more indoor
+						air-handling units, providing targeted cooling and heating without the need for ductwork.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, we specialize in the installation, maintenance, and repair of ductless mini-split
+						systems from leading manufacturers. Our certified technicians have the expertise to help you select the
+						right system for your specific needs and ensure it's installed correctly for optimal performance and
+						efficiency.
+					</p>
+					<p class="text-darkgray mb-8">
+						Whether you're looking to add comfort to a home addition, retrofit an older home without ductwork, or create
+						customized temperature zones throughout your property, our ductless mini-split solutions provide the
+						flexibility and efficiency you need.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/air-conditioning-services/ductless-mini-split.webp"
+						alt="Indoor ductless mini-split air conditioning unit"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="612"
+						height="408"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Ductless Systems -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF DUCTLESS SYSTEMS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Discover why ductless mini-split systems are becoming increasingly popular for homes and businesses in Belton
+					and throughout Central Texas.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Energy Efficiency -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Energy Efficiency</h3>
+					<p class="text-darkgray mb-4">
+						Ductless systems avoid the energy losses associated with ductwork, which can account for up to 30% of energy
+						consumption. This increased efficiency translates to lower utility bills and reduced environmental impact.
+					</p>
+				</div>
+
+				<!-- Zone-Specific Control -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Zone-Specific Control</h3>
+					<p class="text-darkgray mb-4">
+						Each indoor unit can be controlled independently, allowing you to set different temperatures for different
+						rooms. This means you only cool or heat the spaces you're using, further enhancing energy efficiency and
+						personalized comfort.
+					</p>
+				</div>
+
+				<!-- No Ductwork Required -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">No Ductwork Required</h3>
+					<p class="text-darkgray mb-4">
+						Perfect for older homes without existing ductwork, additions, sunrooms, or any space where installing ducts
+						would be impractical or costly. Installation is minimally invasive, requiring only a small hole in the wall
+						for the connecting conduit.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready for Efficient, Flexible Cooling?"
+		text="Contact us today to learn more about our ductless mini-split systems and schedule a consultation with one of our experts."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

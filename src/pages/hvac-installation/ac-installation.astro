@@ -1,0 +1,624 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>AC Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="AC Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional air conditioning installation services in Belton, TX. Our expert technicians provide quality AC installation for new construction, replacements, and upgrades to keep your home cool and comfortable."/>
+	<meta name="keywords"
+	      content="AC installation Belton TX, air conditioning installation, new AC system, AC replacement, HVAC installation, central air installation, energy efficient AC, air conditioner installation, cooling system installation, Central Texas AC installation"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/hvac-installation/ac-installation/"/>
+	<meta property="og:title" content="AC Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional air conditioning installation services in Belton, TX. Our expert technicians provide quality AC installation for new construction, replacements, and upgrades to keep your home cool and comfortable."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/air-conditioning-services/outdoor-ac-unit.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/hvac-installation/ac-installation/"/>
+	<meta property="twitter:title" content="AC Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional air conditioning installation services in Belton, TX. Our expert technicians provide quality AC installation for new construction, replacements, and upgrades to keep your home cool and comfortable."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/air-conditioning-services/outdoor-ac-unit.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/hvac-installation/ac-installation/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "AC Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "AC Installation",
+			"description": "Professional air conditioning installation services for residential and commercial properties. Our comprehensive services include system selection, sizing, installation, and setup for optimal cooling performance and energy efficiency.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "AC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/ac-installation/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/hvac-installation" class="text-darkgray hover:text-accent ml-1 md:ml-2">HVAC Installation</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">AC Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">AC INSTALLATION</h1>
+				<p class="text-xl mb-8">Professional air conditioning installation services to keep your home cool and
+					comfortable during the hot Texas summers.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL AC INSTALLATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						EXPERT AIR CONDITIONING INSTALLATION SERVICES
+					</h3>
+					<p class="text-darkgray mb-4">
+						When it comes to keeping your home cool and comfortable during the hot Texas summers, a properly installed
+						air conditioning system is essential. At Alltek Services, we provide professional AC installation services
+						for new construction, system replacements, and upgrades in Belton and the surrounding areas.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of certified technicians has extensive experience installing all types of air conditioning systems,
+						including central air conditioners, ductless mini-splits, and high-efficiency units. We work with leading
+						manufacturers to provide you with reliable, energy-efficient cooling solutions that fit your specific needs
+						and budget.
+					</p>
+					<p class="text-darkgray mb-8">
+						From helping you select the right system size and type to ensuring proper installation and setup, our
+						experts handle every aspect of the process with professionalism and attention to detail, ensuring your new
+						AC system delivers optimal performance and comfort for years to come.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule AC Installation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/services/ac-installation.jpg"
+						alt="Professional AC installation of an outdoor unit in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="450"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Types of AC Systems -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">TYPES OF AC SYSTEMS WE INSTALL</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We offer installation services for a variety of air conditioning systems to meet your specific cooling needs
+					and preferences.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Central Air Conditioning -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Central Air Conditioning</h3>
+					<p class="text-darkgray mb-4">
+						Central air conditioning systems use a network of ducts to distribute cooled air throughout your home. These
+						systems are ideal for cooling multiple rooms or your entire house efficiently and consistently.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Whole-home cooling
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Energy-efficient options available
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Consistent temperature control
+						</li>
+					</ul>
+				</div>
+
+				<!-- Ductless Mini-Split Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ductless Mini-Split Systems</h3>
+					<p class="text-darkgray mb-4">
+						Ductless mini-split systems offer flexible cooling solutions without the need for ductwork. These systems
+						are perfect for home additions, renovations, or areas where installing ducts is impractical.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							No ductwork required
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Zone-based temperature control
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Energy-efficient operation
+						</li>
+					</ul>
+				</div>
+
+				<!-- High-Efficiency Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">High-Efficiency Systems</h3>
+					<p class="text-darkgray mb-4">
+						High-efficiency air conditioning systems are designed to provide optimal cooling while minimizing energy
+						consumption. These systems can help reduce your utility bills and environmental impact.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Lower energy consumption
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduced utility bills
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Potential tax credits and rebates
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our AC Installation Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR AC INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, step-by-step process to ensure your new air conditioning system is installed
+					correctly and operates at peak efficiency.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Initial Consultation</h3>
+								<p class="text-darkgray">
+									We begin with a thorough assessment of your cooling needs, home layout, and budget to help you select
+									the right AC system for your specific requirements.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Selection</h3>
+								<p class="text-darkgray">
+									Our experts help you choose the appropriate type, size, and efficiency rating of your new air
+									conditioning system based on your home's square footage, insulation, and other factors.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Pre-Installation Preparation</h3>
+								<p class="text-darkgray">
+									We prepare your home for installation by ensuring proper access to installation areas, protecting your
+									property, and removing old equipment if necessary.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Professional Installation</h3>
+								<p class="text-darkgray">
+									Our certified technicians install your new AC system according to manufacturer specifications and
+									industry best practices, ensuring proper placement, connections, and setup.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Testing</h3>
+								<p class="text-darkgray">
+									After installation, we thoroughly test your new AC system to ensure it's operating correctly,
+									efficiently, and safely before considering the job complete.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								6
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Customer Education</h3>
+								<p class="text-darkgray">
+									We provide detailed information on how to operate and maintain your new system, including thermostat
+									programming, filter changes, and maintenance recommendations.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/consulting_600w.jpg"
+						alt="Professional AC installation technician working in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Commitment</h3>
+						<p class="text-darkgray">
+							We are committed to providing high-quality AC installation services that meet or exceed industry
+							standards. Our certified technicians take pride in their workmanship and attention to detail, ensuring
+							your new air conditioning system delivers reliable, efficient cooling for years to come.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Professional AC Installation -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF PROFESSIONAL AC INSTALLATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						WHY EXPERT INSTALLATION MATTERS
+					</h3>
+					<p class="text-darkgray mb-4">
+						Proper installation of your air conditioning system is crucial for optimal performance, efficiency, and
+						longevity. While DIY installation or hiring an inexperienced contractor might seem cost-effective initially,
+						it can lead to numerous problems and higher costs in the long run.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our professional AC installation services ensure that your system is correctly sized, properly installed,
+						and optimally configured to deliver reliable cooling, energy efficiency, and long-term value for your
+						investment.
+					</p>
+					<p class="text-darkgray mb-8">
+						With our expert installation, you can enjoy peace of mind knowing that your new air conditioning system will
+						provide consistent comfort, lower energy bills, and fewer repair issues throughout its lifespan.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Consultation
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Key Benefits</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Proper Sizing:</strong> Correctly sized system for optimal performance and efficiency</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Energy Efficiency:</strong> Lower utility bills through proper installation and setup</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Extended System Life:</strong> Properly installed systems last longer with fewer issues</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Warranty Protection:</strong> Manufacturer warranties typically require professional installation</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Code Compliance:</strong> Installation that meets all local building codes and regulations</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span><strong>Optimal Performance:</strong> Consistent cooling and improved indoor comfort</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready for a New Air Conditioning System?"
+		text="Contact Alltek Services today to schedule a consultation and learn how our professional AC installation services can benefit your business."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

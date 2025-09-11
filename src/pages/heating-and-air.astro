@@ -1,0 +1,698 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServiceProcess from '../components/ServiceProcess.astro';
+import ComfortCare from '../components/ComfortCare.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import PagesCTA from "../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Heating and Air Services in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Heating and Air Services in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta name="keywords"
+	      content="heating and air services Belton TX, furnace repair, heat pump installation, HVAC maintenance, emergency heating repair, heating system tune-up, central Texas heating, HVAC services"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/"/>
+	<meta property="og:title" content="Heating and Air Services in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/"/>
+	<meta property="twitter:title" content="Heating and Air Services in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Heating and Air Services",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$",
+				"photo": [
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-hvac-technician.webp",
+						"caption": "Certified HVAC technician inspecting a heating and air conditioning system in Belton, TX"
+					},
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-home-hvac-system.webp",
+						"caption": "Modern HVAC system installation in a Belton, TX home providing efficient heating and cooling"
+					},
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp",
+						"caption": "HVAC technician performing professional maintenance on heating system in Belton, TX home"
+					}
+				]
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Heating and Air Services",
+			"description": "Professional heating and air conditioning services including repair, installation, maintenance, and emergency services for residential and commercial properties in Belton and Central Texas.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Heating and Air Services",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Heating and Air Services</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HEATING AND AIR SERVICES</h1>
+				<p class="text-xl mb-8">Ensure your home stays warm in the winter and cool in the summer with our expert heating
+					and air conditioning services.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">COMPREHENSIVE HVAC SOLUTIONS</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						RELIABLE HEATING AND COOLING FOR CENTRAL TEXAS
+					</h3>
+					<p class="text-darkgray mb-4">
+						Alltek Services provides complete heating and air conditioning solutions to keep your indoor environment
+						comfortable no matter the season. Our certified HVAC technicians are equipped to handle everything from
+						routine maintenance to complex repairs and new system installations for both residential and commercial
+						properties.
+					</p>
+					<p class="text-darkgray mb-4">
+						We specialize in a wide range of heating and cooling systems, including furnaces, heat pumps, central air
+						conditioners, and ductless mini-splits. We are committed to delivering prompt, professional service and
+						ensuring your system operates efficiently and reliably.
+					</p>
+					<p class="text-darkgray mb-8">
+						With years of experience serving Belton and the surrounding Central Texas communities, Alltek Services is
+						your trusted partner for all your heating and air needs. We prioritize quality workmanship and customer
+						satisfaction on every job.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Get Free Estimate
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="Certified HVAC technician inspecting a heating and air conditioning system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services List -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR HEATING AND AIR SERVICES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We offer a full spectrum of heating and air conditioning services to keep your home comfortable year-round.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Heating Repair -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Heating System Repair</h3>
+					<p class="text-darkgray mb-4 text-center">
+						Our expert technicians quickly diagnose and repair issues with furnaces, heat pumps, and other heating
+						systems to restore warmth to your home.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Furnace repair
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Heat pump repair
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Boiler repair
+						</li>
+					</ul>
+					<div class="text-center">
+						<a href="/heating-and-air/heating-repair"
+						   class="text-secondary hover:text-accent font-bold transition-colors">
+							Learn More →
+						</a>
+					</div>
+				</div>
+
+				<!-- Heating Installation -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M4 16l4.016-.369L20 8l-8-8-8 12.016zm0 0v8h8m-8-4h.01"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Heating System Installation</h3>
+					<p class="text-darkgray mb-4 text-center">
+						We provide professional installation of new heating systems, ensuring proper sizing and efficient operation
+						for your home or business.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Furnace installation
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Heat pump installation
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Boiler installation
+						</li>
+					</ul>
+					<div class="text-center">
+						<a href="/hvac-installation/heating-system-installation"
+						   class="text-secondary hover:text-accent font-bold transition-colors">
+							Learn More →
+						</a>
+					</div>
+				</div>
+
+				<!-- Heating Maintenance -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Heating System Maintenance</h3>
+					<p class="text-darkgray mb-4 text-center">
+						Regular maintenance ensures your heating system runs efficiently and reliably, preventing breakdowns and
+						extending its lifespan.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Furnace tune-ups
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Heat pump maintenance
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Preventative maintenance plans
+						</li>
+					</ul>
+					<div class="text-center">
+						<a href="/heating-and-air/heating-maintenance"
+						   class="text-secondary hover:text-accent font-bold transition-colors">
+							Learn More →
+						</a>
+					</div>
+				</div>
+
+				<!-- Emergency Heating Repair -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Emergency Heating Repair</h3>
+					<p class="text-darkgray mb-4 text-center">
+						Emergency heating repair services when you need them most. We're always here to restore your comfort quickly
+						during heating system failures. Note we only service during normal business hours.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							No overtime charges
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Fast, reliable service
+						</li>
+					</ul>
+					<div class="text-center">
+						<a href="/heating-and-air/emergency-heating-repair"
+						   class="text-secondary hover:text-accent font-bold transition-colors">
+							Learn More →
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">WHY CHOOSE US FOR HEATING AND AIR</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Choose Alltek Services for reliable, expert heating and air conditioning services in Central Texas.
+				</p>
+			</div>
+
+			<div class="mb-16">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+					<div>
+						<img
+							src="/images/optimized/heating-and-air/belton-tx-home-hvac-system.jpg"
+							alt="Modern HVAC system installation in a Belton, TX home providing efficient heating and cooling"
+							class="rounded-lg shadow-xl w-full h-auto object-cover"
+							width="498"
+							height="276"
+						/>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-primary mb-4">EXPERT HEATING AND COOLING SOLUTIONS</h3>
+						<p class="text-darkgray mb-4">
+							At Alltek Services, we understand that your home's comfort depends on reliable heating and cooling
+							systems. Our team of certified technicians brings years of experience and specialized knowledge to every
+							job, ensuring your HVAC system operates at peak efficiency year-round.
+						</p>
+						<p class="text-darkgray">
+							From routine maintenance to complex repairs and new installations, we use only the highest quality parts
+							and equipment to deliver lasting results. We're committed to providing exceptional service that keeps your
+							home comfortable in every season while maximizing energy efficiency and minimizing utility costs.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="bg-lightgray p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Certified HVAC Technicians</h3>
+					<p class="text-darkgray">
+						Our team consists of highly trained and certified professionals specializing in heating and air systems.
+					</p>
+				</div>
+
+				<div class="bg-lightgray p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Prompt & Reliable Service</h3>
+					<p class="text-darkgray">
+						We understand the urgency of HVAC issues and provide timely, dependable service.
+					</p>
+				</div>
+
+				<div class="bg-lightgray p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Transparent Pricing</h3>
+					<p class="text-darkgray">
+						We offer clear and competitive pricing for all our heating and air services.
+					</p>
+				</div>
+
+				<div class="bg-lightgray p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Customer Satisfaction</h3>
+					<p class="text-darkgray">
+						Your comfort and satisfaction are our top priorities. We guarantee our work.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Service Process Section -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR SERVICE PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive process to ensure your heating and cooling systems receive the highest quality
+					service.
+				</p>
+			</div>
+
+			<div class="mb-16">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+					<div>
+						<h3 class="text-2xl font-bold text-primary mb-4">PROFESSIONAL HVAC MAINTENANCE</h3>
+						<p class="text-darkgray mb-4">
+							Regular maintenance is essential for keeping your heating and cooling systems running efficiently and
+							extending their lifespan. Our comprehensive maintenance services include thorough inspections, cleaning,
+							and tune-ups to prevent unexpected breakdowns and ensure optimal performance.
+						</p>
+						<p class="text-darkgray mb-4">
+							Our certified technicians follow a detailed checklist to address all critical components of your HVAC
+							system, from checking refrigerant levels and electrical connections to cleaning coils and calibrating
+							thermostats.
+						</p>
+						<ul class="space-y-2 text-darkgray mb-6">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Comprehensive system inspection
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Cleaning of critical components
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Performance testing and optimization
+							</li>
+						</ul>
+					</div>
+					<div>
+						<img
+							src="/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp"
+							alt="HVAC technician performing professional maintenance on heating system in Belton, TX home"
+							class="rounded-lg shadow-xl w-full h-auto object-cover"
+							width="600"
+							height="400"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="bg-white p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<span class="text-2xl font-bold text-white">1</span>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Consultation</h3>
+					<p class="text-darkgray">
+						We begin with a thorough consultation to understand your specific heating and cooling needs.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<span class="text-2xl font-bold text-white">2</span>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Inspection</h3>
+					<p class="text-darkgray">
+						Our certified technicians conduct a comprehensive inspection of your HVAC system.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<span class="text-2xl font-bold text-white">3</span>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Service Delivery</h3>
+					<p class="text-darkgray">
+						We perform the necessary repairs, maintenance, or installation with quality parts and equipment.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg text-center">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
+						<span class="text-2xl font-bold text-white">4</span>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Follow-Up</h3>
+					<p class="text-darkgray">
+						We ensure your complete satisfaction and provide recommendations for ongoing maintenance.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Comfort Care Section -->
+	<ComfortCare/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Need Heating or Air Conditioning Service?"
+		text="Contact Alltek Services today for expert heating and air solutions in Belton and Central Texas."
+		button="Schedule HVAC service"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

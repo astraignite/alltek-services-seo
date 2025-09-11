@@ -1,0 +1,720 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import settings from "../../settings";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Comfort Care Program | Alltek Services | Belton, TX</title>
+	<meta name="title" content="Comfort Care Program | Alltek Services | Belton, TX"/>
+	<meta name="description"
+	      content="Join our Comfort Care Program for priority service, regular maintenance, extended warranties, and exclusive discounts on repairs and new installations."/>
+	<meta name="keywords"
+	      content="HVAC maintenance program, Comfort Care Program, HVAC service plan, preventative maintenance, HVAC warranty, Belton TX HVAC maintenance, air conditioning service plan, heating maintenance plan"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/about-us/comfort-care-services"/>
+	<meta property="og:title" content="Comfort Care Program | Alltek Services | Belton, TX"/>
+	<meta property="og:description"
+	      content="Join our Comfort Care Program for priority service, regular maintenance, extended warranties, and exclusive discounts on repairs and new installations."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/about-us/comfort-care-services"/>
+	<meta property="twitter:title" content="Comfort Care Program | Alltek Services | Belton, TX"/>
+	<meta property="twitter:description"
+	      content="Join our Comfort Care Program for priority service, regular maintenance, extended warranties, and exclusive discounts on repairs and new installations."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/about-us/comfort-care-services"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Comfort Care Program",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"image": "/images/Logo.png",
+				"url": "https://www.alltek-services.com/",
+				"telephone": "+1-254-721-7049",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				}
+			},
+			"description": "Join our Comfort Care Program for priority service, regular maintenance, extended warranties, and exclusive discounts on repairs and new installations.",
+			"offers": {
+				"@type": "Offer",
+				"category": "HVAC Maintenance Program"
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Comfort Care Services",
+					"item": "https://www.alltek-services.com/about-us/comfort-care-services"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Comfort Care Services</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">COMFORT CARE PROGRAM</h1>
+				<p class="text-xl mb-8">Join our Comfort Care Program for priority service, regular maintenance, extended
+					warranties, and exclusive discounts on repairs and new installations.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Introduction Section -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">OUR COMFORT CARE PROGRAM</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						HELPING CUSTOMERS IN BELL COUNTY AND THE SURROUNDING AREAS CARE FOR THEIR HVAC SYSTEMS
+					</h3>
+					<p class="text-darkgray mb-4">
+						We know that taking proper care of your HVAC system can be a chore – you need to remember to schedule
+						regular maintenance, address any issues that develop, and pay for replacements when your old units wear out.
+						That's why we developed our Comfort Care program.
+					</p>
+					<p class="text-darkgray mb-8">
+						With membership in Alltek Services' Comfort Care program, you'll gain access to convenient seasonal
+						maintenance, exclusive discounts, and reliable warranties that make maintaining optimal HVAC efficiency and
+						effectiveness easier and more affordable than it's ever been.
+					</p>
+				</div>
+
+				<div class="relative">
+					<img
+						src="/images/fleet/service-fleet.jpg"
+						alt="Alltek Services HVAC Service Fleet in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+					<div class="absolute -bottom-6 -left-6 bg-secondary text-white p-6 rounded-lg shadow-lg max-w-xs">
+						<p class="font-bold text-xl mb-2">Priority Service</p>
+						<p>For all Comfort Care members</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Membership Levels Section -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">WHAT'S INCLUDED IN OUR COMFORT CARE PROGRAM?</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Alltek Services offers three levels of Comfort Club memberships – VIP Silver, VIP Gold, and VIP Platinum. Each
+					level of membership includes perks and benefits that ensure your family can easily achieve peak comfort at a
+					price you'll love. Signing up is easy, with monthly and yearly payment options and accommodation for multiple
+					units available. Our team will happily help you find out which membership plan is the best choice for you and
+					your home.
+				</p>
+			</div>
+
+			<!-- VIP Silver -->
+			<div class="bg-white p-8 rounded-lg shadow-md mb-8">
+				<h3 class="text-2xl font-bold text-primary mb-6">Our VIP Silver Program Includes:</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A spring air conditioner inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A 60-day warranty on all repairs</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">The opportunity to gain reward points towards your next system replacement – up to $50 worth per year with regular program renewals</span>
+						</li>
+					</ul>
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A fall heater inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Regular service reminders</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A flat $25 trip fee</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- VIP Gold -->
+			<div class="bg-white p-8 rounded-lg shadow-md mb-8">
+				<h3 class="text-2xl font-bold text-primary mb-6">Our VIP Gold Program Includes:</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A spring air conditioner inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A 1-year warranty on all repairs</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A standard air filter replacement with each visit</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Pre-season scheduling opportunities</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">The opportunity to gain reward points towards your next system replacement – up to $200 worth per year with regular program renewals</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span
+								class="text-darkgray">Free after-hours scheduling diagnostics between the hours of 5 and 10 PM</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">An annual capacitor replacement</span>
+						</li>
+					</ul>
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A fall heater inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Regular service reminders</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A six-month supply of standard air filters</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Priority scheduling for all repairs</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">All tip and diagnostic fees waived</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">A flat 10% discount on all repairs</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- VIP Platinum+ -->
+			<div class="bg-white p-8 rounded-lg shadow-md mb-8">
+				<h3 class="text-2xl font-bold text-primary mb-6">Our VIP Platinum+ Program Includes:</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Only available with the purchase and installation of a complete new or replacement system to include both indoor and outdoor units. Residential units only. With this exclusive package, your new system is covered</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">No Diagnostic Fee</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Yearly Spring Air Conditioning Inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">12-month supply of standard fiberglass air filters</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">$200 per year rewards points towards a new replacement system</span>
+						</li>
+					</ul>
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">10-year parts and Labor warranty on installed equipment and accessories due to a manufacturer's defect</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Priority Scheduling for repairs</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Yearly Fall Heating Inspection</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">No Manufacturer's warranty processing fees</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+							     viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+							</svg>
+							<span class="text-darkgray">Service reminders</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Program Notes -->
+			<div class="bg-white p-8 rounded-lg shadow-md">
+				<h3 class="text-2xl font-bold text-primary mb-6">Important Program Notes:</h3>
+				<ul class="space-y-4">
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Equipment reward points only apply to a complete HVAC replacement (Condenser, Air Handler/Furnace & Evaporator)</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Equipment reward points are only redeemable for equipment replacements. No parts, service, or cash!</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Pricing & Rates subject to change upon renewal.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">New system comes with 10 year labor warranty to match manufacturer's parts Warranty.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Does NOT cover any warranty processing fees charged by manufacturer EX: PSC Motors, Compressor, Condenser Coil, Control Board, ECM Motors, Evap Coil.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Warranty processing fee – $100</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Does NOT Include Duct Cleanings.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Does NOT cover theft, neglect, or damages.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Does NOT cover any damages to any personal property or real property caused by condensation leaks.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Non-transferable to another owner, address, or other units.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Must Notify Alltek Services to cancel.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">Platinum+ will downgrade to Platinum Membership AFTER 10 years.</span>
+					</li>
+					<li class="flex items-start">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-2 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<span class="text-darkgray">If you drop this plan BEFORE 10 years is up you lose the 10-year labor warranty as well</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-6 text-primary font-heading">READY TO JOIN OUR COMFORT CARE PROGRAM?</h2>
+			<p class="text-xl mb-8 max-w-3xl mx-auto text-darkgray">
+				To learn more about our Comfort Care program, call our Bell County office at
+				<a href={`tel:${settings.phoneRaw}`} class="text-accent font-bold">{settings.phone}</a> or reach out to us online today!
+			</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a
+					href="/contact"
+					class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Contact Us
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- What Sets Us Apart Section -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">WHAT SETS ALLTEK SERVICES APART?</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					When you choose Alltek Services for your HVAC needs, you're choosing a company that prioritizes your comfort
+					and satisfaction above all else.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">30+ YEARS OF EXPERIENCE</h3>
+					<p class="text-darkgray text-center">
+						With over three decades of experience, we've seen and solved virtually every HVAC challenge imaginable.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">SERVICE WITH INTEGRITY</h3>
+					<p class="text-darkgray text-center">
+						We believe in honest recommendations, transparent pricing, and doing what's right for our customers.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">MAINTENANCE PLANS & FINANCING OFFERED</h3>
+					<p class="text-darkgray text-center">
+						Our Comfort Care Program and flexible financing options make quality HVAC care accessible to everyone.
+					</p>
+				</div>
+
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">LOCALLY OWNED & OPERATED</h3>
+					<p class="text-darkgray text-center">
+						As a local business, we're invested in our community and committed to providing exceptional service to our
+						neighbors.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-6 font-heading">READY TO EXPERIENCE THE COMFORT CARE DIFFERENCE?</h2>
+			<p class="text-xl mb-8 max-w-3xl mx-auto">
+				Join our Comfort Care Program today and enjoy priority service, regular maintenance, extended warranties, and
+				exclusive discounts.
+			</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a
+					href="/contact"
+					class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Contact Us
+				</a>
+				<a
+					href={`tel:${settings.phoneRaw}`}
+					class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Call {settings.phone}
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

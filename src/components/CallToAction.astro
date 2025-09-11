@@ -1,0 +1,32 @@
+---
+import settings from "../settings.js";
+interface Props {
+  cityName: string;
+  state: string;
+}
+
+const { cityName, state } = Astro.props;
+---
+
+<section class="py-16 md:py-24 bg-primary text-white" id="CTA">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6 font-heading">NEED HVAC SERVICE IN {cityName.toUpperCase()}?</h2>
+    <p class="text-xl mb-8 max-w-3xl mx-auto">
+      Contact Alltek Services today to schedule a service appointment or to learn more about our HVAC solutions in {cityName}, {state}.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a
+        href="/contact"
+        class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+      >
+        Contact Us
+      </a>
+      <a
+        href={`tel:${settings.phoneRaw}`}
+        class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+      >
+        Call {settings.phone}
+      </a>
+    </div>
+  </div>
+</section>

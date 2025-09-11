@@ -1,0 +1,353 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>AC Maintenance Services in Belton, TX | Alltek Services</title>
+	<meta name="title" content="AC Maintenance Services in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional air conditioning maintenance in Belton, TX. Regular tune-ups extend system life, improve efficiency, and prevent costly breakdowns. Schedule service today."/>
+	<meta name="keywords"
+	      content="AC maintenance Belton TX, air conditioner tune-up, HVAC maintenance, preventative AC service, seasonal AC maintenance, AC efficiency, air conditioning check-up, Central Texas AC service, AC system inspection"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url"
+	      content="https://www.alltek-services.com/air-conditioning-services/air-conditioning-maintenance/"/>
+	<meta property="og:title" content="AC Maintenance Services in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional air conditioning maintenance in Belton, TX. Regular tune-ups extend system life, improve efficiency, and prevent costly breakdowns. Schedule service today."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url"
+	      content="https://www.alltek-services.com/air-conditioning-services/air-conditioning-maintenance/"/>
+	<meta property="twitter:title" content="AC Maintenance Services in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional air conditioning maintenance in Belton, TX. Regular tune-ups extend system life, improve efficiency, and prevent costly breakdowns. Schedule service today."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/air-conditioning-services/air-conditioning-maintenance/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/air-conditioning-services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Air Conditioning
+							Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">AC Maintenance</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">AC MAINTENANCE SERVICES</h1>
+				<p class="text-xl mb-8">Regular maintenance to keep your air conditioning system running efficiently, prevent
+					breakdowns, and extend its lifespan.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PREVENTATIVE MAINTENANCE</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						KEEP YOUR SYSTEM RUNNING AT PEAK PERFORMANCE
+					</h3>
+					<p class="text-darkgray mb-4">
+						Regular maintenance is the key to keeping your air conditioning system running efficiently and reliably.
+						Just like your car needs regular oil changes and tune-ups, your AC system requires professional attention to
+						ensure optimal performance and longevity.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, we offer comprehensive AC maintenance services designed to identify and address
+						potential issues before they become costly problems. Our certified technicians perform thorough inspections
+						and tune-ups that keep your system operating at peak efficiency, helping you save on energy costs and avoid
+						unexpected breakdowns.
+					</p>
+					<p class="text-darkgray mb-8">
+						We recommend scheduling AC maintenance at least once a year, ideally in the spring before the cooling season
+						begins. For systems that run year-round or in homes with pets, more frequent maintenance may be beneficial.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Maintenance
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/air-conditioning-services/ac-maintenance.webp"
+						alt="HVAC technician performing air conditioning maintenance"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="612"
+						height="408"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits Section -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF REGULAR MAINTENANCE</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Investing in regular AC maintenance offers numerous benefits that save you money and ensure your comfort:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Extended System Life -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Extended System Life</h3>
+					<p class="text-darkgray mb-4">
+						Regular maintenance can significantly extend the lifespan of your AC system, helping you avoid premature
+						replacement costs and get the most value from your investment.
+					</p>
+				</div>
+
+				<!-- Improved Energy Efficiency -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Energy Efficiency</h3>
+					<p class="text-darkgray mb-4">
+						A well-maintained AC system operates more efficiently, consuming less energy to cool your home. This
+						translates to lower utility bills and reduced environmental impact.
+					</p>
+				</div>
+
+				<!-- Fewer Repairs -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Fewer Repairs</h3>
+					<p class="text-darkgray mb-4">
+						Regular maintenance helps identify and address small issues before they become major problems, reducing the
+						likelihood of unexpected breakdowns and costly emergency repairs.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Maintenance Checklist -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR MAINTENANCE CHECKLIST</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our comprehensive AC maintenance service includes a thorough inspection and tune-up of your entire system:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+				<div>
+					<h3 class="text-xl font-bold text-primary mb-6 border-b border-accent pb-2">Indoor Unit Maintenance</h3>
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Clean or replace air filters</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Clean and inspect evaporator coil</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Check and clean condensate drain line and pan</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Inspect blower motor and wheel</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Check electrical connections and components</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Test thermostat operation and calibration</span>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="text-xl font-bold text-primary mb-6 border-b border-accent pb-2">Outdoor Unit Maintenance</h3>
+					<ul class="space-y-4">
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Clean condenser coil and remove debris</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Inspect fan motor and blade</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Check refrigerant levels and pressure</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Inspect compressor and contactor</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Test capacitors and relays</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Check and tighten electrical connections</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Schedule Your AC Maintenance?"
+		text="Don't wait for your AC to break down. Preventative maintenance saves you money and ensures your comfort all season long."
+		button="Schedule your service"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

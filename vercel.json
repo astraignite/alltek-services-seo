@@ -1,0 +1,179 @@
+{
+  "redirects": [
+    {
+      "source": "/about-us",
+      "destination": "https://www.alltek-services.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/career",
+      "destination": "https://www.alltek-services.com/about-us/careers",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/comfort-care-program",
+      "destination": "https://www.alltek-services.com/about-us/comfort-care-services",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/reviews",
+      "destination": "https://www.alltek-services.comhttps://www.google.com/maps/place/Alltek+Services/@31.1186612,-97.4701785,967m/data=!3m1!1e3!4m8!3m7!1s0x864541975ffe7065:0x883f270c3769dd5f!8m2!3d31.1186612!4d-97.4701785!9m1!1b1!16s%2Fg%2F12hp2pncr?entry=ttu&g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services",
+      "destination": "https://www.alltek-services.com/services",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/hvac-repair",
+      "destination": "https://www.alltek-services.com/heating-and-air/heating-repair",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/hvac-installation",
+      "destination": "https://www.alltek-services.com/hvac-installation",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/hvac-maintenance",
+      "destination": "https://www.alltek-services.com/air-conditioning-services/air-conditioning-maintenance",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/ac-repair",
+      "destination": "https://www.alltek-services.com/air-conditioning-services/air-conditioning-repair",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/ac-installation-replacement",
+      "destination": "https://www.alltek-services.com/air-conditioning-services/air-conditioning-installation",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/commercial-hvac",
+      "destination": "https://www.alltek-services.com/commercial-hvac",
+      "statusCode": 301
+    },
+    {
+      "source": "/ductwork",
+      "destination": "https://www.alltek-services.com/hvac-installation/hvac-ductwork-installation",
+      "statusCode": 301
+    },
+    {
+      "source": "/ductwork/duct-cleaning",
+      "destination": "https://www.alltek-services.com/indoor-air-quality/duct-cleaning-service",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve",
+      "destination": "https://www.alltek-services.com/service-areas",
+      "statusCode": 301
+    },
+    {
+      "source": "/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/belton-services",
+      "destination": "https://www.alltek-services.com/service-areas/belton-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/round-rock-service",
+      "destination": "https://www.alltek-services.com/service-areas/round-rock-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/copperas-cove-service",
+      "destination": "https://www.alltek-services.com/service-areas/copperas-cove-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/temple-service",
+      "destination": "https://www.alltek-services.com/service-areas/temple-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/waco-service",
+      "destination": "https://www.alltek-services.com/service-areas/waco-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/woodway-service",
+      "destination": "https://www.alltek-services.com/service-areas/woodway-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/hvac-services/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/indoor-air-quality/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/ductwork/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us/appointmen",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/round-rock",
+      "destination": "https://www.alltek-services.com/service-areas/round-rock-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/waco",
+      "destination": "https://www.alltek-services.com/service-areas/waco-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/appointment",
+      "destination": "https://www.alltek-services.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/round-rock-service",
+      "destination": "https://www.alltek-services.com/service-areas/round-rock-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/temple",
+      "destination": "https://www.alltek-services.com/service-areas/temple-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/woodway",
+      "destination": "https://www.alltek-services.com/service-areas/woodway-tx",
+      "statusCode": 301
+    },
+    {
+      "source": "/areas-we-serve/belton",
+      "destination": "https://www.alltek-services.com/service-areas/belton-tx",
+      "statusCode": 301
+    }
+  ]
+}

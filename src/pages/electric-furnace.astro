@@ -1,0 +1,488 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServiceProcess from '../components/ServiceProcess.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import PagesCTA from "../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Electric Furnace Services in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Electric Furnace Services in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional electric furnace services in Belton, TX. Our expert technicians provide installation, maintenance, and repair for all types of electric furnaces to keep your home warm and comfortable."/>
+	<meta name="keywords"
+	      content="electric furnace Belton TX, electric heating system, electric furnace installation, electric furnace maintenance, electric furnace repair, electric heating, HVAC services, energy efficient heating, Central Texas electric furnace"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/electric-furnace/"/>
+	<meta property="og:title" content="Electric Furnace Services in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional electric furnace services in Belton, TX. Our expert technicians provide installation, maintenance, and repair for all types of electric furnaces to keep your home warm and comfortable."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/heating-system-repair.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/electric-furnace/"/>
+	<meta property="twitter:title" content="Electric Furnace Services in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional electric furnace services in Belton, TX. Our expert technicians provide installation, maintenance, and repair for all types of electric furnaces to keep your home warm and comfortable."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/heating-system-repair.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/electric-furnace/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Electric Furnace Services",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Electric Furnace Services",
+			"description": "Professional electric furnace services for residential and commercial properties. Our comprehensive services include installation, maintenance, and repairs for all types of electric furnaces to ensure optimal performance, efficiency, and safety.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Electric Furnace",
+					"item": "https://www.alltek-services.com/electric-furnace/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Electric Furnace</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">ELECTRIC FURNACE SERVICES</h1>
+				<p class="text-xl mb-8">Expert installation, maintenance, and repair services for all types of electric furnaces
+					to keep your home warm and comfortable in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">ELECTRIC FURNACE SPECIALISTS</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						EXPERT SOLUTIONS FOR ELECTRIC HEATING SYSTEMS
+					</h3>
+					<p class="text-darkgray mb-4">
+						Electric furnaces are a popular heating option for many homes in Belton and throughout Central Texas,
+						offering clean, efficient heating without the need for natural gas or propane. At Alltek Services, we
+						specialize in all aspects of electric furnace service, from installation and maintenance to repairs and
+						replacements.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of certified technicians has extensive experience working with electric furnaces from all major
+						manufacturers. We understand the unique requirements of electric heating systems and can provide tailored
+						solutions to ensure optimal performance, efficiency, and comfort.
+					</p>
+					<p class="text-darkgray mb-8">
+						Whether you need a new electric furnace installation, routine maintenance to keep your system running
+						efficiently, or emergency repairs when your furnace stops working, our experts have the knowledge, skills,
+						and tools to handle all your electric furnace service needs with professionalism and attention to detail.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Electric Furnace Service
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/heating-system-repair.webp"
+						alt="Professional technician servicing an electric furnace in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How Electric Furnaces Work -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">HOW ELECTRIC FURNACES WORK</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Understanding how your electric furnace operates can help you make informed decisions about maintenance and
+					repairs.
+				</p>
+			</div>
+
+			<div class="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+					<div>
+						<h3 class="text-2xl font-bold text-primary mb-6">The Heating Process</h3>
+						<ol class="space-y-4 text-darkgray">
+							<li class="flex">
+								<span
+									class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</span>
+								<p><strong>Thermostat Signal:</strong> When your home's temperature drops below the thermostat setting,
+									it sends a signal to the furnace to start the heating cycle.</p>
+							</li>
+							<li class="flex">
+								<span
+									class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</span>
+								<p><strong>Heating Elements Activate:</strong> Electricity flows through the heating elements, causing
+									them to heat up, similar to how a toaster works.</p>
+							</li>
+							<li class="flex">
+								<span
+									class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</span>
+								<p><strong>Air Circulation:</strong> The blower motor pushes air across the hot heating elements,
+									warming the air.</p>
+							</li>
+							<li class="flex">
+								<span
+									class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</span>
+								<p><strong>Distribution:</strong> The warm air is distributed throughout your home via the ductwork.</p>
+							</li>
+							<li class="flex">
+								<span
+									class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">5</span>
+								<p><strong>Cycle Continues:</strong> This process continues until your home reaches the desired
+									temperature set on the thermostat.</p>
+							</li>
+						</ol>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-primary mb-6">Key Components</h3>
+						<ul class="space-y-3 text-darkgray">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Heating Elements:</strong> Convert electrical energy into heat
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Blower Motor:</strong> Circulates air through the system
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Sequencer:</strong> Controls the heating elements, turning them on and off in sequence
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Transformer:</strong> Converts high voltage to low voltage for the control circuit
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Limit Switch:</strong> Safety device that shuts off the furnace if it overheats
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								<div>
+									<strong>Control Board:</strong> The "brain" of the furnace that manages all operations
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Electric Furnace Services -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR ELECTRIC FURNACE SERVICES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We provide comprehensive electric furnace services to meet all your heating needs.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Installation -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Installation & Replacement</h3>
+					<p class="text-darkgray mb-4">
+						Our expert technicians provide professional installation of high-efficiency electric furnaces from leading
+						manufacturers. We'll help you select the right size and model for your home, ensure proper installation
+						according to manufacturer specifications and safety codes, and optimize the system for maximum efficiency
+						and performance.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Free in-home consultations
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Expert system sizing
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Professional installation
+						</li>
+					</ul>
+				</div>
+
+				<!-- Repair -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Repair & Troubleshooting</h3>
+					<p class="text-darkgray mb-4">
+						When your electric furnace isn't working properly, our skilled technicians can quickly diagnose the problem
+						and provide effective repairs. We service all makes and models of electric furnaces and can address a wide
+						range of issues, from minor repairs to complex system malfunctions.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							24/7 emergency service
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Accurate diagnostics
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Upfront pricing
+						</li>
+					</ul>
+					<div class="text-center">
+						<a href="/electric-furnace-repair" class="text-secondary hover:text-accent font-bold">Learn More →</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Keep your Home Comfrtable Year-Round"
+		text="Don't wait until your system down completely. Contact Alltek Services today for professional services to ensure your system operates efficiently and reliably in all seasons."
+		button="Schedule electric furnace services"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>
+
+
+

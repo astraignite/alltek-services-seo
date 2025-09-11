@@ -1,0 +1,644 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Energy Efficient AC Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Energy Efficient AC Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional energy efficient air conditioning installation services in Belton, TX. Our expert technicians install high-efficiency AC systems that reduce energy consumption and lower utility bills while providing superior comfort."/>
+	<meta name="keywords"
+	      content="energy efficient AC installation Belton TX, high-efficiency air conditioner, energy saving HVAC, SEER rating, eco-friendly cooling, energy star AC, utility bill reduction, green HVAC solutions, Central Texas AC installation, sustainable cooling"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/hvac-installation/energy-eficient-ac-installation/"/>
+	<meta property="og:title" content="Energy Efficient AC Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional energy efficient air conditioning installation services in Belton, TX. Our expert technicians install high-efficiency AC systems that reduce energy consumption and lower utility bills while providing superior comfort."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/hvac-installation-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url"
+	      content="https://www.alltek-services.com/hvac-installation/energy-eficient-ac-installation/"/>
+	<meta property="twitter:title" content="Energy Efficient AC Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional energy efficient air conditioning installation services in Belton, TX. Our expert technicians install high-efficiency AC systems that reduce energy consumption and lower utility bills while providing superior comfort."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/hvac-installation-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/hvac-installation/energy-eficient-ac-installation/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Energy Efficient AC Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Energy Efficient AC Installation",
+			"description": "Professional installation of high-efficiency air conditioning systems for residential and commercial properties. Our services include consultation, system selection, professional installation, and setup of energy-efficient air conditioners that reduce energy consumption, lower utility bills, and provide superior comfort while minimizing environmental impact.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Energy Efficient AC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/energy-eficient-ac-installation/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/hvac-installation" class="text-darkgray hover:text-accent ml-1 md:ml-2">HVAC Installation</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Energy Efficient AC Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">ENERGY EFFICIENT AC INSTALLATION</h1>
+				<p class="text-xl mb-8">Professional installation of high-efficiency air conditioning systems that reduce energy
+					consumption and lower utility bills while providing superior comfort in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">SAVE ENERGY & MONEY</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						HIGH-EFFICIENCY COOLING SOLUTIONS FOR YOUR HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						In the hot Texas climate, an energy-efficient air conditioning system isn't just a luxury—it's a smart
+						investment that can significantly reduce your energy consumption and monthly utility bills while providing
+						superior comfort. At Alltek Services, we specialize in installing high-efficiency AC systems that are
+						designed to maximize performance while minimizing energy use.
+					</p>
+					<p class="text-darkgray mb-4">
+						Modern energy-efficient air conditioners can use up to 50% less energy than older models, thanks to advanced
+						technology and improved design. Our certified technicians will help you select the right system for your
+						home based on factors such as your home's size, layout, insulation, and your specific cooling needs and
+						budget.
+					</p>
+					<p class="text-darkgray mb-8">
+						We install a variety of energy-efficient cooling solutions, including central air conditioners with high
+						SEER ratings, variable-speed systems, and smart thermostat-compatible units. Our professional installation
+						ensures that your new system operates at peak efficiency from day one, providing reliable cooling and
+						maximum energy savings for years to come.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/services/hvac-replacement/hvac-replacement.jpg"
+						alt="Energy efficient air conditioning installation in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Energy Efficient AC -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF ENERGY EFFICIENT AC</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Investing in an energy-efficient air conditioning system offers numerous advantages beyond just lower energy
+					bills.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Lower Energy Bills -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Lower Energy Bills</h3>
+					<p class="text-darkgray mb-4">
+						High-efficiency air conditioners use significantly less electricity to produce the same cooling output as
+						older, less efficient models. This translates to immediate savings on your monthly utility bills, especially
+						during the hot summer months when your AC runs more frequently.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Up to 50% reduction in cooling costs
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Faster return on investment
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Potential utility rebates and incentives
+						</li>
+					</ul>
+				</div>
+
+				<!-- Enhanced Comfort -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Enhanced Comfort</h3>
+					<p class="text-darkgray mb-4">
+						Modern energy-efficient systems don't just save energy—they provide superior comfort. Features like
+						variable-speed technology allow these systems to run longer at lower speeds, which helps maintain more
+						consistent temperatures, reduce humidity more effectively, and eliminate the temperature swings common with
+						older systems.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							More consistent temperatures
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Better humidity control
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Quieter operation
+						</li>
+					</ul>
+				</div>
+
+				<!-- Environmental Benefits -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Environmental Benefits</h3>
+					<p class="text-darkgray mb-4">
+						By consuming less electricity, energy-efficient air conditioners reduce the demand for power generation,
+						which helps decrease greenhouse gas emissions and other pollutants. Additionally, modern systems use
+						environmentally friendly refrigerants that have less impact on the ozone layer and global warming.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduced carbon footprint
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Eco-friendly refrigerants
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Conservation of natural resources
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Understanding SEER Ratings -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">UNDERSTANDING SEER RATINGS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					SEER (Seasonal Energy Efficiency Ratio) is a measure of air conditioning efficiency—the higher the SEER
+					rating, the more energy-efficient the system.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-lightgray p-8 rounded-lg shadow-md mb-8">
+					<h3 class="text-xl font-bold text-primary mb-4">What SEER Rating Means</h3>
+					<p class="text-darkgray mb-4">
+						SEER measures how efficiently an air conditioning system operates over an entire cooling season. It's
+						calculated by dividing the total cooling output (in BTUs) by the total electrical energy input (in
+						watt-hours) during the same period. The higher the SEER number, the greater the system's efficiency.
+					</p>
+					<p class="text-darkgray mb-4">
+						As of 2023, the minimum SEER rating for new air conditioners in the southern United States is 15, but
+						high-efficiency models can have SEER ratings of 20 or higher. Each increase in SEER rating represents
+						approximately a 5-8% increase in energy efficiency.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<!-- Standard Efficiency -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h4 class="text-lg font-bold text-primary mb-3">Standard Efficiency</h4>
+						<p class="text-darkgray mb-3">SEER 15-16</p>
+						<ul class="space-y-2 text-darkgray">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Meets minimum requirements
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Lower upfront cost
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Basic energy savings
+							</li>
+						</ul>
+					</div>
+
+					<!-- High Efficiency -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h4 class="text-lg font-bold text-primary mb-3">High Efficiency</h4>
+						<p class="text-darkgray mb-3">SEER 17-19</p>
+						<ul class="space-y-2 text-darkgray">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Significant energy savings
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Better comfort features
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Moderate investment with good ROI
+							</li>
+						</ul>
+					</div>
+
+					<!-- Premium Efficiency -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h4 class="text-lg font-bold text-primary mb-3">Premium Efficiency</h4>
+						<p class="text-darkgray mb-3">SEER 20+</p>
+						<ul class="space-y-2 text-darkgray">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Maximum energy savings
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Advanced comfort technology
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+								     viewBox="0 0 20 20" fill="currentColor">
+									<path fill-rule="evenodd"
+									      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+									      clip-rule="evenodd"/>
+								</svg>
+								Higher upfront cost with best long-term value
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Installation Process -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, multi-step process to ensure your energy-efficient AC system is properly installed
+					for optimal performance.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<!-- Step 1: Consultation and Assessment -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">1</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Consultation and Assessment</h3>
+						<p class="text-darkgray mb-4">
+							We begin with a thorough assessment of your home's cooling needs, taking into account factors such as
+							square footage, insulation levels, window placement, and your specific comfort preferences. This helps us
+							determine the right size and type of energy-efficient system for your home.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 2: System Selection -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">2</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Selection</h3>
+						<p class="text-darkgray mb-4">
+							Based on our assessment, we'll recommend energy-efficient AC options that best meet your needs and budget.
+							We'll explain the different SEER ratings, features, and benefits of each system, helping you make an
+							informed decision that balances upfront costs with long-term energy savings.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 3: Professional Installation -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">3</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Professional Installation</h3>
+						<p class="text-darkgray mb-4">
+							Our certified technicians will install your new energy-efficient AC system according to manufacturer
+							specifications and industry best practices. This includes proper placement of the outdoor unit, correct
+							refrigerant charging, and ensuring all electrical connections are safe and up to code.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 4: System Optimization -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">4</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Optimization</h3>
+						<p class="text-darkgray mb-4">
+							After installation, we'll fine-tune your system for optimal performance and efficiency. This includes
+							checking airflow, testing system controls, and making any necessary adjustments to ensure your new AC
+							system operates at peak efficiency from day one.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 5: Education and Support -->
+				<div class="flex flex-col md:flex-row items-start">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">5</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Education and Support</h3>
+						<p class="text-darkgray mb-4">
+							We'll show you how to operate and maintain your new energy-efficient system, including thermostat
+							programming for maximum efficiency. We also provide ongoing support and maintenance services to ensure
+							your system continues to perform efficiently for years to come.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Start Saving Energy and Money?"
+		text="Contact Alltek Services today to schedule a consultation for energy-efficient AC installation. Our expert technicians will help you select and install the perfect high-efficiency cooling system for your Belton, TX home."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>
+
+
+

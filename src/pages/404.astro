@@ -1,0 +1,129 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Page Not Found | Alltek Services | HVAC Experts in Belton, TX</title>
+	<meta name="title" content="Page Not Found | Alltek Services | HVAC Experts in Belton, TX"/>
+	<meta name="description"
+	      content="The page you're looking for cannot be found. Explore our HVAC services in Belton, TX or contact us for assistance with your heating and cooling needs."/>
+	<meta name="robots" content="noindex, follow"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/404/"/>
+	<meta property="og:title" content="Page Not Found | Alltek Services | HVAC Experts in Belton, TX"/>
+	<meta property="og:description"
+	      content="The page you're looking for cannot be found. Explore our HVAC services in Belton, TX or contact us for assistance with your heating and cooling needs."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/404/"/>
+	<meta property="twitter:title" content="Page Not Found | Alltek Services | HVAC Experts in Belton, TX"/>
+	<meta property="twitter:description"
+	      content="The page you're looking for cannot be found. Explore our HVAC services in Belton, TX or contact us for assistance with your heating and cooling needs."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<GoogleHead/>
+</head>
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Page Not Found</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">404 - PAGE NOT FOUND</h1>
+				<p class="text-xl mb-8">The page you're looking for doesn't exist or has been moved.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Call to Action -->
+	<section class="py-16 md:py-24 bg-white text-black">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-6 font-heading">LOOKING FOR SOMETHING?</h2>
+			<p class="text-xl mb-8 max-w-3xl mx-auto">
+				We're sorry, but the page you were looking for cannot be found. You can return to our homepage or explore our services below.
+			</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a
+					href="/"
+					class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Return to Homepage
+				</a>
+				<a
+					href="/services"
+					class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Explore Our Services
+				</a>
+				<a
+					href="/contact"
+					class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Contact Us
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

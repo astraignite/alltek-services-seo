@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Images to WebP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            margin-bottom: 30px;
+        }
+        canvas {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convert Images to WebP</h1>
+    
+    <div class="container">
+        <h2>Image 1: Professional Furnace Repair Technician</h2>
+        <canvas id="canvas1"></canvas>
+        <button id="download1">Download as WebP</button>
+    </div>
+    
+    <div class="container">
+        <h2>Image 2: Heating System Diagnostic Service</h2>
+        <canvas id="canvas2"></canvas>
+        <button id="download2">Download as WebP</button>
+    </div>
+    
+    <script>
+        // Function to load image and convert to WebP
+        function setupImageConverter(imgPath, canvasId, downloadBtnId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            const downloadBtn = document.getElementById(downloadBtnId);
+            
+            const img = new Image();
+            img.onload = function() {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+            };
+            img.src = imgPath;
+            
+            downloadBtn.addEventListener('click', function() {
+                const webpDataUrl = canvas.toDataURL('image/webp', 0.8);
+                const link = document.createElement('a');
+                link.href = webpDataUrl;
+                link.download = filename;
+                link.click();
+            });
+        }
+        
+        // Setup converters for each image
+        setupImageConverter(
+            '/images/optimized/heating-and-air/belton-tx-professional-furnace-repair-technician.jpg',
+            'canvas1',
+            'download1',
+            'belton-tx-professional-furnace-repair-technician.webp'
+        );
+        
+        setupImageConverter(
+            '/images/optimized/heating-and-air/belton-tx-heating-system-diagnostic-service.jpg',
+            'canvas2',
+            'download2',
+            'belton-tx-heating-system-diagnostic-service.webp'
+        );
+    </script>
+</body>
+</html>

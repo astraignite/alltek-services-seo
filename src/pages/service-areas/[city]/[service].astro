@@ -1,0 +1,486 @@
+---
+import '../../../styles/global.css';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import ServiceProcess from '../../../components/ServiceProcess.astro';
+import GoogleHead from "../../../components/GoogleHead.astro";
+import settings from "../../../settings";
+import PagesCTA from "../../../components/PagesCTA.astro";
+
+// Define types for our data
+interface Service {
+	name: string;
+	slug: string;
+	category: string;
+}
+
+interface ServiceDetail {
+	cityName: string;
+	citySlug: string;
+	state: string;
+	serviceName: string;
+	serviceSlug: string;
+	seo: {
+		title: string;
+		metaDescription: string;
+		h1: string;
+		keywords: string[];
+		longtailKeywords: string[];
+		entities: string[];
+		lsiKeywords: string[];
+		canonicalUrl: string;
+		ogTitle: string;
+		ogDescription: string;
+		ogImage: string;
+		twitterCard: string;
+		twitterTitle: string;
+		twitterDescription: string;
+		twitterImage: string;
+	};
+	content: {
+		introduction: string;
+		sections: {
+			title: string;
+			content: string;
+			keywords: string[];
+		}[];
+		callToAction: string;
+		faq: {
+			question: string;
+			answer: string;
+		}[];
+	};
+	schemaMarkup: any[];
+}
+
+// Get the city and service slugs from the URL
+export async function getStaticPaths() {
+	const locationsData = await import('../../../data/service-areas/locations.json');
+	const locations = locationsData.default;
+
+	// Filter out Bell County as it's not a specific city
+	const cities = locations.filter(location => location.slug !== 'bell-county');
+
+	const paths = [];
+
+	for (const city of cities) {
+		try {
+			const cityData = await import(`../../../data/service-areas/${city.slug}.json`);
+			const cityInfo = cityData.default;
+
+			for (const service of cityInfo.services) {
+				paths.push({
+					params: {
+						city: city.slug,
+						service: service.slug
+					},
+					props: {
+						citySlug: city.slug,
+						serviceSlug: service.slug
+					}
+				});
+			}
+		} catch (error) {
+			console.error(`Error loading data for ${city.slug}:`, error);
+		}
+	}
+
+	return paths;
+}
+
+// Get the service data
+const {citySlug, serviceSlug} = Astro.props;
+const serviceData = await import(`../../../data/service-areas/${citySlug}/${serviceSlug}.json`);
+const service = serviceData.default as ServiceDetail;
+
+// Define city info interface
+interface CityInfo {
+	services: {
+		slug: string;
+		name: string;
+		category: string;
+	}[];
+}
+
+// Get related services
+let relatedServices: Service[] = [];
+try {
+	const cityData = await import(`../../../data/service-areas/${citySlug}.json`);
+	const cityInfo = cityData.default as CityInfo;
+
+	// Get up to 3 related services from the same category
+	relatedServices = cityInfo.services
+		.filter((s: Service) => s.slug !== serviceSlug && s.category === cityInfo.services.find((cs: Service) => cs.slug === serviceSlug)?.category)
+		.slice(0, 3);
+} catch (error) {
+	console.error(`Error loading related services for ${citySlug}/${serviceSlug}:`, error);
+}
+
+// Service icons based on service slug keywords
+const getServiceIcon = (slug: string) => {
+	if (slug.includes('ac-') || slug.includes('air-conditioning')) {
+		return 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm8-6a8 8 0 1 0-16 0 8 8 0 0 0 16 0zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z';
+	} else if (slug.includes('heat') || slug.includes('furnace')) {
+		return 'M11.5 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM10.5 21.5a1.5 1.5 0 0 1-3 0V20h3v1.5zM13.5 21.5a1.5 1.5 0 0 0 3 0V20h-3v1.5zM7.5 20v-1.5a4.5 4.5 0 1 1 9 0V20h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H6.5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1z';
+	} else if (slug.includes('install') || slug.includes('replacement')) {
+		return 'M14.121 9.88l-5.5 5.5a1 1 0 0 1-1.414-1.414l5.5-5.5a1 1 0 1 1 1.414 1.414zM12 4l1.5 1.5L5 14l-2.5-2.5L12 4zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-7 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z';
+	} else {
+		return 'M4.5 16.5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1z';
+	}
+};
+
+const ldBreadcrumbs =
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://www.alltek-services.com/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Service Areas",
+				"item": "https://www.alltek-services.com/service-areas/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 3,
+				"name": `${service.cityName}, ${service.state}`,
+				"item": `https://www.alltek-services.com/service-areas/${service.citySlug}/`
+			},
+			{
+				"@type": "ListItem",
+				"position": 4,
+				"name": service.serviceName,
+				"item": service.seo.canonicalUrl
+			}
+		]
+	};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>{service.seo.title}</title>
+	<meta name="title" content={service.seo.title}/>
+	<meta name="description" content={service.seo.metaDescription}/>
+	<meta name="keywords" content={service.seo.keywords.join(', ')}/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content={service.seo.canonicalUrl}/>
+	<meta property="og:title" content={service.seo.ogTitle}/>
+	<meta property="og:description" content={service.seo.ogDescription}/>
+	<meta property="og:image" content={service.seo.ogImage}/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content={service.seo.twitterCard}/>
+	<meta property="twitter:url" content={service.seo.canonicalUrl}/>
+	<meta property="twitter:title" content={service.seo.twitterTitle}/>
+	<meta property="twitter:description" content={service.seo.twitterDescription}/>
+	<meta property="twitter:image" content={service.seo.twitterImage}/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href={service.seo.canonicalUrl}/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data -->
+	{service.schemaMarkup.map((schema) => (
+		<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+	))}
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json" set:html={JSON.stringify(ldBreadcrumbs)}>
+	</script>
+	<GoogleHead/>
+	<meta name="robots" content="nofollow"/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3 relative z-10">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/service-areas" class="text-darkgray hover:text-accent ml-1 md:ml-2">Service Areas</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href={`/service-areas/${service.citySlug}`}
+						   class="text-darkgray hover:text-accent ml-1 md:ml-2">{service.cityName}, {service.state}</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">{service.serviceName}</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section with Gradient Overlay -->
+	<section class="relative bg-primary overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10"></div>
+		<div class="absolute inset-0">
+			<img
+				src="/images-optimized/hero/hero-hvac.webp"
+				alt={`${service.serviceName} in ${service.cityName}, ${service.state}`}
+				class="w-full h-full object-cover"
+			/>
+		</div>
+		<div class="container mx-auto px-4 py-20 md:py-32 relative z-20">
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 shadow-xl">
+					<div class="flex justify-center mb-6">
+						<div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24"
+							     stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								      d={getServiceIcon(service.serviceSlug)}/>
+							</svg>
+						</div>
+					</div>
+					<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading text-white text-center">
+						{service.seo.h1}
+					</h1>
+					<p class="text-xl text-white text-center mb-8">
+						{service.content.introduction}
+					</p>
+					<div class="flex flex-col sm:flex-row justify-center gap-4">
+						<a
+							href="/contact"
+							class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors text-center"
+						>
+							Schedule Service
+						</a>
+						<a
+							href={`tel:${settings.phoneRaw}`}
+							class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors text-center"
+						>
+							Call {settings.phone}
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Content Sections -->
+	{service.content.sections.map((section, index) => (
+		<section class={`py-16 md:py-24 ${index % 2 === 0 ? 'bg-white' : 'bg-lightgray'}`}>
+			<div class="container mx-auto px-4">
+				<div class="max-w-5xl mx-auto">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-bold text-primary font-heading mb-4">{section.title}</h2>
+						<div class="w-24 h-1 bg-accent mx-auto"></div>
+					</div>
+
+					<div class="flex flex-col md:flex-row gap-12 items-center">
+						<div class={`w-full md:w-1/2 ${index % 2 !== 0 ? 'md:order-2' : ''}`}>
+							<div class="prose prose-lg max-w-none">
+								<div class="text-darkgray space-y-4" set:html={section.content}/>
+							</div>
+						</div>
+
+						<div class={`w-full md:w-1/2 ${index % 2 !== 0 ? 'md:order-1' : ''}`}>
+							<div class="relative rounded-lg overflow-hidden shadow-xl">
+								<!-- Dynamic Image Tag -->
+								<img
+									src={`/images-optimized/services/${service.serviceSlug.split('-')[0]}.webp`}
+									alt={`${service.serviceName} in ${service.cityName}, ${service.state}`}
+									class="w-full h-auto object-cover"
+									width="600"
+									height="400"
+									onerror="this.src='/images-optimized/fleet/service-fleet.webp'"
+								/>
+								<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end">
+									<div class="p-6 w-full">
+										<div class="flex items-center">
+											<div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center mr-4">
+												<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+												     viewBox="0 0 24 24" stroke="currentColor">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+												</svg>
+											</div>
+											<p class="text-white font-bold text-lg">
+												Professional {service.serviceName.includes('Services') ? service.serviceName : `${service.serviceName} Services`}</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	))}
+
+	<!-- Service Process Section -->
+	<div class="w-full">
+		<ServiceProcess/>
+	</div>
+
+	<!-- FAQ Section -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-primary font-heading mb-4">FREQUENTLY ASKED QUESTIONS</h2>
+				<div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Get answers to common questions about {service.serviceName.toLowerCase()}
+					in {service.cityName}, {service.state}.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<div class="space-y-6">
+					{service.content.faq.map((item, index) => (
+						<div class="bg-lightgray rounded-lg overflow-hidden shadow-md">
+							<details class="group">
+								<summary class="flex items-center justify-between cursor-pointer p-6">
+									<div class="flex items-center">
+										<div
+											class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center mr-4 flex-shrink-0 font-bold">
+											Q
+										</div>
+										<h3 class="text-xl font-bold text-primary">{item.question}</h3>
+									</div>
+									<svg class="w-6 h-6 text-accent group-open:rotate-180 transition-transform" fill="none"
+									     viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+									</svg>
+								</summary>
+								<div class="px-6 pb-6 pt-2">
+									<div class="flex">
+										<div
+											class="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center mr-4 flex-shrink-0 font-bold">
+											A
+										</div>
+										<p class="text-darkgray">{item.answer}</p>
+									</div>
+								</div>
+							</details>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Related Services -->
+	{relatedServices.length > 0 && (
+		<section class="py-16 md:py-24 bg-lightgray">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-bold text-primary font-heading mb-4">RELATED SERVICES
+						IN {service.cityName.toUpperCase()}</h2>
+					<div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+					<p class="text-lg text-darkgray max-w-3xl mx-auto">
+						Explore other HVAC services we offer in {service.cityName}, {service.state}.
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					{relatedServices.map((relatedService: Service) => (
+						<a
+							href={`/service-areas/${service.citySlug}/${relatedService.slug}`}
+							class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
+						>
+							<div class="p-6">
+								<div
+									class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:bg-accent/20 transition-colors">
+									<svg xmlns="http://www.w3.org/2000/svg"
+									     class="h-8 w-8 text-primary group-hover:text-accent transition-colors" fill="none"
+									     viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										      d={getServiceIcon(relatedService.slug)}/>
+									</svg>
+								</div>
+								<h3
+									class="text-xl font-bold text-primary mb-3 text-center group-hover:text-accent transition-colors">{relatedService.name}</h3>
+								<p class="text-darkgray text-center mb-4">
+									Professional {relatedService.name.toLowerCase().includes('service') ? relatedService.name.toLowerCase() : `${relatedService.name.toLowerCase()} services`}
+									for homes and businesses in {service.cityName}.
+								</p>
+								<div class="flex justify-center">
+                      <span class="inline-flex items-center text-accent font-medium">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                      </span>
+								</div>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+	)}
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading={`Ready for professional ${service.serviceName} In ${service.cityName}?`}
+		text={service.content.callToAction}
+		button={`Call ${settings.phone}`}
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

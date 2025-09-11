@@ -1,0 +1,517 @@
+From 5fb5722b3e7e29a2bb0f986dc40c9ba3b16974ce Mon Sep 17 00:00:00 2001
+From: AstraIgnite <support@astraignite.com>
+Date: Sat, 26 Apr 2025 22:17:49 -0500
+Subject: [PATCH] Update styling and CTAs: 1) Fix text centering in WhyChooseUs
+ component, 2) Change all 'Schedule a Service' CTAs to 'Get Free Estimate', 3)
+ Add sitemap.xml
+
+---
+ public/sitemap.xml                        | 331 ++++++++++++++++++++++
+ src/components/ServicesList.astro         |   2 +-
+ src/components/WhyChooseUs.astro          | 115 ++++++++
+ src/pages/air-conditioning-services.astro |   2 +-
+ src/pages/heating-and-air.astro           |   2 +-
+ 5 files changed, 449 insertions(+), 3 deletions(-)
+ create mode 100644 public/sitemap.xml
+ create mode 100644 src/components/WhyChooseUs.astro
+
+diff --git a/public/sitemap.xml b/public/sitemap.xml
+new file mode 100644
+index 0000000..a0c0f29
+--- /dev/null
++++ b/public/sitemap.xml
+@@ -0,0 +1,331 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
++  <!-- Main Pages -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/</loc>
++    <changefreq>weekly</changefreq>
++    <priority>1.0</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/about</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.8</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/services</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.8</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.8</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/faq</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/contact</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.8</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/privacy-policy</loc>
++    <changefreq>yearly</changefreq>
++    <priority>0.3</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/terms-of-service</loc>
++    <changefreq>yearly</changefreq>
++    <priority>0.3</priority>
++  </url>
++  
++  <!-- Air Conditioning Services -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/air-conditioning-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/air-conditioning-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/air-conditioning-maintenance</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/ductless-mini-split</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/air-conditioning-refrigerant</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/air-conditioning-services/emergency-ac-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  
++  <!-- Heating and Air -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/heating-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/furnace-service-and-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/heat-pump-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/gas-furnace</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/electric-furnace</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/emergency-heating-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/heating-and-air-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/heating-and-air-repair-part2</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/gas-furnace-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/electric-furnace-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/heating-maintenance</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/heating-and-air/gas-and-electric-furnace-services</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  
++  <!-- HVAC Installation -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/ac-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/heating-system-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/hvac-replacement</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/energy-eficient-ac-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/energy-efficient-systems</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/hvac-ductwork-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/ductwork-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/hvac-installation/thermostat-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  
++  <!-- Indoor Air Quality -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/indoor-air-quality-testing</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/air-quality-testing</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/indoor-air-quality-purification</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/air-purification-systems</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/hvac-indoor-air-quality-humidifiers</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/hvac-indoor-air-quality-dehumidifiers</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/humidifiers-dehumidifiers</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/duct-cleaning-service</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/duct-cleaning</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/uv-light-installation-service</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/uv-light-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/indoor-air-quality/allergen-reduction</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  
++  <!-- Commercial HVAC -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/commercial-hvac</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.7</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/commercial-hvac/commercial-hvac-installation</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/commercial-hvac/commercial-hvac-repair</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/commercial-hvac/preventative-maintenance-plans</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/commercial-hvac/energy-efficiency-upgrades</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  
++  <!-- Service Areas -->
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/bell-county</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/belton-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/temple-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/killeen-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/harker-heights-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/georgetown-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/round-rock-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++  <url>
++    <loc>https://www.alltekhvacservices.com/service-areas/waco-tx</loc>
++    <changefreq>monthly</changefreq>
++    <priority>0.6</priority>
++  </url>
++</urlset>
+diff --git a/src/components/ServicesList.astro b/src/components/ServicesList.astro
+index 383d633..f67ac88 100644
+--- a/src/components/ServicesList.astro
++++ b/src/components/ServicesList.astro
+@@ -218,7 +218,7 @@
+         href="#contact" 
+         class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+       >
+-        Schedule a Service
++        Get Free Estimate
+       </a>
+     </div>
+   </div>
+diff --git a/src/components/WhyChooseUs.astro b/src/components/WhyChooseUs.astro
+new file mode 100644
+index 0000000..6813fb8
+--- /dev/null
++++ b/src/components/WhyChooseUs.astro
+@@ -0,0 +1,115 @@
++---
++---
++<section class="py-16 md:py-24 bg-lightgray w-full block" id="why-choose-us">
++  <div class="container mx-auto px-4">
++    <div class="text-center mb-16">
++      <h2 class="text-3xl font-bold text-primary mb-4 font-heading">WHAT SETS ALLTEK SERVICES APART?</h2>
++      <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
++      <p class="text-lg text-darkgray max-w-3xl mx-auto">
++        Our commitment to excellence and customer satisfaction is reflected in our comprehensive service approach. Here's what makes us different:
++      </p>
++    </div>
++    
++    <div class="flex flex-wrap justify-center">
++      <div class="relative w-full max-w-5xl mx-auto">
++        <!-- Central Circle -->
++        <div class="w-48 h-48 rounded-full border-4 border-accent bg-white flex items-center justify-center mx-auto z-10 relative">
++          <img src="/images-optimized/Logo.webp" alt="Alltek Services HVAC Logo" class="w-32 h-32" />
++        </div>
++        
++        <!-- Surrounding Circles -->
++        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mt-16">
++          <div class="flex flex-col items-center text-center">
++            <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-xl font-bold">1</div>
++            <div class="w-32 h-32 rounded-full border-4 border-accent overflow-hidden mb-4">
++              <img 
++                src="/images-optimized/process/consultation.webp" 
++                alt="Free Consultation" 
++                class="w-full h-full object-cover" 
++                width="400" 
++                height="400"
++                loading="lazy"
++              />
++            </div>
++            <h3 class="text-xl font-bold text-primary mb-2 text-center w-full mx-auto">Free Consultation</h3>
++            <p class="text-center text-darkgray">
++              We start with a thorough assessment of your needs and provide honest recommendations.
++            </p>
++          </div>
++          
++          <div class="flex flex-col items-center text-center">
++            <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-xl font-bold">2</div>
++            <div class="w-32 h-32 rounded-full border-4 border-accent overflow-hidden mb-4">
++              <img 
++                src="/images-optimized/process/technician.webp" 
++                alt="Certified Technicians" 
++                class="w-full h-full object-cover" 
++                width="400" 
++                height="400"
++                loading="lazy"
++              />
++            </div>
++            <h3 class="text-xl font-bold text-primary mb-2 text-center w-full mx-auto">Certified Technicians</h3>
++            <p class="text-center text-darkgray">
++              Our team consists of highly trained and certified professionals with years of experience.
++            </p>
++          </div>
++          
++          <div class="flex flex-col items-center text-center">
++            <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-xl font-bold">3</div>
++            <div class="w-32 h-32 rounded-full border-4 border-accent overflow-hidden mb-4">
++              <img 
++                src="/images-optimized/process/quality-parts.webp" 
++                alt="Quality Parts" 
++                class="w-full h-full object-cover" 
++                width="400" 
++                height="400"
++                loading="lazy"
++              />
++            </div>
++            <h3 class="text-xl font-bold text-primary mb-2 text-center w-full mx-auto">Quality Parts</h3>
++            <p class="text-center text-darkgray">
++              We use only high-quality, manufacturer-approved parts for all repairs and installations.
++            </p>
++          </div>
++          
++          <div class="flex flex-col items-center text-center">
++            <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-xl font-bold">4</div>
++            <div class="w-32 h-32 rounded-full border-4 border-accent overflow-hidden mb-4">
++              <img 
++                src="/images-optimized/process/pricing.webp" 
++                alt="Transparent Pricing" 
++                class="w-full h-full object-cover" 
++                width="400" 
++                height="400"
++                loading="lazy"
++              />
++            </div>
++            <h3 class="text-xl font-bold text-primary mb-2 text-center w-full mx-auto">Transparent Pricing</h3>
++            <p class="text-center text-darkgray">
++              No hidden fees or surprise charges. We provide clear, upfront pricing for all services.
++            </p>
++          </div>
++          
++          <div class="flex flex-col items-center text-center">
++            <div class="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center mb-4 text-xl font-bold">5</div>
++            <div class="w-32 h-32 rounded-full border-4 border-accent overflow-hidden mb-4">
++              <img 
++                src="/images-optimized/process/satisfaction.webp" 
++                alt="Satisfaction Guarantee" 
++                class="w-full h-full object-cover" 
++                width="400" 
++                height="400"
++                loading="lazy"
++              />
++            </div>
++            <h3 class="text-xl font-bold text-primary mb-2 text-center w-full mx-auto">Satisfaction Guarantee</h3>
++            <p class="text-center text-darkgray">
++              Your satisfaction is our priority. We stand behind our work with solid warranties and guarantees.
++            </p>
++          </div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
+diff --git a/src/pages/air-conditioning-services.astro b/src/pages/air-conditioning-services.astro
+index f32f314..337acf5 100644
+--- a/src/pages/air-conditioning-services.astro
++++ b/src/pages/air-conditioning-services.astro
+@@ -183,7 +183,7 @@ import ComfortCare from '../components/ComfortCare.astro';
+                 href="/contact" 
+                 class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+               >
+-                Schedule a Service
++                Get Free Estimate
+               </a>
+             </div>
+             
+diff --git a/src/pages/heating-and-air.astro b/src/pages/heating-and-air.astro
+index 937e216..5b7318f 100644
+--- a/src/pages/heating-and-air.astro
++++ b/src/pages/heating-and-air.astro
+@@ -199,7 +199,7 @@ import ComfortCare from '../components/ComfortCare.astro';
+                 href="/contact" 
+                 class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+               >
+-                Schedule a Service
++                Get Free Estimate
+               </a>
+             </div>
+             
+-- 
+2.39.5 (Apple Git-154)
+

@@ -1,0 +1,702 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Air Purification Systems in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Air Purification Systems in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Advanced air purification systems for homes and businesses in Belton, TX. Our solutions remove allergens, pollutants, and contaminants to create a healthier indoor environment with cleaner, fresher air."/>
+	<meta name="keywords"
+	      content="air purification systems Belton TX, HEPA air filters, whole-home air purifiers, electronic air cleaners, UV air purification, air filtration, allergen removal, indoor air quality, air purifier installation, clean air solutions, air sanitization, HVAC air purification, Central Texas air quality"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/indoor-air-quality/air-purification-systems/"/>
+	<meta property="og:title" content="Air Purification Systems in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Advanced air purification systems for homes and businesses in Belton, TX. Our solutions remove allergens, pollutants, and contaminants to create a healthier indoor environment with cleaner, fresher air."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/icons/air-quality.png"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/indoor-air-quality/air-purification-systems/"/>
+	<meta property="twitter:title" content="Air Purification Systems in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Advanced air purification systems for homes and businesses in Belton, TX. Our solutions remove allergens, pollutants, and contaminants to create a healthier indoor environment with cleaner, fresher air."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/icons/air-quality.png"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/indoor-air-quality/air-purification-systems/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Air Purification Systems",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Air Purification Systems",
+			"description": "Professional installation and maintenance of advanced air purification systems for homes and businesses. Our solutions effectively remove allergens, pollutants, and contaminants to create a healthier indoor environment with cleaner, fresher air.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Indoor Air Quality Services",
+					"item": "https://www.alltek-services.com/indoor-air-quality/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Air Purification Systems",
+					"item": "https://www.alltek-services.com/indoor-air-quality/air-purification-systems/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/indoor-air-quality" class="text-darkgray hover:text-accent ml-1 md:ml-2">Indoor Air Quality
+							Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Air Purification Systems</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">AIR PURIFICATION SYSTEMS</h1>
+				<p class="text-xl mb-8">Advanced solutions to remove allergens, pollutants, and contaminants for cleaner,
+					healthier air in your home or business.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BREATHE CLEANER, HEALTHIER AIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						ADVANCED AIR PURIFICATION SOLUTIONS FOR YOUR HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						Indoor air can contain a variety of pollutants that affect your health and comfort, from allergens and dust
+						to harmful microorganisms and chemical pollutants. At Alltek Services, we offer advanced air purification
+						systems designed to effectively remove these contaminants and create a healthier living environment.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our air purification solutions utilize cutting-edge technology to capture and eliminate airborne particles,
+						allergens, bacteria, viruses, mold spores, and volatile organic compounds (VOCs). Whether you're concerned
+						about allergies, asthma, or simply want to improve the overall air quality in your home, we have a solution
+						that fits your needs.
+					</p>
+					<p class="text-darkgray mb-8">
+						Our expert technicians will help you select the right air purification system for your home based on your
+						specific air quality concerns, the size of your space, and your budget. We offer a range of options, from
+						whole-home systems that integrate with your HVAC system to standalone units for targeted purification in
+						specific areas.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Consultation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"
+						alt="Professional air purification system installation in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="500"
+						height="324"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Air Purification Options -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">AIR PURIFICATION OPTIONS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We offer a variety of air purification solutions to address your specific indoor air quality concerns.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- HEPA Filtration Systems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">HEPA Filtration Systems</h3>
+					<p class="text-darkgray mb-4">
+						High-Efficiency Particulate Air (HEPA) filters are designed to trap 99.97% of particles as small as 0.3
+						microns, including dust, pollen, pet dander, and other allergens. These systems are ideal for allergy and
+						asthma sufferers.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Captures 99.97% of airborne particles
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ideal for allergy and asthma sufferers
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Available as whole-home or portable units
+						</li>
+					</ul>
+				</div>
+
+				<!-- Whole-Home Air Purifiers -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Whole-Home Air Purifiers</h3>
+					<p class="text-darkgray mb-4">
+						Integrated with your HVAC system, whole-home air purifiers clean all the air circulating through your home.
+						These systems provide comprehensive protection against airborne contaminants throughout your entire living
+						space.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Purifies air throughout your entire home
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Integrates with existing HVAC system
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Silent operation and low maintenance
+						</li>
+					</ul>
+				</div>
+
+				<!-- UV Light Purification -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">UV Light Purification</h3>
+					<p class="text-darkgray mb-4">
+						UV light purification systems use ultraviolet light to kill or inactivate microorganisms like bacteria,
+						viruses, and mold spores. These systems are particularly effective at eliminating biological contaminants in
+						your air.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Kills bacteria, viruses, and mold spores
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Installs directly into your HVAC system
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Continuous protection against microorganisms
+						</li>
+					</ul>
+				</div>
+
+				<!-- Electronic Air Cleaners -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Electronic Air Cleaners</h3>
+					<p class="text-darkgray mb-4">
+						Electronic air cleaners use an electrical charge to trap particles. These systems are highly efficient at
+						capturing small particles and can be more effective than standard filters at removing fine dust, smoke, and
+						other microscopic contaminants.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Captures microscopic particles
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Effective against smoke and fine dust
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Washable components for easy maintenance
+						</li>
+					</ul>
+				</div>
+
+				<!-- Activated Carbon Filters -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Activated Carbon Filters</h3>
+					<p class="text-darkgray mb-4">
+						Activated carbon filters are designed to remove odors, gases, and volatile organic compounds (VOCs) from the
+						air. These filters are particularly effective at eliminating cooking odors, pet odors, smoke, and chemical
+						fumes.
+					</p>
+					<ul class="space-y-2 text-darkgray mb-6">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Removes odors and chemical fumes
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Effective against VOCs and gases
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Often combined with HEPA filtration
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Installation Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, step-by-step process to ensure your air purification system is installed correctly
+					and operates at peak efficiency.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Initial Consultation</h3>
+								<p class="text-darkgray">
+									We begin with a thorough discussion of your air quality concerns, health needs, and budget to help you
+									select the right air purification system.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Selection</h3>
+								<p class="text-darkgray">
+									Based on your needs and our assessment, we recommend the most appropriate air purification solution
+									for your home or business.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Professional Installation</h3>
+								<p class="text-darkgray">
+									Our certified technicians install your air purification system according to manufacturer
+									specifications and industry best practices.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Testing</h3>
+								<p class="text-darkgray">
+									After installation, we thoroughly test your air purification system to ensure it's operating correctly
+									and efficiently.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">User Orientation</h3>
+								<p class="text-darkgray">
+									We provide a complete orientation on how to operate and maintain your new air purification system for
+									optimal performance.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/consulting_600w.jpg"
+						alt="Professional installation of air purification system in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover bg-lightgray p-8 mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Commitment</h3>
+						<p class="text-darkgray">
+							We are committed to providing high-quality air purification solutions that effectively improve your indoor
+							air quality. Our certified technicians ensure proper installation and ongoing support for your system.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Air Purification -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF AIR PURIFICATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						WHY AIR PURIFICATION IS IMPORTANT FOR YOUR HOME
+					</h3>
+					<p class="text-darkgray mb-4">
+						Installing an air purification system in your home can provide numerous health and comfort benefits. By
+						removing allergens, pollutants, and contaminants from your indoor air, these systems help create a healthier
+						living environment for you and your family.
+					</p>
+					<p class="text-darkgray mb-4">
+						For allergy and asthma sufferers, air purification can significantly reduce symptoms by eliminating common
+						triggers like dust, pollen, and pet dander. These systems can also help protect against airborne viruses and
+						bacteria, potentially reducing the spread of illness in your home.
+					</p>
+					<p class="text-darkgray mb-8">
+						Beyond health benefits, air purification systems can eliminate odors, improve sleep quality, and create a
+						more comfortable living environment. With cleaner, fresher air, you and your family can breathe easier and
+						enjoy improved overall well-being.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Consultation
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Key Benefits</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Reduces allergy and asthma symptoms</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Eliminates airborne bacteria and viruses</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Removes odors and chemical pollutants</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Improves sleep quality and overall comfort</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Creates a healthier living environment for your family</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Breathe Cleaner, Healthier Air?"
+		text="Contact us today to learn more about our air purification solutions and take the first step toward creating a healthier living environment for you and your family."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServiceProcess from '../components/ServiceProcess.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import PagesCTA from "../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>HVAC Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta name="keywords"
+	      content="heating and air services Belton TX, furnace repair, heat pump installation, HVAC maintenance, emergency heating repair, heating system tune-up, central Texas heating, HVAC services"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/"/>
+	<meta property="og:title" content="HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/"/>
+	<meta property="twitter:title" content="HVAC Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Expert heating and air conditioning services in Belton, TX including furnace repair, heat pump installation, HVAC maintenance, and emergency heating services. Stay warm and comfortable year-round."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "HVAC Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$",
+				"photo": [
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-hvac-technician.webp",
+						"caption": "Certified HVAC technician inspecting a heating and air conditioning system in Belton, TX"
+					},
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-home-hvac-system.webp",
+						"caption": "Modern HVAC system installation in a Belton, TX home providing efficient heating and cooling"
+					},
+					{
+						"@type": "ImageObject",
+						"url": "/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp",
+						"caption": "HVAC technician performing professional maintenance on heating system in Belton, TX home"
+					}
+				]
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "HVAC Installation",
+			"description": "Professional heating and air conditioning services including repair, installation, maintenance, and emergency services for residential and commercial properties in Belton and Central Texas.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">HVAC Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HVAC INSTALLATION</h1>
+				<p class="text-xl mb-8">Upgrade to better efficiency &amp; performance in Bell County &amp; the central Texas
+					area.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL HVAC INSTALLATION SERVICES IN
+							KILLEEN</h2>
+					</div>
+					<p class="text-darkgray mb-4">
+						Alltek Services offers a wide variety of options for HVAC installation in Killeen and the surrounding areas.
+						We have more than 30 years of experience in the HVAC industry and extensive product knowledge.
+					</p>
+					<p class="text-darkgray mb-8">
+						Our highly qualified technicians will provide honest, trustworthy advice and install your new equipment for
+						optimal performance. We stand behind our installations with a two-year labor warranty.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Get Free Estimate
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="Certified HVAC technician inspecting a heating and air conditioning system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services List -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">UNDERSTANDING YOUR HVAC SYSTEM'S LIFESPAN</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-left text-darkgray max-w-3xl mx-auto">
+					The expected lifespan of an HVAC system can vary depending on several factors, including the type of system,
+					how well it’s maintained, and the quality of the installation.
+				</p>
+
+			</div>
+			<div class="text-left mb-12 m-7">
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					<strong>On average, you can expect the following lifespans for different types of HVAC systems:</strong>
+				</p>
+				<ul class="max-w-3xl mx-auto mt-4">
+					<li class="mb-4"><strong>Furnaces</strong>: A well-maintained gas or electric furnace typically lasts between
+						15 to 20 years. High-efficiency models may have a slightly shorter lifespan due to the increased stress on
+						their
+						components.
+					</li>
+					<li class="mb-4"><strong>Air Conditioners</strong>: Central air conditioning units typically have a lifespan
+						of 15 to 20 years. Like furnaces, proper maintenance and usage can extend their lifespan.
+					</li>
+					<li class="mb-4"><strong>Heat Pumps</strong>: Heat pumps, which can provide both heating and cooling, have a
+						similar lifespan of 15 to 20 years.
+					</li>
+					<li class="mb-4"><strong>Ductless Mini-Split Systems</strong>: These systems often last 15 to 20 years or more
+						with proper care.
+					</li>
+					<li class="mb-4"><strong>Geothermal Heat Pumps</strong>: Geothermal systems are known for their longevity and
+						can last 20 to 25 years for the indoor components and 25 to 50 years or more for the ground loop system.
+					</li>
+				</ul>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mt-7">
+					It’s important to note that these are average lifespans, and individual cases may vary.
+				</p>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mt-4">
+					<strong>Several factors can affect the lifespan of an HVAC system:</strong>
+				</p>
+				<ul class="max-w-3xl mx-auto mt-4">
+					<li class="mb-4"><strong>Maintenance</strong>: Regular maintenance, including cleaning, filter replacement,
+						and professional inspections, can significantly extend the life of your HVAC system.
+					</li>
+					<li class="mb-4"><strong>Quality of Installation</strong>: Proper installation by qualified professionals is
+						crucial. Poor installation can lead to premature system failure.
+					</li>
+					<li class="mb-4"><strong>Usage Patterns</strong>: The frequency and intensity of system use can impact its
+						longevity.
+					</li>
+					<li class="mb-4"><strong>Climate</strong>: HVAC systems in areas with extreme temperature variations or high
+						humidity may experience more stress and wear.
+					</li>
+					<li class="mb-4"><strong>Brand and Model</strong>: Higher-quality and more energy-efficient systems often have
+						longer lifespans.
+					</li>
+					<li class="mb-4"><strong>Technological Advancements</strong>: Newer systems may be more energy-efficient and
+						have advanced features, which could influence decisions to replace older systems.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="py-8 md:py-12 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading uppercase">Extend Your HVAC System's Life with Expert
+						Maintenance</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-left  max-w-3xl mx-auto">
+					While the expected lifespan of an HVAC system can vary depending on factors such as usage, maintenance, and
+					environmental conditions, there are steps you can take to maximize the lifespan of your system. Our Belton
+					HVAC experts can provide tips and recommendations to help ensure your HVAC system operates efficiently and
+					lasts for years to come.
+				</p>
+
+			</div>
+			<div class="text-left mb-12 m-7">
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					<strong>Ways to maximize the lifespan of your HVAC system include:</strong>
+				</p>
+				<ul class="max-w-3xl mx-auto mt-4">
+					<li class="mb-4">Regular maintenance and tune-ups</li>
+					<li class="mb-4">Changing air filters regularly</li>
+					<li class="mb-4">Keeping the outdoor unit clear of debris</li>
+					<li class="mb-4">Monitoring and maintaining proper refrigerant levels</li>
+					<li class="mb-4">Sealing and insulating ductwork</li>
+				</ul>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mt-7">
+					By taking proactive steps to care for your HVAC system, you can extend its lifespan, reduce the need for
+					costly repairs, and ensure consistent comfort in your home.
+				</p>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mt-4">
+					When your HVAC system reaches the end of its expected lifespan, it’s generally a good idea to consider
+					replacing it, as older systems tend to be less energy-efficient and can become costly to maintain.
+				</p>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mt-4">
+					Regular maintenance and prompt repairs can help extend the life of your HVAC system and keep it running
+					efficiently.
+				</p>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Need Heating or Air Conditioning Service?"
+		text="Contact Alltek Services today for expert heating and air solutions in Belton and Central Texas."
+		button="Schedule HVAC service"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

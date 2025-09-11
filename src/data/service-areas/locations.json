@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Bell County",
+    "state": "TX",
+    "slug": "bell-county"
+  },
+  {
+    "name": "Killeen",
+    "state": "TX",
+    "slug": "killeen-tx"
+  },
+  {
+    "name": "Belton",
+    "state": "TX",
+    "slug": "belton-tx"
+  },
+  {
+    "name": "Briggs",
+    "state": "TX",
+    "slug": "briggs-tx"
+  },
+  {
+    "name": "Copperas Cove",
+    "state": "TX",
+    "slug": "copperas-cove-tx"
+  },
+  {
+    "name": "Florence",
+    "state": "TX",
+    "slug": "florence-tx"
+  },
+  {
+    "name": "Gatesville",
+    "state": "TX",
+    "slug": "gatesville-tx"
+  },
+  {
+    "name": "Georgetown",
+    "state": "TX",
+    "slug": "georgetown-tx"
+  },
+  {
+    "name": "Harker Heights",
+    "state": "TX",
+    "slug": "harker-heights-tx"
+  },
+  {
+    "name": "Hewitt",
+    "state": "TX",
+    "slug": "hewitt-tx"
+  },
+  {
+    "name": "Holland",
+    "state": "TX",
+    "slug": "holland-tx"
+  },
+  {
+    "name": "Lorena",
+    "state": "TX",
+    "slug": "lorena-tx"
+  },
+  {
+    "name": "Lott",
+    "state": "TX",
+    "slug": "lott-tx"
+  },
+  {
+    "name": "McGregor",
+    "state": "TX",
+    "slug": "mcgregor-tx"
+  },
+  {
+    "name": "Nolanville",
+    "state": "TX",
+    "slug": "nolanville-tx"
+  },
+  {
+    "name": "Ratibor",
+    "state": "TX",
+    "slug": "ratibor-tx"
+  },
+  {
+    "name": "Rogers",
+    "state": "TX",
+    "slug": "rogers-tx"
+  },
+  {
+    "name": "Round Rock",
+    "state": "TX",
+    "slug": "round-rock-tx"
+  },
+  {
+    "name": "Salado",
+    "state": "TX",
+    "slug": "salado-tx"
+  },
+  {
+    "name": "Seaton",
+    "state": "TX",
+    "slug": "seaton-tx"
+  },
+  {
+    "name": "Temple",
+    "state": "TX",
+    "slug": "temple-tx"
+  },
+  {
+    "name": "Troy",
+    "state": "TX",
+    "slug": "troy-tx"
+  },
+  {
+    "name": "Waco",
+    "state": "TX",
+    "slug": "waco-tx"
+  },
+  {
+    "name": "Woodway",
+    "state": "TX",
+    "slug": "woodway-tx"
+  },
+  {
+    "name": "Zabcikville",
+    "state": "TX",
+    "slug": "zabcikville-tx"
+  },
+  {
+    "name": "Moffat",
+    "state": "TX",
+    "slug": "moffat-tx"
+  },
+  {
+    "name": "Morgan's Point Resort",
+    "state": "TX",
+    "slug": "morgans-point-resort-tx"
+  }
+]

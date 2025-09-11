@@ -1,0 +1,258 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import settings from "../settings";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Terms of Service | Alltek Services</title>
+	<meta name="title" content="Terms of Service | Alltek Services"/>
+	<meta name="description"
+	      content="Read the terms and conditions that govern your use of Alltek Services' website and services. Our terms of service outline the rules, guidelines, and legal agreements between you and Alltek Services."/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/terms-of-service/"/>
+	<meta property="og:title" content="Terms of Service | Alltek Services"/>
+	<meta property="og:description"
+	      content="Read the terms and conditions that govern your use of Alltek Services' website and services. Our terms of service outline the rules, guidelines, and legal agreements between you and Alltek Services."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/Logo.png"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/terms-of-service/"/>
+	<meta property="twitter:title" content="Terms of Service | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Read the terms and conditions that govern your use of Alltek Services' website and services. Our terms of service outline the rules, guidelines, and legal agreements between you and Alltek Services."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/Logo.png"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/terms-of-service/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Terms of Service</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Terms of Service Content -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto">
+				<h1 class="text-3xl md:text-4xl font-bold text-primary mb-8">Terms of Service</h1>
+				<p class="text-darkgray mb-6">Last Updated: April 26, 2025</p>
+
+				<div class="prose prose-lg max-w-none text-darkgray">
+					<p>
+						Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the website or
+						services operated by Alltek Services ("us", "we", "our").
+					</p>
+
+					<p>
+						Your access to and use of our services is conditioned on your acceptance of and compliance with these Terms.
+						These Terms apply to all visitors, users, and others who access or use our services.
+					</p>
+
+					<p>
+						By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part of
+						the terms, then you may not access our services.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Use of Services</h2>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Service Description</h3>
+					<p>
+						Alltek Services provides heating, ventilation, and air conditioning (HVAC) services for residential and
+						commercial properties. Our services include, but are not limited to, installation, repair, maintenance, and
+						consultation related to HVAC systems.
+					</p>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Scheduling and Appointments</h3>
+					<p>
+						When scheduling services through our website, phone, or other means, you agree to provide accurate and
+						complete information. We reserve the right to reschedule or cancel appointments due to unforeseen
+						circumstances, weather conditions, or other factors that may affect our ability to provide services safely
+						and effectively.
+					</p>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Service Warranties</h3>
+					<p>
+						We strive to provide high-quality services and may offer warranties on certain services and products.
+						Specific warranty terms will be provided at the time of service or purchase. These warranties may be subject
+						to certain conditions and limitations.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Website Use</h2>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Content</h3>
+					<p>
+						Our website may contain information, text, links, graphics, photos, videos, or other materials ("Content").
+						The Content is provided for informational purposes only and does not constitute professional advice. We make
+						no warranties about the accuracy, reliability, completeness, or timeliness of the Content.
+					</p>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">User Conduct</h3>
+					<p>
+						You agree not to use our website:
+					</p>
+					<ul class="list-disc pl-6 mb-4">
+						<li>In any way that violates any applicable federal, state, local, or international law or regulation</li>
+						<li>To transmit, or procure the sending of, any advertising or promotional material, including any "junk
+							mail", "chain letter", "spam", or any other similar solicitation
+						</li>
+						<li>To impersonate or attempt to impersonate Alltek Services, an Alltek Services employee, another user, or
+							any other person or entity
+						</li>
+						<li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the website, or
+							which may harm Alltek Services or users of the website
+						</li>
+					</ul>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Intellectual Property</h3>
+					<p>
+						The website and its original content, features, and functionality are and will remain the exclusive property
+						of Alltek Services and its licensors. The website is protected by copyright, trademark, and other laws of
+						both the United States and foreign countries. Our trademarks and trade dress may not be used in connection
+						with any product or service without the prior written consent of Alltek Services.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Payments and Billing</h2>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Pricing</h3>
+					<p>
+						Prices for our services are subject to change without notice. We reserve the right to modify or discontinue
+						any service without notice at any time. We shall not be liable to you or to any third party for any
+						modification, price change, suspension, or discontinuance of the service.
+					</p>
+
+					<h3 class="text-xl font-bold text-primary mt-6 mb-3">Payment Terms</h3>
+					<p>
+						Payment is due upon completion of services unless otherwise agreed upon in writing. We accept various
+						payment methods, which will be communicated to you at the time of service. You agree to provide current,
+						complete, and accurate purchase and account information for all purchases made through our website or
+						directly with our technicians.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Limitation of Liability</h2>
+					<p>
+						In no event shall Alltek Services, nor its directors, employees, partners, agents, suppliers, or affiliates,
+						be liable for any indirect, incidental, special, consequential, or punitive damages, including without
+						limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+					</p>
+					<ul class="list-disc pl-6 mb-4">
+						<li>Your access to or use of or inability to access or use our services</li>
+						<li>Any conduct or content of any third party on our services</li>
+						<li>Any content obtained from our services</li>
+						<li>Unauthorized access, use, or alteration of your transmissions or content</li>
+					</ul>
+					<p>
+						Whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not
+						we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to
+						have failed of its essential purpose.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Indemnification</h2>
+					<p>
+						You agree to defend, indemnify, and hold harmless Alltek Services and its licensee and licensors, and their
+						employees, contractors, agents, officers, and directors, from and against any and all claims, damages,
+						obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's
+						fees), resulting from or arising out of:
+					</p>
+					<ul class="list-disc pl-6 mb-4">
+						<li>Your use and access of our services</li>
+						<li>Your violation of any term of these Terms</li>
+						<li>Your violation of any third-party right, including without limitation any copyright, property, or
+							privacy right
+						</li>
+						<li>Any claim that your actions caused damage to a third party</li>
+					</ul>
+					<p>
+						This defense and indemnification obligation will survive these Terms and your use of our services.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Governing Law</h2>
+					<p>
+						These Terms shall be governed and construed in accordance with the laws of the State of Texas, United
+						States, without regard to its conflict of law provisions.
+					</p>
+					<p>
+						Our failure to enforce any right or provision of these Terms will not be considered a waiver of those
+						rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining
+						provisions of these Terms will remain in effect.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Changes to Terms</h2>
+					<p>
+						We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is
+						material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What
+						constitutes a material change will be determined at our sole discretion.
+					</p>
+					<p>
+						By continuing to access or use our services after those revisions become effective, you agree to be bound by
+						the revised terms. If you do not agree to the new terms, please stop using our services.
+					</p>
+
+					<h2 class="text-2xl font-bold text-primary mt-8 mb-4">Contact Us</h2>
+					<p>
+						If you have any questions about these Terms, please contact us:
+					</p>
+					<ul class="list-none pl-0 mb-4">
+						<li><strong>By phone:</strong> {settings.phoneMain}</li>
+						<li><strong>By mail:</strong> 1181 FM-2271 Hwy, Belton, TX 76513</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<Footer/>
+</body>
+</html>

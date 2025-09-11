@@ -1,0 +1,630 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ServiceAreas from '../components/ServiceAreas.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import settings from "../settings";
+import PagesCTA from "../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Contact Alltek Services | HVAC Services in Belton, TX</title>
+	<meta name="title" content="Contact Alltek Services | HVAC Services in Belton, TX"/>
+	<meta name="description"
+	      content="Contact Alltek Services for reliable HVAC solutions in Belton and Central Texas. Schedule service, request a free estimate, or get emergency assistance for your heating and cooling needs."/>
+	<meta name="keywords"
+	      content="contact HVAC company, Belton TX HVAC contact, schedule HVAC service, HVAC free estimate, emergency HVAC service, heating and cooling contact, air conditioning service request, HVAC consultation"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/contact/"/>
+	<meta property="og:title" content="Contact Alltek Services | HVAC Services in Belton, TX"/>
+	<meta property="og:description"
+	      content="Contact Alltek Services for reliable HVAC solutions in Belton and Central Texas. Schedule service, request a free estimate, or get emergency assistance for your heating and cooling needs."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/contact/"/>
+	<meta property="twitter:title" content="Contact Alltek Services | HVAC Services in Belton, TX"/>
+	<meta property="twitter:description"
+	      content="Contact Alltek Services for reliable HVAC solutions in Belton and Central Texas. Schedule service, request a free estimate, or get emergency assistance for your heating and cooling needs."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/contact/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Local Business -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "HVACBusiness",
+			"name": "Alltek Services",
+			"image": "/images/Logo.png",
+			"url": "https://www.alltek-services.com/contact/",
+			"telephone": "+1-254-721-7049",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1181 FM-2271 Hwy",
+				"addressLocality": "Belton",
+				"addressRegion": "TX",
+				"postalCode": "76513",
+				"addressCountry": "US"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 31.1186612,
+				"longitude": -97.4701785
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday"
+					],
+					"opens": "08:00",
+					"closes": "17:00"
+				}
+			],
+			"sameAs": [
+				"https://www.facebook.com/Alltekhvacservices/",
+				"https://www.instagram.com/alltekhvacservices/?hl=en",
+				"https://www.yelp.com/biz/alltek-services-belton",
+				"https://www.angi.com/companylist/us/tx/belton/alltek-services-reviews-7780573.htm",
+				"https://www.google.com/maps/place/Alltek+Services/@31.1186612,-97.4701785,17z/"
+			]
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Contact",
+					"item": "https://www.alltek-services.com/contact/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Contact</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">CONTACT ALLTEK SERVICES</h1>
+				<p class="text-xl mb-8">Get in touch with our team for all your heating, ventilation, and air conditioning needs
+					in Belton and Central Texas.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Information -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+				<div>
+					<div class="flex items-center mb-6">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">GET IN TOUCH</h2>
+					</div>
+
+					<div class="bg-lightgray p-8 rounded-lg shadow-md mb-8">
+						<h3 class="text-xl font-bold text-primary mb-6">Contact Information</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-accent flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+								</svg>
+								<div>
+									<span class="font-semibold block text-primary">Address:</span>
+									<address class="not-italic">
+										<a
+											href="https://www.google.com/maps/place/Alltek+Services/data=!4m2!3m1!1s0x0:0x883f270c3769dd5f?sa=X&ved=1t:2428&ictx=111"
+											target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">
+											1181 FM-2271 Hwy<br>
+											Belton, TX 76513<br>United States
+										</a>
+									</address>
+								</div>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-accent flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+								</svg>
+								<div>
+									<span class="font-semibold block text-primary">Phone:</span>
+									<a href={`tel:${settings.phoneRaw}`} class="hover:text-accent transition-colors">{settings.phone}</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="bg-lightgray p-8 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-6">Business Hours</h3>
+						<ul class="space-y-2">
+							<li class="flex justify-between">
+								<span class="font-semibold">Monday - Friday:</span>
+								<span>8:00 AM - 5:00 PM</span>
+							</li>
+							<li class="flex justify-between">
+								<span class="font-semibold">Saturday:</span>
+								<span>Closed</span>
+							</li>
+							<li class="flex justify-between">
+								<span class="font-semibold">Sunday:</span>
+								<span>Closed</span>
+							</li>
+						</ul>
+						<div class="mt-6 p-4 bg-accent/10 rounded-md border-l-4 border-accent">
+							<p class="font-bold text-primary">24 Hour Scheduling Available</p>
+							<p class="text-sm mt-1">We offer 24-hour scheduling for your convenience. No weekend or after-hours
+								service available.</p>
+						</div>
+					</div>
+
+					<div class="mt-8">
+						<h3 class="text-xl font-bold text-primary mb-4">Connect With Us</h3>
+						<div class="flex space-x-4">
+							<a href="https://www.facebook.com/Alltekhvacservices/" target="_blank" rel="noopener"
+							   class="bg-[#1877F2] text-white p-3 rounded-full hover:opacity-90 transition-opacity">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+								</svg>
+							</a>
+							<a href="https://www.instagram.com/alltekhvacservices/?hl=en" target="_blank" rel="noopener"
+							   class="bg-[#E4405F] text-white p-3 rounded-full hover:opacity-90 transition-opacity">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+								</svg>
+							</a>
+							<a href="https://www.yelp.com/biz/alltek-services-belton" target="_blank" rel="noopener"
+							   class="bg-[#F3F3F3] text-white p-3 rounded-full hover:opacity-90 transition-opacity">
+								<img src="/images/yelp-logo.svg" alt="Yelp" class="h-6 w-6"/>
+							</a>
+							<a href="https://www.angi.com/companylist/us/tx/belton/alltek-services-reviews-7780573.htm"
+							   target="_blank" rel="noopener"
+							   class="bg-[#F3F3F3] text-white p-3 rounded-full hover:opacity-90 transition-opacity">
+								<img src="/images/Angi-logo-Orange.svg" alt="Angi" class="h-6 w-6"/>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="flex items-center mb-6">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">SEND US A MESSAGE</h2>
+					</div>
+
+					<form class="bg-lightgray p-8 rounded-lg shadow-md">
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label for="name" class="block mb-2 font-medium text-darkgray">Full Name*</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+									placeholder="Your Name"
+									required
+								/>
+							</div>
+
+							<div>
+								<label for="email" class="block mb-2 font-medium text-darkgray">Email Address*</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+									placeholder="your.email@example.com"
+									required
+								/>
+							</div>
+						</div>
+
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+							<div>
+								<label for="phone" class="block mb-2 font-medium text-darkgray">Phone Number*</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+									placeholder={settings.phonePlaceholder}
+									required
+								/>
+							</div>
+
+							<div>
+								<label for="service" class="block mb-2 font-medium text-darkgray">Service Needed*</label>
+								<select
+									id="service"
+									name="service"
+									class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+									required
+								>
+									<option value="" disabled selected>Select a Service</option>
+									<option class="text-black" value="ac-repair">AC Repair</option>
+									<option class="text-black" value="ac-installation">AC Installation</option>
+									<option class="text-black" value="heating-repair">Heating Repair</option>
+									<option class="text-black" value="heating-installation">Heating Installation</option>
+									<option class="text-black" value="maintenance">Maintenance</option>
+									<option class="text-black" value="air-quality">Indoor Air Quality</option>
+									<option class="text-black" value="commercial">Commercial HVAC</option>
+									<option class="text-black" value="other">Other</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="mb-6">
+							<label for="address" class="block mb-2 font-medium text-darkgray">Address</label>
+							<input
+								type="text"
+								id="address"
+								name="address"
+								class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+								placeholder="Your Address"
+							/>
+						</div>
+
+						<div class="mb-6">
+							<label for="message" class="block mb-2 font-medium text-darkgray">Message*</label>
+							<textarea
+								id="message"
+								name="message"
+								rows="5"
+								class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary/50"
+								placeholder="Please describe your HVAC needs or issues..."
+								required
+							></textarea>
+						</div>
+
+						<div class="mb-6">
+							<label class="flex items-start">
+								<input
+									type="checkbox"
+									name="consent"
+									class="mt-1 mr-2"
+									required
+								/>
+								<span class="text-sm text-darkgray">
+                      I consent to having this website store my submitted information so they can respond to my inquiry. See our <a
+									href="/privacy-policy" class="text-secondary hover:underline">privacy policy</a> to learn more about how we use data.
+                    </span>
+							</label>
+						</div>
+
+						<div id="formResponse"></div>
+						<div class="text-center">
+							<input type="hidden" name="af-form" value="page-contact"/>
+							<input type="hidden" id="page-contact-hash" name="af-hash" value="failed"/>
+							<input type="hidden" id="page-contact-url" name="af-url" value="failed"/>
+							<button
+								type="submit"
+								class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+							>
+								SUBMIT
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Map Section -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">FIND US</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our central location in Belton allows us to serve customers throughout Central Texas quickly and efficiently.
+				</p>
+			</div>
+
+			<div class="bg-white p-4 rounded-lg shadow-md">
+				<div class="aspect-w-16 aspect-h-9">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.7231618777166!2d-97.47236688482828!3d31.118661281509364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864f5c3c7b0c7e2d%3A0x8f3f4a7c4a4f8f0!2sAlltek%20Services!5e0!3m2!1sen!2sus!4v1650123456789!5m2!1sen!2sus"
+						width="100%"
+						height="450"
+						style="border:0;"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						title="Alltek Services Location Map"
+						class="rounded-md"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Areas -->
+	<ServiceAreas/>
+
+	<!-- FAQ Section -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">FREQUENTLY ASKED QUESTIONS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Find answers to common questions about our services and scheduling.
+				</p>
+			</div>
+
+			<div class="max-w-3xl mx-auto">
+				<div class="space-y-6">
+					<!-- FAQ Item 1 -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">How do I schedule a service appointment?</h3>
+						<p class="text-darkgray">
+							You can schedule a service appointment by calling our office at <a href={`tel:${settings.phoneRaw}`}
+							                                                                   class="text-accent hover:underline">{settings.phone}</a>,
+							filling out the contact form on this page, or sending us an email. Our customer service team will get back
+							to you promptly to confirm your appointment.
+						</p>
+					</div>
+
+					<!-- FAQ Item 2 -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">Do you offer emergency HVAC services?</h3>
+						<p class="text-darkgray">
+							We offer 24-hour scheduling for your convenience, but we do not provide weekend or after-hours service.
+							Our regular business hours are Monday through Friday, 8:00 AM to 5:00 PM.
+						</p>
+					</div>
+
+					<!-- FAQ Item 3 -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">What areas do you serve?</h3>
+						<p class="text-darkgray">
+							We serve Killeen, Belton, Temple, Harker Heights, Bell County, Salado, Georgetown, Round Rock, Waco,
+							Copperas Cove, and other nearby communities. If you're unsure if we service your area, please contact us.
+						</p>
+					</div>
+
+					<!-- FAQ Item 4 -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">Do you provide free estimates?</h3>
+						<p class="text-darkgray">
+							Yes, we provide free estimates for new installations or replacements only. We do not offer free estimates
+							on diagnostics and repairs. Contact us to schedule an appointment, and one of our technicians will assess
+							your needs and provide a detailed estimate with no obligation.
+						</p>
+					</div>
+
+					<!-- FAQ Item 5 -->
+					<div class="bg-lightgray p-6 rounded-lg shadow-md">
+						<h3 class="text-xl font-bold text-primary mb-2">What payment methods do you accept?</h3>
+						<p class="text-darkgray">
+							We accept cash, checks, and all major credit cards. We also offer financing options for larger
+							installations and replacements to help make your HVAC investment more manageable.
+						</p>
+					</div>
+
+					<div class="text-center mt-8">
+						<a href="/faq"
+						   class="inline-block bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors">
+							View All FAQs
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Experience Superior HVAC Service?"
+		text="Contact us today to schedule a service appointment or to learn more about how we can help with your heating and cooling needs."
+		button="Schedule HVAC services"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// Function to fetch refresh hash when the page loads
+	async function fetchRefreshHash() {
+		try {
+			const response = await fetch('https://api.astraforms.site/', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({action: "forminit"}),
+			});
+
+			if (response.ok) {
+				const data = await response.json();
+				// Populate the hidden input field with the refresh hash
+				const refreshHashInput = document.getElementById('page-contact-hash') as HTMLInputElement;
+				if (refreshHashInput) {
+					refreshHashInput.value = data.hash || '';
+				}
+				const urlInput = document.getElementById('page-contact-url') as HTMLInputElement;
+				if (urlInput) {
+					urlInput.value = window.location.href;
+				}
+			} else {
+				console.error('Failed to fetch refresh hash');
+			}
+		} catch (error) {
+			console.error('Error fetching refresh hash:', error);
+		}
+	}
+
+	// Fetch refresh hash when the page loads
+	document.addEventListener('DOMContentLoaded', fetchRefreshHash);
+
+	// Handle form submission
+	document.addEventListener('DOMContentLoaded', () => {
+		const form = document.querySelector('form');
+		const formResponseDiv = document.getElementById('formResponse');
+
+		if (!form || !formResponseDiv) return;
+
+		form.addEventListener('submit', async function (event) {
+			event.preventDefault();
+
+			// Create FormData object
+			const formData = new FormData(this);
+			// Convert FormData to JSON object
+			let formDataObj = Object.fromEntries(formData.entries());
+			formDataObj.action = 'submit';
+
+			try {
+				const response = await fetch('https://api.astraforms.site/', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(formDataObj),
+				});
+
+				if (response.ok) {
+					const result = await response.json();
+
+					if (result.status === 'success') {
+						// Clear the form
+						this.reset();
+						// Fetch a new refresh hash
+						await fetchRefreshHash();
+						// Show a success message
+						formResponseDiv.innerHTML = `
+                  <div class="p-4 bg-green-500 text-white rounded-md mb-6">
+                    Your message has been sent successfully! We'll get back to you as soon as possible.
+                  </div>
+                `;
+
+						// Scroll to the response message
+						formResponseDiv.scrollIntoView({behavior: 'smooth'});
+
+						// Remove success message after 5 seconds
+						setTimeout(() => {
+							formResponseDiv.innerHTML = '';
+						}, 5000);
+					} else if (result.status === 'expired') {
+						// Show expired message
+						formResponseDiv.innerHTML = `
+                  <div class="p-4 bg-red-500 text-white rounded-md mb-6">
+                    The form has expired. Please refresh the page and try again.
+                  </div>
+                `;
+						// Scroll to the response message
+						formResponseDiv.scrollIntoView({behavior: 'smooth'});
+					} else {
+						// Show generic error message
+						formResponseDiv.innerHTML = `
+                  <div class="p-4 bg-red-500 text-white rounded-md mb-6">
+                    There was an error submitting the form. Please try again.
+                  </div>
+                `;
+						// Scroll to the response message
+						formResponseDiv.scrollIntoView({behavior: 'smooth'});
+					}
+				} else {
+					throw new Error('Network response was not ok');
+				}
+			} catch (error) {
+				console.error('Error submitting form:', error);
+				// Show error message
+				formResponseDiv.innerHTML = `
+              <div class="p-4 bg-red-500 text-white rounded-md mb-6">
+                There was an error submitting the form. Please try again.
+              </div>
+            `;
+				// Scroll to the response message
+				formResponseDiv.scrollIntoView({behavior: 'smooth'});
+			}
+		});
+	});
+</script>
+</body>
+</html>

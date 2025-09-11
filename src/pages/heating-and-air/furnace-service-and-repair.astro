@@ -1,0 +1,703 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Furnace Service and Repair in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Furnace Service and Repair in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional furnace service and repair in Belton, TX. Our expert technicians provide comprehensive maintenance, troubleshooting, and repair services to keep your furnace running efficiently and reliably."/>
+	<meta name="keywords"
+	      content="furnace service Belton TX, furnace repair, furnace maintenance, gas furnace repair, electric furnace service, heating system repair, furnace troubleshooting, furnace tune-up, furnace cleaning, HVAC repair, heating repair, Central Texas furnace service"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/furnace-service-and-repair/"/>
+	<meta property="og:title" content="Furnace Service and Repair in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional furnace service and repair in Belton, TX. Our expert technicians provide comprehensive maintenance, troubleshooting, and repair services to keep your furnace running efficiently and reliably."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/furnace-maintenance.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/furnace-service-and-repair/"/>
+	<meta property="twitter:title" content="Furnace Service and Repair in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional furnace service and repair in Belton, TX. Our expert technicians provide comprehensive maintenance, troubleshooting, and repair services to keep your furnace running efficiently and reliably."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/furnace-maintenance.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/furnace-service-and-repair/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Furnace Service and Repair",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Furnace Service and Repair",
+			"description": "Professional furnace service and repair for residential and commercial properties. Our comprehensive services include troubleshooting, maintenance, and repairs for all types of furnaces to ensure optimal performance and energy efficiency.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Heating and Air",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Furnace Service and Repair",
+					"item": "https://www.alltek-services.com/heating-and-air/furnace-service-and-repair/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/heating-and-air" class="text-darkgray hover:text-accent ml-1 md:ml-2">Heating and Air</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Furnace Service and Repair</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">FURNACE SERVICE AND REPAIR</h1>
+				<p class="text-xl mb-8">Expert furnace service and repair solutions to keep your home warm and comfortable
+					during the cold months in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL FURNACE SERVICES</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						COMPREHENSIVE FURNACE MAINTENANCE AND REPAIR SOLUTIONS
+					</h3>
+					<p class="text-darkgray mb-4">
+						When your furnace isn't working properly, it can leave your home uncomfortably cold and potentially lead to
+						more serious issues. At Alltek Services, we provide expert furnace service and repair to ensure your heating
+						system operates efficiently and reliably throughout the winter months.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of certified technicians has extensive experience working with all types of furnaces, including
+						gas, electric, and oil models from all major manufacturers. We can diagnose and repair a wide range of
+						furnace issues, from simple maintenance needs to complex system failures.
+					</p>
+					<p class="text-darkgray mb-8">
+						Whether your furnace is making strange noises, not producing enough heat, cycling on and off frequently, or
+						has stopped working altogether, our experts can identify the problem and provide effective solutions to get
+						your system back up and running quickly.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Furnace Service
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/services/furnace-service/furnace-technician.jpg"
+						alt="Professional furnace service and repair technician working on a heating system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="608"
+						height="416"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Common Furnace Issues -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">COMMON FURNACE ISSUES WE REPAIR</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our experienced technicians can diagnose and repair a wide range of furnace problems to restore comfort to
+					your home.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Insufficient Heat -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Insufficient Heat</h3>
+					<p class="text-darkgray mb-4">
+						If your furnace is running but not producing enough heat, it could be due to a clogged filter, improper
+						thermostat settings, or issues with the pilot light or ignition system. Our technicians can diagnose the
+						problem and restore proper heating to your home.
+					</p>
+				</div>
+
+				<!-- Strange Noises -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 01-.707-7.07m-2.122 9.9a9 9 0 010-12.728"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Strange Noises</h3>
+					<p class="text-darkgray mb-4">
+						Banging, rattling, whistling, or grinding noises from your furnace often indicate mechanical problems such
+						as loose components, airflow restrictions, or worn-out parts. Our team can identify the source of the noise
+						and make necessary repairs.
+					</p>
+				</div>
+
+				<!-- Frequent Cycling -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Frequent Cycling</h3>
+					<p class="text-darkgray mb-4">
+						If your furnace turns on and off frequently, it may be short cycling due to an oversized unit, thermostat
+						issues, or airflow problems. Our experts can diagnose the cause and implement solutions to improve system
+						efficiency.
+					</p>
+				</div>
+
+				<!-- Pilot Light or Ignition Problems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ignition Problems</h3>
+					<p class="text-darkgray mb-4">
+						Issues with the pilot light or electronic ignition system can prevent your furnace from starting. Our
+						technicians can repair or replace faulty ignition components to ensure reliable furnace operation.
+					</p>
+				</div>
+
+				<!-- Blower Motor Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Blower Motor Issues</h3>
+					<p class="text-darkgray mb-4">
+						Problems with the blower motor can result in poor airflow, uneven heating, or a furnace that won't start.
+						Our team can repair or replace faulty blower motors to restore proper system function.
+					</p>
+				</div>
+
+				<!-- Thermostat Malfunctions -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Thermostat Malfunctions</h3>
+					<p class="text-darkgray mb-4">
+						Thermostat issues can cause your furnace to operate inefficiently or not at all. We can repair or replace
+						faulty thermostats and help you upgrade to programmable or smart models for improved comfort and energy
+						savings.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Furnace Service Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR FURNACE SERVICE PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive approach to furnace service and repair to ensure your heating system operates at
+					peak performance.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Thorough Inspection</h3>
+								<p class="text-darkgray">
+									We begin with a comprehensive inspection of your furnace to identify any issues or potential problems
+									that may affect performance or safety.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Accurate Diagnosis</h3>
+								<p class="text-darkgray">
+									Our technicians use advanced diagnostic tools and their extensive knowledge to accurately identify the
+									root cause of any furnace problems.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Detailed Explanation</h3>
+								<p class="text-darkgray">
+									We explain our findings and repair recommendations in clear, easy-to-understand terms, along with
+									upfront pricing before any work begins.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Expert Repairs</h3>
+								<p class="text-darkgray">
+									Our skilled technicians perform all necessary repairs using high-quality parts and industry best
+									practices to ensure lasting results.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Testing</h3>
+								<p class="text-darkgray">
+									After completing repairs, we thoroughly test your furnace to ensure it's operating safely,
+									efficiently, and at peak performance.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								6
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Maintenance Recommendations</h3>
+								<p class="text-darkgray">
+									We provide personalized recommendations for ongoing maintenance to prevent future issues and extend
+									the life of your furnace.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="Furnace service and repair technician performing maintenance in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Commitment</h3>
+						<p class="text-darkgray">
+							We are committed to providing prompt, reliable furnace service and repair to keep your home comfortable
+							during the cold months. Our certified technicians are trained to work on all furnace makes and models,
+							ensuring you receive expert service regardless of your system type.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Professional Furnace Service -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF PROFESSIONAL FURNACE SERVICE</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						WHY REGULAR FURNACE MAINTENANCE IS ESSENTIAL
+					</h3>
+					<p class="text-darkgray mb-4">
+						Regular professional furnace service is essential for maintaining the efficiency, reliability, and safety of
+						your heating system. By scheduling routine maintenance and addressing repair needs promptly, you can enjoy
+						numerous benefits that impact both comfort and cost.
+					</p>
+					<p class="text-darkgray mb-4">
+						A well-maintained furnace operates more efficiently, which can lead to significant energy savings on your
+						utility bills. Additionally, regular service helps identify and address minor issues before they develop
+						into major problems requiring costly repairs or premature system replacement.
+					</p>
+					<p class="text-darkgray mb-8">
+						Perhaps most importantly, professional furnace service ensures your heating system operates safely, reducing
+						the risk of carbon monoxide leaks, fire hazards, and other safety concerns that can put your family at risk.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Furnace Service
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Key Benefits</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Improved energy efficiency and lower utility bills</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Extended equipment lifespan and fewer breakdowns</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Enhanced home comfort with consistent heating</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Improved indoor air quality through clean filters and components</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Reduced risk of carbon monoxide leaks and other safety hazards</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Maintained manufacturer warranty coverage</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to Call for Furnace Service -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">WHEN TO CALL FOR FURNACE SERVICE</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Recognizing the signs that your furnace needs professional attention can help prevent major breakdowns and
+					ensure your home stays warm and comfortable.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Unusual Noises -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 01-.707-7.07m-2.122 9.9a9 9 0 010-12.728"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Unusual Noises</h3>
+					</div>
+					<p class="text-darkgray">
+						Banging, rattling, whistling, or grinding sounds from your furnace are not normal and typically indicate a
+						mechanical issue that requires professional attention.
+					</p>
+				</div>
+
+				<!-- Insufficient Heat -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Insufficient Heat</h3>
+					</div>
+					<p class="text-darkgray">
+						If your furnace is running but not producing enough heat, or if some rooms are much colder than others, it's
+						time to call for professional service.
+					</p>
+				</div>
+
+				<!-- Rising Energy Bills -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Rising Energy Bills</h3>
+					</div>
+					<p class="text-darkgray">
+						An unexpected increase in your heating bills without a corresponding increase in usage often indicates that
+						your furnace is operating inefficiently and needs service.
+					</p>
+				</div>
+
+				<!-- Frequent Cycling -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Frequent Cycling</h3>
+					</div>
+					<p class="text-darkgray">
+						If your furnace turns on and off frequently, it may be short cycling due to overheating, thermostat issues,
+						or other problems that require professional diagnosis.
+					</p>
+				</div>
+
+				<!-- Yellow Pilot Light -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Yellow Pilot Light</h3>
+					</div>
+					<p class="text-darkgray">
+						A healthy pilot light should be blue. If yours is yellow or flickering, it could indicate a ventilation
+						problem or carbon monoxide leak, which requires immediate professional attention.
+					</p>
+				</div>
+
+				<!-- Age of System -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Age of System</h3>
+					</div>
+					<p class="text-darkgray">
+						If your furnace is more than 15 years old, it may require more frequent service to maintain efficiency and
+						reliability. Regular maintenance becomes even more important as systems age.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Keep Your Home Warmed and Comfortable"
+		text="Don't wait until your furnace breaks down completely. Contact Alltek Services today for professional furnace service and repair to ensure your heating system operates efficiently and reliably all season long."
+		button="Schedule Furnace Service"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

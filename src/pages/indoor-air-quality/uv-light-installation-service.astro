@@ -1,0 +1,243 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>UV Light Installation Service in Belton, TX | Alltek Services</title>
+	<meta name="title" content="UV Light Installation Service in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional UV light installation services for HVAC systems in Belton, TX. Our expert technicians install germicidal UV lights to improve indoor air quality by eliminating bacteria, viruses, mold, and other harmful microorganisms."/>
+	<meta name="keywords"
+	      content="UV light installation Belton TX, HVAC UV light, germicidal UV light, UV air purification, HVAC air sanitizer, UV-C light installation, indoor air quality, air disinfection, mold prevention, Central Texas UV light"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/indoor-air-quality/uv-light-installation-service/"/>
+	<meta property="og:title" content="UV Light Installation Service in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional UV light installation services for HVAC systems in Belton, TX. Our expert technicians install germicidal UV lights to improve indoor air quality by eliminating bacteria, viruses, mold, and other harmful microorganisms."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/air-quality-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url"
+	      content="https://www.alltek-services.com/indoor-air-quality/uv-light-installation-service/"/>
+	<meta property="twitter:title" content="UV Light Installation Service in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional UV light installation services for HVAC systems in Belton, TX. Our expert technicians install germicidal UV lights to improve indoor air quality by eliminating bacteria, viruses, mold, and other harmful microorganisms."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/optimized/air-quality-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/indoor-air-quality/uv-light-installation-service/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "UV Light Installation Service",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "UV Light Installation",
+			"description": "Professional installation of germicidal UV light systems for residential and commercial HVAC systems. Our services include consultation, installation, and maintenance of UV-C light technology that helps eliminate bacteria, viruses, mold, and other harmful microorganisms from your indoor air, improving overall air quality and system efficiency.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Indoor Air Quality",
+					"item": "https://www.alltek-services.com/indoor-air-quality/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "UV Light Installation Service",
+					"item": "https://www.alltek-services.com/indoor-air-quality/uv-light-installation-service/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+	<meta name="robots" content="nofollow"/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/indoor-air-quality" class="text-darkgray hover:text-accent ml-1 md:ml-2">Indoor Air Quality</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">UV Light Installation Service</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">UV LIGHT INSTALLATION SERVICE</h1>
+				<p class="text-xl mb-8">Professional installation of germicidal UV lights for your HVAC system to eliminate
+					bacteria, viruses, mold, and other harmful microorganisms in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">ADVANCED AIR PURIFICATION</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						ELIMINATE HARMFUL MICROORGANISMS WITH UV TECHNOLOGY
+					</h3>
+					<p class="text-darkgray mb-4">
+						UV light technology has been used for decades in hospitals, laboratories, and water treatment facilities to
+						kill bacteria, viruses, and other pathogens. Now, this same powerful technology can be installed in your
+						home's HVAC system to improve indoor air quality and create a healthier living environment.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, we offer professional installation of germicidal UV light systems that are designed to
+						work with your existing HVAC equipment. These systems use special UV-C light, which has been proven
+						effective at neutralizing a wide range of microorganisms, including bacteria, viruses, mold spores, and
+						allergens that can circulate through your home's air.
+					</p>
+					<p class="text-darkgray mb-8">
+						Our certified technicians will properly install UV lights in strategic locations within your HVAC system,
+						typically near the cooling coil and/or in the ductwork, to maximize their effectiveness. We'll ensure the
+						system is correctly sized for your specific needs and properly integrated with your existing equipment for
+						optimal performance and safety.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule UV Light Installation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/uv-light_600w.jpg"
+						alt="HVAC technician installing UV light system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Improve Your Indoor Air Quality"
+		text="Contact Alltek Services today to learn more about our UV light installation services and take the first step toward a healthier home environment."
+		button="Schedule Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

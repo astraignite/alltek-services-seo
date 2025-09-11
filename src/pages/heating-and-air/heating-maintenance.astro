@@ -1,0 +1,540 @@
+---
+import GoogleHead from "../../components/GoogleHead.astro";
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Heating System Maintenance in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Heating System Maintenance in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional heating system maintenance in Belton, TX. Our comprehensive tune-ups keep your furnace, heat pump, or boiler running efficiently and reliably all season long. Prevent costly breakdowns and extend system life."/>
+	<meta name="keywords"
+	      content="heating maintenance Belton TX, furnace tune-up, heat pump maintenance, boiler service, HVAC maintenance, preventative maintenance, heating system efficiency, furnace cleaning, heating system inspection, Central Texas HVAC"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/heating-maintenance/"/>
+	<meta property="og:title" content="Heating System Maintenance in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional heating system maintenance in Belton, TX. Our comprehensive tune-ups keep your furnace, heat pump, or boiler running efficiently and reliably all season long. Prevent costly breakdowns and extend system life."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/heating-maintenance/"/>
+	<meta property="twitter:title" content="Heating System Maintenance in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional heating system maintenance in Belton, TX. Our comprehensive tune-ups keep your furnace, heat pump, or boiler running efficiently and reliably all season long. Prevent costly breakdowns and extend system life."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/heating-maintenance/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Heating System Maintenance",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Heating System Maintenance",
+			"description": "Professional heating system maintenance services including comprehensive inspections, cleaning, and tune-ups for furnaces, heat pumps, and boilers. Our preventative maintenance plans help ensure your heating system operates efficiently and reliably throughout the season.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Heating and Air Services",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Heating System Maintenance",
+					"item": "https://www.alltek-services.com/heating-and-air/heating-maintenance/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/heating-and-air" class="text-darkgray hover:text-accent ml-1 md:ml-2">Heating and Air Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Heating System Maintenance</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HEATING SYSTEM MAINTENANCE</h1>
+				<p class="text-xl mb-8">Comprehensive maintenance services to keep your heating system running efficiently and
+					reliably all season long.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL HEATING MAINTENANCE</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						KEEP YOUR HEATING SYSTEM RUNNING AT PEAK PERFORMANCE
+					</h3>
+					<p class="text-darkgray mb-4">
+						Regular maintenance is essential for keeping your heating system operating efficiently and extending its
+						lifespan. At Alltek Services, our comprehensive maintenance services are designed to prevent unexpected
+						breakdowns, improve energy efficiency, and ensure your home stays warm and comfortable throughout the winter
+						months.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our certified technicians perform thorough inspections and tune-ups on all types of heating systems,
+						including furnaces, heat pumps, and boilers. We follow a detailed checklist to address all critical
+						components, from checking electrical connections and lubricating moving parts to cleaning burners and
+						testing safety controls.
+					</p>
+					<p class="text-darkgray mb-8">
+						Don't wait until your heating system breaks down during the coldest days of winter. Schedule preventative
+						maintenance with Alltek Services today and enjoy peace of mind knowing your system is ready to keep you
+						comfortable all season long.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Maintenance
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/optimized/heating-and-air/belton-tx-hvac-maintenance.webp"
+						alt="HVAC technician performing professional maintenance on a heating system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Maintenance -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF REGULAR HEATING MAINTENANCE</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Investing in regular heating system maintenance offers numerous advantages for your home and budget.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Improved Energy Efficiency -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Energy Efficiency</h3>
+					<p class="text-darkgray mb-4">
+						A well-maintained heating system operates more efficiently, using less energy to produce the same amount of
+						heat. This translates to lower utility bills and reduced energy consumption, which is good for both your
+						wallet and the environment.
+					</p>
+				</div>
+
+				<!-- Extended System Lifespan -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Extended System Lifespan</h3>
+					<p class="text-darkgray mb-4">
+						Regular maintenance helps prevent premature wear and tear on your heating system's components. By addressing
+						minor issues before they become major problems, you can significantly extend the lifespan of your heating
+						equipment, delaying the need for costly replacements.
+					</p>
+				</div>
+
+				<!-- Fewer Breakdowns -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Fewer Breakdowns</h3>
+					<p class="text-darkgray mb-4">
+						Preventative maintenance helps identify and resolve potential issues before they lead to system failures.
+						This means fewer unexpected breakdowns, especially during the coldest days of winter when your heating
+						system is working hardest and you need it most.
+					</p>
+				</div>
+
+				<!-- Improved Air Quality -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Improved Air Quality</h3>
+					<p class="text-darkgray mb-4">
+						Regular cleaning and maintenance of your heating system helps remove dust, allergens, and other contaminants
+						that can circulate through your home. This leads to better indoor air quality, which is especially important
+						for family members with allergies, asthma, or other respiratory conditions.
+					</p>
+				</div>
+
+				<!-- Enhanced Safety -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Enhanced Safety</h3>
+					<p class="text-darkgray mb-4">
+						Heating systems, especially those that use natural gas or oil, can pose safety risks if not properly
+						maintained. Regular inspections check for gas leaks, carbon monoxide emissions, and other potential hazards,
+						ensuring your heating system operates safely throughout the season.
+					</p>
+				</div>
+
+				<!-- Consistent Comfort -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Consistent Comfort</h3>
+					<p class="text-darkgray mb-4">
+						A well-maintained heating system provides more consistent heating throughout your home, eliminating cold
+						spots and temperature fluctuations. This ensures your family stays comfortable no matter how cold it gets
+						outside.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Maintenance Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR COMPREHENSIVE MAINTENANCE PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our thorough maintenance process ensures every critical component of your heating system is inspected,
+					cleaned, and optimized.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Thorough Inspection</h3>
+								<p class="text-darkgray">
+									We begin with a comprehensive inspection of your entire heating system, checking for signs of wear,
+									damage, or potential issues that could lead to problems down the line.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Cleaning and Lubrication</h3>
+								<p class="text-darkgray">
+									We clean all critical components, including burners, heat exchangers, and blower assemblies. We also
+									lubricate moving parts to reduce friction and wear, ensuring smooth operation.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Filter Replacement</h3>
+								<p class="text-darkgray">
+									We check and replace air filters as needed to ensure proper airflow and improve indoor air quality.
+									Clean filters also help your system operate more efficiently.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Safety Testing</h3>
+								<p class="text-darkgray">
+									We perform comprehensive safety checks, including testing for carbon monoxide leaks, inspecting
+									electrical connections, and verifying that all safety controls are functioning properly.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Performance Testing</h3>
+								<p class="text-darkgray">
+									We test your system's performance, checking for proper airflow, temperature output, and cycle times to
+									ensure it's operating at peak efficiency.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/belton-tx-professional-furnace-repair-technician_600w.jpg"
+						alt="HVAC technician performing detailed maintenance on a furnace in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+					<div class="mt-8 bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Maintenance Guarantee</h3>
+						<p class="text-darkgray">
+							We stand behind our maintenance services with a 100% satisfaction guarantee. If you experience any issues
+							with your heating system within 30 days of our maintenance service, we'll return to address the problem at
+							no additional cost.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Maintenance Checklist -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR HEATING MAINTENANCE CHECKLIST</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our comprehensive maintenance service includes a detailed inspection and tune-up of all critical components.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Furnace Maintenance -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-6 text-center">Furnace Maintenance</h3>
+					<ul class="space-y-3">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Inspect and clean burners</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Clean and inspect heat exchanger</span>
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-0.5"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							<span>Test ignition system</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Keep Your Home Comfortable Year-Round"
+		text="Don't wait until your system breaks down completely. Contact Alltek Services today for professional maintence services to ensure your system operates efficiently and reliably in all seasons."
+		button="Schedule Maintenance"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>
+
+

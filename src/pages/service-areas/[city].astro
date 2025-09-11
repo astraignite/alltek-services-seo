@@ -1,0 +1,570 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WhyChooseUs from '../../components/WhyChooseUs.astro';
+import CallToAction from '../../components/CallToAction.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import settings from "../../settings.js"
+
+// Define types
+interface Service {
+	name: string;
+	slug: string;
+	category: string;
+}
+
+interface City {
+	cityName: string;
+	citySlug: string;
+	state: string;
+	zipCodes: string[];
+	countyName: string;
+	latitude: number;
+	longitude: number;
+	population: number;
+	description: string;
+	services: Service[];
+	seo: {
+		title: string;
+		metaDescription: string;
+		keywords: string[];
+		canonicalUrl: string;
+		ogTitle: string;
+		ogDescription: string;
+		ogImage: string;
+		twitterCard: string;
+		twitterTitle: string;
+		twitterDescription: string;
+		twitterImage: string;
+	};
+}
+
+// Category info types
+interface CategoryInfo {
+	icon: string;
+	description: string;
+}
+
+interface CategoryData {
+	[key: string]: CategoryInfo;
+}
+
+interface CategoryNames {
+	[key: string]: string;
+}
+
+interface ServiceCategories {
+	[key: string]: Service[];
+}
+
+// Get the city slug from the URL
+export async function getStaticPaths() {
+	const locationsData = await import('../../data/service-areas/locations.json');
+	const locations = locationsData.default;
+
+	// Filter out Bell County as it's not a specific city
+	const cities = locations.filter(location => location.slug !== 'bell-county');
+
+	return cities.map(city => {
+		return {
+			params: {city: city.slug},
+			props: {citySlug: city.slug}
+		};
+	});
+}
+
+// Get the city data
+const {citySlug} = Astro.props;
+let city;
+try {
+	const cityData = await import(`../../data/service-areas/${citySlug}.json`);
+	city = cityData.default;
+} catch (error) {
+	console.error(`Error loading data for ${citySlug}:`, error);
+	return Astro.redirect('/service-areas');
+}
+
+// Group services by category
+const serviceCategories: ServiceCategories = {
+	'air-conditioning': city.services.filter((service: Service) => service.category === 'air-conditioning'),
+	'heating': city.services.filter((service: Service) => service.category === 'heating'),
+	'installation': city.services.filter((service: Service) => service.category === 'installation'),
+	'indoor-air-quality': city.services.filter((service: Service) => service.category === 'indoor-air-quality'),
+	'commercial-hvac': city.services.filter((service: Service) => service.category === 'commercial-hvac')
+};
+
+// Category icons and descriptions
+const categoryInfo: CategoryData = {
+	'air-conditioning': {
+		icon: 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm8-6a8 8 0 1 0-16 0 8 8 0 0 0 16 0zM2.5 12a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z',
+		description: `Expert air conditioning services in ${city.cityName} to keep your home cool and comfortable all summer long.`
+	},
+	'heating': {
+		icon: 'M11.5 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM10.5 21.5a1.5 1.5 0 0 1-3 0V20h3v1.5zM13.5 21.5a1.5 1.5 0 0 0 3 0V20h-3v1.5zM7.5 20v-1.5a4.5 4.5 0 1 1 9 0V20h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H6.5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1z',
+		description: `Reliable heating solutions in ${city.cityName} to ensure your comfort during the coldest months.`
+	},
+	'installation': {
+		icon: 'M14.121 9.88l-5.5 5.5a1 1 0 0 1-1.414-1.414l5.5-5.5a1 1 0 1 1 1.414 1.414zM12 4l1.5 1.5L5 14l-2.5-2.5L12 4zm1 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-7 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z',
+		description: `Professional HVAC installation services in ${city.cityName} with quality equipment and expert technicians.`
+	},
+	'indoor-air-quality': {
+		icon: 'M4.5 16.5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm-15-5a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1zm5 0a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1z',
+		description: `Improve the air quality in your ${city.cityName} home with our comprehensive indoor air quality solutions.`
+	},
+	'commercial-hvac': {
+		icon: 'M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7v-7zm4-3h2v10h-2V7zm4 6h2v4h-2v-4z',
+		description: `Specialized commercial HVAC services in ${city.cityName} for businesses of all sizes.`
+	}
+};
+
+// Category display names
+const categoryNames: CategoryNames = {
+	'air-conditioning': 'Air Conditioning',
+	'heating': 'Heating',
+	'installation': 'Installation',
+	'indoor-air-quality': 'Indoor Air Quality',
+	'commercial-hvac': 'Commercial HVAC'
+};
+
+// Get category keys for iteration - only include categories that have services
+const categoryKeys = Object.keys(categoryNames).filter(key => serviceCategories[key] && serviceCategories[key].length > 0);
+
+// Get nearby cities
+const locationsData = await import('../../data/service-areas/locations.json');
+const locations = locationsData.default;
+const nearbyCities = locations
+	.filter(location => location.slug !== citySlug && location.slug !== 'bell-county')
+	.slice(0, 5);
+
+const pageTitle = city.seo?.title || `HVAC Services in ${city.cityName}, ${city.state} | Alltek Services`;
+
+
+const ldLocalBusiness = {
+	"@context": "https://schema.org",
+	"@type": "HVACBusiness",
+	"name": "Alltek Services",
+	"image": "/images/Logo.png",
+	"url": `https: //www.alltek-services.com/service-areas/${city.citySlug}/`,
+	"telephone": `${settings.phoneMainRaw}`,
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "1181 FM-2271 Hwy",
+		"addressLocality": "Belton",
+		"addressRegion": "TX",
+		"postalCode": "76513",
+		"addressCountry": "US"
+	},
+	"areaServed": {
+		"@type": "City",
+		"name": `${city.cityName}, ${city.state}`
+	},
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "HVAC Services",
+		"itemListElement": city.services.map((service, index) => ({
+			"@type": "Offer",
+			"itemOffered": {
+				"@type": "Service",
+				"name": service.name,
+				"serviceType": "HVAC",
+				"provider": {
+					"@id": "https://www.alltek-services.com/"
+				},
+				"areaServed": {
+					"@type": "Place",
+					"name": `${city.cityName}, ${city.state}`
+				},
+				"description": `Professional ${service.name} services in ${city.cityName}, ${city.state}.`,
+				"url": `https: //www.alltek-services.com/service-areas/${city.citySlug}/${service.slug}/`
+			}
+		}))
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": city.latitude,
+		"longitude": city.longitude
+	},
+	"openingHoursSpecification": [
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			"opens": "08:00",
+			"closes": "18:00"
+		},
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": "Saturday",
+			"opens": "09:00",
+			"closes": "16:00"
+		}
+	],
+	"priceRange": "$$"
+};
+
+const ldBreadcrumbs = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.alltek-services.com/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Service Areas",
+			"item": "https://www.alltek-services.com/service-areas/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": `${city.cityName}, ${city.state}`,
+			"item": `https://www.alltek-services.com/service-areas/${city.citySlug}/`
+		}
+	]
+};
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>{pageTitle}</title>
+	<meta name="title"
+	      content={city.seo?.title || `HVAC Services in ${city.cityName}, ${city.state} | Alltek Services`}/>
+	<meta name="description"
+	      content={city.seo?.metaDescription || `Professional HVAC services in ${city.cityName}, ${city.state} including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving ${city.cityName} and surrounding areas.`}/>
+	<meta name="keywords"
+	      content={city.seo?.keywords ? city.seo.keywords.join(', ') : `HVAC services ${city.cityName}, air conditioning ${city.cityName} ${city.state}, heating services ${city.cityName}, furnace repair ${city.cityName}, AC installation ${city.cityName}, indoor air quality ${city.cityName}, HVAC contractor ${city.cityName}`}/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url"
+	      content={city.seo?.canonicalUrl || `https://www.alltek-services.com/service-areas/${city.citySlug}/`}/>
+	<meta property="og:title"
+	      content={city.seo?.ogTitle || `HVAC Services in ${city.cityName}, ${city.state} | Alltek Services`}/>
+	<meta property="og:description"
+	      content={city.seo?.ogDescription || `Professional HVAC services in ${city.cityName}, ${city.state} including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving ${city.cityName} and surrounding areas.`}/>
+	<meta property="og:image"
+	      content={city.seo?.ogImage || "https://www.alltek-services.com/images-optimized/fleet/service-fleet.webp"}/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content={city.seo?.twitterCard || "summary_large_image"}/>
+	<meta property="twitter:url"
+	      content={city.seo?.canonicalUrl || `https://www.alltek-services.com/service-areas/${city.citySlug}/`}/>
+	<meta property="twitter:title"
+	      content={city.seo?.twitterTitle || `HVAC Services in ${city.cityName}, ${city.state} | Alltek Services`}/>
+	<meta property="twitter:description"
+	      content={city.seo?.twitterDescription || `Professional HVAC services in ${city.cityName}, ${city.state} including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving ${city.cityName} and surrounding areas.`}/>
+	<meta property="twitter:image"
+	      content={city.seo?.twitterImage || "https://www.alltek-services.com/images-optimized/fleet/service-fleet.webp"}/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical"
+	      href={city.seo?.canonicalUrl || `https://www.alltek-services.com/service-areas/${city.citySlug}/`}/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Local Business -->
+	<script type="application/ld+json" set:html={JSON.stringify(ldLocalBusiness)}>
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json" set:html={JSON.stringify(ldBreadcrumbs)}>
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3 relative z-10">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/service-areas" class="text-darkgray hover:text-accent ml-1 md:ml-2">Service Areas</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">{city.cityName}, {city.state}</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section with Gradient Overlay -->
+	<section class="relative bg-primary overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10"></div>
+		<div class="absolute inset-0">
+			<img
+				src="/images-optimized/hero/hero-hvac.webp"
+				alt={`HVAC Services in ${city.cityName}, ${city.state}`}
+				class="w-full h-full object-cover"
+			/>
+		</div>
+		<div class="container mx-auto px-4 py-20 md:py-32 relative z-20">
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 shadow-xl">
+					<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading text-white text-center">
+						HVAC SERVICES IN {city.cityName.toUpperCase()}, {city.state}
+					</h1>
+					<p class="text-xl text-white text-center mb-8">
+						Professional heating, cooling, and indoor air quality solutions for homes and businesses
+						in {city.cityName} and surrounding areas.
+					</p>
+					<div class="flex flex-col sm:flex-row justify-center gap-4">
+						<a
+							href="/contact"
+							class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors text-center"
+						>
+							Schedule Service
+						</a>
+						<a href={`tel:${settings.phoneRaw}`}
+						   class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors text-center">Call {settings.phone}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- City Overview with Stats -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-primary font-heading mb-4">TRUSTED HVAC SERVICES
+					IN {city.cityName.toUpperCase()}</h2>
+				<div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Your comfort is our priority. We provide comprehensive HVAC solutions tailored to the unique needs
+					of {city.cityName} residents and businesses.
+				</p>
+			</div>
+
+			<div class="flex flex-col lg:flex-row gap-12 items-center">
+				<div class="w-full lg:w-1/2">
+					<div class="relative rounded-lg overflow-hidden shadow-xl">
+						<img
+							src="/images-optimized/fleet/service-fleet.webp"
+							alt={`Alltek Services HVAC service vehicles in ${city.cityName}, ${city.state}`}
+							class="w-full h-auto object-cover"
+						/>
+						<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
+							<p class="text-white font-bold text-xl">Serving {city.cityName} with Pride</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full lg:w-1/2">
+					<div class="prose prose-lg max-w-none">
+						<h3 class="text-xl font-bold text-primary mb-4">Your Local HVAC Experts in {city.cityName}</h3>
+						<p class="text-darkgray text-base mb-3">
+							Alltek Services is proud to provide comprehensive HVAC solutions to the {city.cityName} community. Our
+							team of certified technicians has extensive experience working with homes and businesses
+							throughout {city.cityName}, {city.state}, delivering reliable heating, cooling, and indoor air quality
+							services.
+						</p>
+						<p class="text-darkgray text-base mb-3">
+							We understand the unique climate challenges that {city.cityName} residents face throughout the year.
+							From scorching summer heat to chilly winter nights, our experts are equipped to keep your home or
+							business comfortable in all seasons.
+						</p>
+
+						<!-- Stats Grid -->
+						<div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+							<div class="bg-lightgray p-4 rounded-lg text-center">
+								<div class="text-3xl font-bold text-accent mb-1">24/7</div>
+								<div class="text-sm text-darkgray">Emergency Service Scheduling</div>
+							</div>
+							<div class="bg-lightgray p-4 rounded-lg text-center">
+								<div class="text-3xl font-bold text-accent mb-1">30+</div>
+								<div class="text-sm text-darkgray">Years Experience</div>
+							</div>
+							<div class="bg-lightgray p-4 rounded-lg text-center">
+								<div class="text-3xl font-bold text-accent mb-1">100%</div>
+								<div class="text-sm text-darkgray">Satisfaction</div>
+							</div>
+							<div class="bg-lightgray p-4 rounded-lg text-center">
+								<div class="text-3xl font-bold text-accent mb-1">5★</div>
+								<div class="text-sm text-darkgray">Rated Service</div>
+							</div>
+						</div>
+
+						<div class="mt-6">
+							<a
+								href="/contact"
+								class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+							>
+								Schedule Service in {city.cityName}
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Categories with Cards -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-primary font-heading mb-4">OUR SERVICES
+					IN {city.cityName.toUpperCase()}</h2>
+				<div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We offer a comprehensive range of HVAC services to meet all your heating, cooling, and indoor air quality
+					needs in {city.cityName}, {city.state}.
+				</p>
+			</div>
+
+			<!-- Service Categories -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+				{categoryKeys.map((category) => (
+					<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+						<div class="p-6">
+							<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24"
+								     stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d={categoryInfo[category].icon}/>
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold text-primary mb-3 text-center">{categoryNames[category]}</h3>
+							<p class="text-darkgray mb-6 text-center">
+								{categoryInfo[category].description}
+							</p>
+							<div class="space-y-2">
+								{serviceCategories[category].slice(0, 3).map((service: Service) => (
+									<a
+										href={`/service-areas/${city.citySlug}/${service.slug}`}
+										class="flex items-center p-2 rounded-md hover:bg-accent/10 transition-colors group"
+									>
+										<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2" fill="none"
+										     viewBox="0 0 24 24" stroke="currentColor">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+										</svg>
+										<span class="text-darkgray group-hover:text-accent transition-colors">{service.name}</span>
+									</a>
+								))}
+								{serviceCategories[category].length > 3 && (
+									<a
+										href="#"
+										class="flex items-center justify-center p-2 text-accent hover:text-accent/80 transition-colors font-medium"
+									>
+										View All {serviceCategories[category].length} Services
+									</a>
+								)}
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Nearby Cities Section -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold text-primary font-heading mb-4">NEARBY SERVICE AREAS</h2>
+				<div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We proudly serve {city.cityName} and the surrounding communities. Explore our HVAC services in these
+					nearby areas:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				{nearbyCities.map((nearbyCity) => (
+					<a
+						href={`/service-areas/${nearbyCity.slug}`}
+						class="bg-lightgray rounded-lg p-6 hover:shadow-lg transition-shadow group"
+					>
+						<div class="flex items-center justify-between">
+							<div>
+								<h3
+									class="text-xl font-bold text-primary group-hover:text-accent transition-colors">{nearbyCity.name}, {nearbyCity.state}</h3>
+								<p class="text-darkgray mt-2">HVAC Services</p>
+							</div>
+							<div
+								class="bg-white/80 rounded-full w-10 h-10 flex items-center justify-center group-hover:bg-accent/10 transition-colors">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24"
+								     stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+								</svg>
+							</div>
+						</div>
+					</a>
+				))}
+			</div>
+
+			<div class="text-center mt-10">
+				<a
+					href="/service-areas"
+					class="inline-flex items-center text-accent hover:text-accent/80 font-medium"
+				>
+					View All Service Areas
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+					     stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us Section - Full Width -->
+	<section class="w-full block" style="clear: both; display: block; width: 100%; float: none;">
+		<WhyChooseUs/>
+	</section>
+
+	<!-- Call to Action Section - Full Width -->
+	<section class="w-full block" style="clear: both; display: block; width: 100%; float: none; margin-top: 0;">
+		<CallToAction cityName={city.cityName} state={city.state}/>
+	</section>
+</main>
+
+<Footer/>
+</body>
+</html>

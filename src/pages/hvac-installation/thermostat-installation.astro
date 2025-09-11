@@ -1,0 +1,717 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Thermostat Installation in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Thermostat Installation in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional thermostat installation services in Belton, TX. Our expert technicians install programmable, smart, and Wi-Fi thermostats to improve comfort, convenience, and energy efficiency in your home."/>
+	<meta name="keywords"
+	      content="thermostat installation Belton TX, smart thermostat, programmable thermostat, Wi-Fi thermostat, HVAC controls, energy efficient thermostat, temperature control, smart home, Nest thermostat, Ecobee installation, Central Texas thermostat"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/hvac-installation/thermostat-installation/"/>
+	<meta property="og:title" content="Thermostat Installation in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional thermostat installation services in Belton, TX. Our expert technicians install programmable, smart, and Wi-Fi thermostats to improve comfort, convenience, and energy efficiency in your home."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/optimized/hvac-installation-icon.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/hvac-installation/thermostat-installation/"/>
+	<meta property="twitter:title" content="Thermostat Installation in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional thermostat installation services in Belton, TX. Our expert technicians install programmable, smart, and Wi-Fi thermostats to improve comfort, convenience, and energy efficiency in your home."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/hvac-installation-icon.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/hvac-installation/thermostat-installation/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Thermostat Installation",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Thermostat Installation",
+			"description": "Professional installation of programmable, smart, and Wi-Fi thermostats for residential and commercial properties. Our services include consultation, thermostat selection, professional installation, programming, and setup to ensure optimal HVAC system performance, improved comfort, and enhanced energy efficiency.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Thermostat Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/thermostat-installation/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/hvac-installation" class="text-darkgray hover:text-accent ml-1 md:ml-2">HVAC Installation</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Thermostat Installation</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">THERMOSTAT INSTALLATION</h1>
+				<p class="text-xl mb-8">Professional installation of programmable, smart, and Wi-Fi thermostats to improve
+					comfort, convenience, and energy efficiency in your Belton, TX home.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">SMART TEMPERATURE CONTROL</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						UPGRADE YOUR HOME WITH ADVANCED THERMOSTAT TECHNOLOGY
+					</h3>
+					<p class="text-darkgray mb-4">
+						Your thermostat is the control center of your HVAC system, and upgrading to a modern, programmable, or smart
+						thermostat can significantly improve your home's comfort, convenience, and energy efficiency. Today's
+						advanced thermostats offer features that were unimaginable just a few years ago, from learning your
+						preferences to allowing remote control via smartphone apps.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, we specialize in professional thermostat installation for all types of homes and HVAC
+						systems. Our experienced technicians can help you select the right thermostat for your specific needs and
+						ensure it's properly installed and programmed for optimal performance.
+					</p>
+					<p class="text-darkgray mb-8">
+						Whether you're looking to replace an outdated manual thermostat, upgrade to a programmable model, or embrace
+						the latest smart home technology with a Wi-Fi-connected thermostat, we provide expert installation services
+						that ensure your new thermostat works seamlessly with your HVAC system and delivers the comfort and
+						efficiency you expect.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Installation
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/thermostat_600w.jpg"
+						alt="Smart thermostat installation in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of Modern Thermostats -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF MODERN THERMOSTATS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Upgrading to a programmable or smart thermostat offers numerous advantages for your home and lifestyle.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Energy Savings -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Energy Savings</h3>
+					<p class="text-darkgray mb-4">
+						Modern thermostats can significantly reduce your energy consumption by automatically adjusting temperatures
+						based on your schedule and preferences. By lowering heating or cooling when you're away or asleep, these
+						thermostats can help you save up to 10-15% on your annual heating and cooling costs.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							10-15% reduction in energy costs
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Automatic temperature adjustments
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Reduced environmental impact
+						</li>
+					</ul>
+				</div>
+
+				<!-- Enhanced Comfort -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Enhanced Comfort</h3>
+					<p class="text-darkgray mb-4">
+						Smart thermostats learn your preferences and adjust temperatures accordingly, ensuring your home is always
+						at your ideal comfort level. Many models also offer features like room sensors to eliminate hot and cold
+						spots, humidity control, and geofencing that adjusts temperatures based on your location.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Personalized temperature settings
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Elimination of hot/cold spots
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Advanced humidity control
+						</li>
+					</ul>
+				</div>
+
+				<!-- Convenience and Control -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Convenience and Control</h3>
+					<p class="text-darkgray mb-4">
+						Wi-Fi-enabled thermostats allow you to control your home's temperature from anywhere using your smartphone,
+						tablet, or computer. You can adjust settings remotely, receive maintenance alerts, and even integrate with
+						other smart home devices and voice assistants like Amazon Alexa or Google Assistant.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Remote temperature control
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Smart home integration
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Voice control capabilities
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Types of Thermostats -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">TYPES OF THERMOSTATS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We install a variety of thermostat types to meet your specific needs and preferences.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Programmable Thermostats -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Programmable Thermostats</h3>
+					<p class="text-darkgray mb-4">
+						These thermostats allow you to set temperature schedules for different times of the day and days of the
+						week. By automatically adjusting temperatures when you're away or asleep, programmable thermostats help
+						reduce energy consumption while maintaining comfort when you need it.
+					</p>
+					<p class="text-darkgray mb-4">
+						Programmable thermostats are an excellent entry-level option for homeowners looking to improve energy
+						efficiency without the higher cost of smart thermostats. They're reliable, easy to use, and can still
+						provide significant energy savings compared to manual thermostats.
+					</p>
+				</div>
+
+				<!-- Smart Thermostats -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Smart Thermostats</h3>
+					<p class="text-darkgray mb-4">
+						Smart thermostats take programmable features to the next level by learning your preferences and habits over
+						time. These advanced devices can automatically create and adjust schedules based on your behavior, optimize
+						settings for energy efficiency, and provide detailed energy usage reports.
+					</p>
+					<p class="text-darkgray mb-4">
+						Many smart thermostats also offer features like occupancy sensing, which detects when you're home or away,
+						and adaptive recovery, which intelligently preheats or precools your home to reach your desired temperature
+						exactly when scheduled, maximizing both comfort and efficiency.
+					</p>
+				</div>
+
+				<!-- Wi-Fi Thermostats -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Wi-Fi Thermostats</h3>
+					<p class="text-darkgray mb-4">
+						Wi-Fi-enabled thermostats connect to your home network, allowing you to control your HVAC system remotely
+						via smartphone apps or web interfaces. This connectivity provides convenience and flexibility, letting you
+						adjust temperatures from anywhere and receive alerts about system issues or maintenance needs.
+					</p>
+					<p class="text-darkgray mb-4">
+						Many Wi-Fi thermostats also integrate with smart home ecosystems like Amazon Alexa, Google Home, or Apple
+						HomeKit, enabling voice control and automation with other smart devices. This integration creates a more
+						connected and convenient home environment that adapts to your lifestyle.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Installation Process -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR INSTALLATION PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, step-by-step process to ensure your new thermostat is properly installed and
+					configured.
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto">
+				<!-- Step 1: Consultation and Selection -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">1</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Consultation and Selection</h3>
+						<p class="text-darkgray mb-4">
+							We begin by discussing your specific needs, preferences, and budget to help you select the right
+							thermostat for your home. Our technicians will explain the features and benefits of different models and
+							recommend options that are compatible with your HVAC system and align with your goals.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 2: Professional Installation -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">2</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Professional Installation</h3>
+						<p class="text-darkgray mb-4">
+							Our certified technicians will carefully remove your old thermostat and install the new one according to
+							manufacturer specifications. We ensure proper wiring connections, secure mounting, and compatibility with
+							your HVAC system to prevent any issues or damage.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 3: System Configuration -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">3</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">System Configuration</h3>
+						<p class="text-darkgray mb-4">
+							After installation, we'll configure your new thermostat to work optimally with your HVAC system. This
+							includes setting up the correct system type, stages of heating and cooling, fan operation, and any other
+							technical parameters specific to your equipment.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 4: Programming and Setup -->
+				<div class="flex flex-col md:flex-row items-start mb-12">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">4</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Programming and Setup</h3>
+						<p class="text-darkgray mb-4">
+							For programmable and smart thermostats, we'll help you set up schedules, preferences, and any connectivity
+							features. This includes connecting Wi-Fi thermostats to your home network, installing and setting up
+							smartphone apps, and integrating with any smart home systems you may have.
+						</p>
+					</div>
+				</div>
+
+				<!-- Step 5: Education and Support -->
+				<div class="flex flex-col md:flex-row items-start">
+					<div
+						class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 md:mr-6 mx-auto md:mx-0 mb-4 md:mb-0">
+						<span class="text-white text-2xl font-bold">5</span>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-primary mb-3 text-center md:text-left">Education and Support</h3>
+						<p class="text-darkgray mb-4">
+							We'll show you how to use all the features of your new thermostat, answer any questions you may have, and
+							provide tips for maximizing energy efficiency and comfort. Our support doesn't end with installation—we're
+							always available to help with any questions or issues that may arise in the future.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Popular Thermostat Brands -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">POPULAR THERMOSTAT BRANDS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We install and service a wide range of quality thermostat brands to meet your specific needs.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Nest -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Nest</h3>
+					<p class="text-darkgray mb-4">
+						Google Nest thermostats are known for their learning capabilities, sleek design, and intuitive interfaces.
+						These smart thermostats learn your preferences over time and automatically create schedules based on your
+						habits, helping to maximize both comfort and energy efficiency.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Learning technology
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Sleek, modern design
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Google Home integration
+						</li>
+					</ul>
+				</div>
+
+				<!-- Ecobee -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ecobee</h3>
+					<p class="text-darkgray mb-4">
+						Ecobee smart thermostats feature built-in voice control with Amazon Alexa and optional room sensors that
+						help manage hot and cold spots in your home. These advanced thermostats provide detailed energy reports and
+						intelligent comfort settings based on occupancy and weather conditions.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Room sensors
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Built-in voice assistant
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Detailed energy reporting
+						</li>
+					</ul>
+				</div>
+
+				<!-- Honeywell -->
+				<div class="bg-lightgray p-8 rounded-lg shadow-md">
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Honeywell</h3>
+					<p class="text-darkgray mb-4">
+						Honeywell offers a wide range of thermostats, from basic programmable models to advanced Wi-Fi-enabled
+						options. Known for their reliability and user-friendly interfaces, Honeywell thermostats provide flexible
+						programming options and compatibility with most HVAC systems.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Extensive product range
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Proven reliability
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Wide system compatibility
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Upgrade Your Home's Comfort and Efficiency?"
+		text="Contact Alltek Services today to schedule a professional thermostat installation. Our expert technicians will help you select and install the perfect thermostat for your Belton, TX home, ensuring improved comfort, convenience, and energy savings."
+		button="Schedule Installation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

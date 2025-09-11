@@ -1,0 +1,214 @@
+{
+  "@context": "https:\/\/schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve Killeen, Belton, Temple, Harker Heights, Bell County, Salado, Georgetown, Round Rock, Waco, Copperas Cove, and other nearby communities. If you're unsure if we service your area, please contact us."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What payment methods do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept cash, checks, and all major credit cards. We also offer financing options for larger installations and replacements to help make your HVAC investment more manageable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Alltek Services is fully licensed (TACLB31231E) and insured. Our technicians are certified professionals with extensive training and experience in HVAC systems. We maintain all required licenses and insurance coverage to protect our customers and provide peace of mind."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer warranties on your work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we stand behind our work with comprehensive warranties. All new installations come with manufacturer warranties, and we provide labor warranties on our installations and repairs. The specific warranty terms vary by service and equipment, so please ask your technician for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I schedule a service appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can schedule a service appointment by calling our office at PHONE_NUMBER, filling out the contact form on our website, or sending us an email. Our customer service team will get back to you promptly to confirm your appointment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer emergency HVAC services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer 24-hour scheduling for your convenience, but we do not provide weekend or after-hours service. Our regular business hours are Monday through Friday, 8:00 AM to 5:00 PM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide free estimates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide free estimates for new installations or replacements only. We do not offer free estimates on diagnostics and repairs. Contact us to schedule an appointment, and one of our technicians will assess your needs and provide a detailed estimate with no obligation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond to service calls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For emergency service, we aim to respond within 24 hours during the week, however we are not open on the weekends. During seasonal peak periods, response times may be longer due to high demand. We prioritize calls based on severity and schedule availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I expect during a service visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our technician will arrive in a company vehicle, wearing a uniform with proper identification. They'll discuss your concerns, inspect your system, diagnose any issues, and explain their findings. Before performing any work, they'll provide a clear explanation of what needs to be done and the associated costs. After completing the service, they'll clean up the work area and review the work performed with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I replace my air conditioner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most air conditioning systems last between 10-15 years with proper maintenance. However, if your system requires frequent repairs, has significantly reduced efficiency, or can't maintain comfortable temperatures, it might be time for a replacement regardless of age. Our technicians can assess your system and help you make an informed decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my air conditioner not cooling properly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are several possible reasons: dirty air filters restricting airflow, low refrigerant levels due to leaks, thermostat issues, dirty condenser coils, or a malfunctioning compressor. Regular maintenance can prevent many of these issues. If you're experiencing cooling problems, schedule a service call for proper diagnosis and repair."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size air conditioner do I need for my home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The correct size depends on multiple factors including your home's square footage, insulation levels, window efficiency, ceiling height, local climate, and more. An improperly sized unit can lead to inefficiency, inadequate cooling, and premature system failure. Our technicians perform detailed load calculations to determine the optimal size for your specific home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I improve my air conditioner's efficiency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Regular maintenance is key to efficiency. Additionally, change air filters monthly during heavy use periods, keep outdoor units clear of debris, use a programmable thermostat, ensure proper insulation, seal air leaks in your home, use ceiling fans to improve air circulation, and keep blinds closed during the hottest parts of the day to reduce heat gain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a gas and electric furnace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gas furnaces burn natural gas to create heat and typically provide warmer air output and lower operational costs, especially in colder climates. Electric furnaces use electric heating elements, have lower upfront costs, require less maintenance, and don't require gas lines. They're typically more expensive to operate but can be more efficient in milder climates like Central Texas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my furnace making strange noises?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Different noises indicate different problems: banging or popping could be delayed ignition or expanding\/contracting ductwork; whistling often indicates air leaks; scraping might be a blower wheel issue; rumbling could suggest dirty burners; and high-pitched squealing typically points to belt or motor bearing problems. Any unusual noise warrants professional inspection to prevent further damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I change my furnace filter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For standard 1-inch filters, replacement every 1-3 months is recommended, depending on usage, pets, allergies, and air quality. Thicker premium filters (3-5 inches) may last 6-12 months. Check your filter monthly during heavy use seasons and replace it when it appears dirty. Regular replacement improves efficiency, air quality, and system longevity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What maintenance does my heating system need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Annual professional maintenance is recommended before the heating season begins. This includes inspecting heat exchangers for cracks, testing safety controls, checking electrical connections, lubricating moving parts, cleaning burners and components, checking gas pressure and connections, and ensuring proper airflow. Between professional services, regularly change filters and keep the area around your furnace clean."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I schedule HVAC maintenance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend professional maintenance twice a year: in spring for your cooling system and in fall for your heating system. This ensures your equipment is ready for the upcoming season of heavy use. Regular maintenance extends system life, improves efficiency, prevents breakdowns, and maintains warranty coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a maintenance visit include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our comprehensive maintenance includes: inspecting and cleaning components, checking refrigerant levels, testing electrical connections and controls, lubricating moving parts, checking thermostat operation, inspecting condensate drainage, checking air filters, testing system operation in all modes, and identifying any potential issues before they become major problems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer maintenance plans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer several maintenance plan options to fit different needs and budgets. Our plans include priority scheduling, discounts on repairs, regular maintenance visits, and extended warranty coverage. Maintenance plan members also receive special pricing on system replacements and accessories. Contact us for details on our current maintenance plan offerings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What maintenance can I do myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Homeowners can perform several basic maintenance tasks: regularly changing air filters, keeping outdoor units clear of debris, ensuring indoor vents aren't blocked, cleaning visible dust from registers and returns, monitoring thermostat operation, and checking for unusual noises or odors. However, technical maintenance involving electrical components, refrigerant, or internal system parts should be left to professionals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I improve my home's indoor air quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Improving indoor air quality involves multiple approaches: installing high-efficiency air filters, adding air purification systems, using UV light systems to kill airborne pathogens, ensuring proper ventilation, controlling humidity levels with humidifiers or dehumidifiers, regular duct cleaning, and routine HVAC maintenance. Our technicians can assess your home's specific needs and recommend appropriate solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I have my air ducts cleaned?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The National Air Duct Cleaners Association recommends cleaning air ducts every 3-5 years under normal conditions. However, you might need more frequent cleaning if you have pets, allergies, recent home renovations, water damage, or visible mold growth. Regular inspections can help determine when cleaning is necessary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the ideal humidity level for my home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The ideal indoor humidity level is around 55%. Levels that are too low can cause dry skin, irritated sinuses, and damage to wood furniture. Levels that are too high can promote mold growth, dust mites, and bacteria. In Central Texas, our humid climate often requires dehumidification, especially during summer months. We can help you select the right humidity control solutions for your home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are UV light systems effective for air purification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, UV light systems installed in your HVAC system can effectively kill or inactivate airborne pathogens including bacteria, viruses, and mold spores as air passes through the system. They're particularly effective when combined with high-efficiency filtration. UV systems require annual lamp replacement to maintain effectiveness. They don't remove particles or chemicals from the air, so they work best as part of a comprehensive air quality strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What MERV rating should my air filter have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MERV (Minimum Efficiency Reporting Value) ratings range from 1-20, with higher numbers indicating better filtration. For most residential systems, filters with MERV 8-13 provide a good balance between filtration and airflow. Higher MERV ratings (14+) offer superior filtration but may restrict airflow in systems not designed for them. Our technicians can recommend the optimal filter rating for your specific system and air quality needs."
+      }
+    }
+  ]
+}

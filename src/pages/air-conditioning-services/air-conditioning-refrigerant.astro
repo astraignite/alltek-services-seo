@@ -1,0 +1,351 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>AC Refrigerant Services in Belton, TX | Alltek Services</title>
+	<meta name="title" content="AC Refrigerant Services in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional AC refrigerant services in Belton, TX. Refrigerant leak detection, repair, and recharging by certified technicians. EPA-compliant handling and disposal."/>
+	<meta name="keywords"
+	      content="AC refrigerant Belton TX, refrigerant leak, freon recharge, R-410A, R-22 replacement, AC not cooling, low refrigerant, refrigerant leak detection, EPA certified refrigerant, Central Texas AC service"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url"
+	      content="https://www.alltek-services.com/air-conditioning-services/air-conditioning-refrigerant/"/>
+	<meta property="og:title" content="AC Refrigerant Services in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional AC refrigerant services in Belton, TX. Refrigerant leak detection, repair, and recharging by certified technicians. EPA-compliant handling and disposal."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url"
+	      content="https://www.alltek-services.com/air-conditioning-services/air-conditioning-refrigerant/"/>
+	<meta property="twitter:title" content="AC Refrigerant Services in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional AC refrigerant services in Belton, TX. Refrigerant leak detection, repair, and recharging by certified technicians. EPA-compliant handling and disposal."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/services/air-conditioning.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/air-conditioning-services/air-conditioning-refrigerant/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/air-conditioning-services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Air Conditioning
+							Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">AC Refrigerant Services</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">AC REFRIGERANT SERVICES</h1>
+				<p class="text-xl mb-8">Professional refrigerant leak detection, repair, and recharging services by
+					EPA-certified technicians.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">REFRIGERANT SERVICES</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						EXPERT REFRIGERANT HANDLING FOR OPTIMAL COOLING
+					</h3>
+					<p class="text-darkgray mb-4">
+						Refrigerant is the lifeblood of your air conditioning system, responsible for absorbing heat from inside
+						your home and releasing it outside. When your system is low on refrigerant, it can't effectively cool your
+						home, leading to decreased comfort and increased energy bills.
+					</p>
+					<p class="text-darkgray mb-4">
+						At Alltek Services, our EPA-certified technicians are trained to safely handle all types of refrigerants,
+						including R-410A and R-22. We provide comprehensive refrigerant services, including leak detection, repair,
+						and proper recharging to ensure your system operates at peak efficiency.
+					</p>
+					<p class="text-darkgray mb-8">
+						Unlike some companies that simply "top off" refrigerant levels, we take the time to identify and repair the
+						source of any leaks. This approach not only protects the environment but also saves you money in the long
+						run by preventing repeated refrigerant charges.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule Service
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/ac-refrigerant_600w.jpg"
+						alt="HVAC technician checking AC refrigerant levels"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Signs of Refrigerant Issues -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">SIGNS OF REFRIGERANT ISSUES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Recognizing the signs of refrigerant problems early can help prevent more serious damage to your AC system:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Insufficient Cooling -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Insufficient Cooling</h3>
+					<p class="text-darkgray mb-4">
+						If your AC is running but not cooling effectively, or if it takes much longer than usual to reach the
+						desired temperature, low refrigerant levels could be the cause.
+					</p>
+				</div>
+
+				<!-- Ice Formation -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Ice Formation</h3>
+					<p class="text-darkgray mb-4">
+						Ice buildup on the evaporator coil or refrigerant lines is a common sign of low refrigerant levels. This
+						occurs because the reduced pressure in the system causes the temperature to drop below freezing.
+					</p>
+				</div>
+
+				<!-- Hissing Sounds -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 017.072 0m-9.9-2.828a9 9 0 0112.728 0"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Hissing Sounds</h3>
+					<p class="text-darkgray mb-4">
+						A hissing or bubbling sound coming from your AC unit could indicate a refrigerant leak. These sounds occur
+						as the refrigerant escapes from the system under pressure.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Refrigerant Services -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR REFRIGERANT SERVICES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We provide comprehensive refrigerant services to keep your AC system running efficiently:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+				<div>
+					<h3 class="text-xl font-bold text-primary mb-6 border-b border-accent pb-2">Leak Detection & Repair</h3>
+					<p class="text-darkgray mb-4">
+						Using advanced electronic leak detectors and UV dye testing, our technicians can pinpoint even the smallest
+						refrigerant leaks. Once identified, we repair the leak at its source to prevent future refrigerant loss.
+					</p>
+					<ul class="space-y-4 mt-6">
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Electronic leak detection</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>UV dye testing</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Pressure testing</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Coil and line repairs</span>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<h3 class="text-xl font-bold text-primary mb-6 border-b border-accent pb-2">Refrigerant Recharging</h3>
+					<p class="text-darkgray mb-4">
+						After repairing any leaks, we properly recharge your system with the correct type and amount of refrigerant
+						according to manufacturer specifications. This ensures optimal system performance and efficiency.
+					</p>
+					<ul class="space-y-4 mt-6">
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>R-410A refrigerant service</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>R-22 alternatives and conversion</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>Precise charging to manufacturer specs</span>
+						</li>
+						<li class="flex items-start">
+							<svg class="w-6 h-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+							</svg>
+							<span>System performance testing</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="mt-12 bg-lightgray p-8 rounded-lg border-l-4 border-accent">
+				<h3 class="text-xl font-bold text-primary mb-4">EPA Certified Technicians</h3>
+				<p class="text-darkgray mb-4">
+					All of our technicians are EPA certified to handle refrigerants safely and legally. We follow strict protocols
+					for refrigerant recovery, recycling, and disposal to protect the environment and comply with federal
+					regulations.
+				</p>
+				<p class="text-darkgray">
+					When you choose Alltek Services for your refrigerant needs, you can be confident that the job will be done
+					right, with minimal environmental impact and maximum system performance.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Experiencing cooling issues?"
+		text="Don't let refrigerant problems leave you sweating. Contact our EPA-certified technicians for professional diagnosis and repair."
+		button="Schedule your service"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

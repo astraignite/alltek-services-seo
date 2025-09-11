@@ -1,0 +1,530 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Experience from '../components/Experience.astro';
+import ServiceProcess from '../components/ServiceProcess.astro';
+import GoogleHead from "../components/GoogleHead.astro";
+import settings from "../settings";
+
+const ldLocalBusiness = {
+	"@context": "https://schema.org",
+	"@type": "HVACBusiness",
+	"name": "Alltek Services",
+	"image": "/images/Logo.png",
+	"url": "https://www.alltek-services.com/about/",
+	"telephone": settings.phoneMainRaw,
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "1181 FM-2271 Hwy",
+		"addressLocality": "Belton",
+		"addressRegion": "TX",
+		"postalCode": "76513",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 31.1186612,
+		"longitude": -97.4701785
+	},
+	"openingHoursSpecification": [
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			],
+			"opens": "08:00",
+			"closes": "18:00"
+		},
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": "Saturday",
+			"opens": "09:00",
+			"closes": "16:00"
+		}
+	],
+	"sameAs": [
+		"https://www.facebook.com/Alltekhvacservices/",
+		"https://www.instagram.com/alltekhvacservices/?hl=en",
+		"https://www.yelp.com/biz/alltek-services-belton",
+		"https://www.angi.com/companylist/us/tx/belton/alltek-services-reviews-7780573.htm",
+		"https://www.google.com/maps/place/Alltek+Services/@31.1186612,-97.4701785,17z/"
+	],
+	"description": "Alltek Services is Central Texas's premier HVAC company providing reliable heating, ventilation, and air conditioning solutions for residential and commercial properties.",
+	"foundingDate": "1993",
+	"founders": [
+		{
+			"@type": "Person",
+			"name": "Alltek Services Founder"
+		}
+	],
+	"areaServed": {
+		"@type": "GeoCircle",
+		"geoMidpoint": {
+			"@type": "GeoCoordinates",
+			"latitude": 31.1186612,
+			"longitude": -97.4701785
+		},
+		"geoRadius": "50000"
+	}
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>About Alltek Services | Trusted HVAC Experts in Belton, TX</title>
+	<meta name="title" content="About Alltek Services | Trusted HVAC Experts in Belton, TX"/>
+	<meta name="description"
+	      content="Learn about Alltek Services, Central Texas's premier HVAC company. Our certified technicians provide reliable heating and cooling solutions with a customer-first approach."/>
+	<meta name="keywords"
+	      content="HVAC company Belton TX, about Alltek Services, HVAC technicians, heating and cooling experts, air conditioning company history, trusted HVAC contractor, Belton HVAC team, Central Texas HVAC company"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/about/"/>
+	<meta property="og:title" content="About Alltek Services | Trusted HVAC Experts in Belton, TX"/>
+	<meta property="og:description"
+	      content="Learn about Alltek Services, Central Texas's premier HVAC company. Our certified technicians provide reliable heating and cooling solutions with a customer-first approach."/>
+	<meta property="og:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/about/"/>
+	<meta property="twitter:title" content="About Alltek Services | Trusted HVAC Experts in Belton, TX"/>
+	<meta property="twitter:description"
+	      content="Learn about Alltek Services, Central Texas's premier HVAC company. Our certified technicians provide reliable heating and cooling solutions with a customer-first approach."/>
+	<meta property="twitter:image" content="https://www.alltek-services.com/images/fleet/service-fleet.jpg"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/about/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Local Business -->
+	<script type="application/ld+json" set:html={JSON.stringify(ldLocalBusiness)}/>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "About Us",
+					"item": "https://www.alltek-services.com/about/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">About Us</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">ABOUT ALLTEK SERVICES</h1>
+				<p class="text-xl mb-8">Your trusted partner for all heating, ventilation, and air conditioning needs in Belton
+					and the Central Texas area.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Company Story -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">OUR STORY</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						SERVING CENTRAL TEXAS SINCE 1993
+					</h3>
+					<p class="text-darkgray mb-4">
+						Founded in 1993, Alltek Services began with a simple mission: to provide honest, reliable, and high-quality
+						HVAC services to the residents and businesses of Central Texas. What started as a small family operation has
+						grown into one of the region's most trusted heating and cooling companies.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our founder recognized a need in the community for an HVAC company that prioritized customer satisfaction
+						above all else. Too often, homeowners and business owners were left frustrated by unreliable service,
+						unclear pricing, and poor workmanship. Alltek Services was established to change that narrative.
+					</p>
+					<p class="text-darkgray mb-4">
+						Over the years, we've built our reputation on integrity, expertise, and exceptional customer care. We've
+						grown not through aggressive marketing, but through word-of-mouth recommendations from satisfied customers
+						who appreciate our honest approach and quality work.
+					</p>
+					<p class="text-darkgray mb-8">
+						Today, we continue to uphold the values that guided us from the beginning. Every member of our team is
+						committed to providing the highest level of service, ensuring that your comfort needs are met with
+						professionalism and care.
+					</p>
+				</div>
+
+				<div class="relative">
+					<img
+						src="/images/fleet/service-fleet.jpg"
+						alt="Alltek Services HVAC Service Fleet in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+					<div class="absolute -bottom-6 -left-6 bg-secondary text-white p-6 rounded-lg shadow-lg max-w-xs">
+						<p class="font-bold text-xl mb-2">30+ Years</p>
+						<p>Serving Central Texas with pride and dedication</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Mission & Values -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR MISSION & VALUES</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					At Alltek Services, we're guided by a set of core principles that define who we are and how we operate.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">INTEGRITY</h3>
+					<p class="text-darkgray text-center">
+						We believe in honest communication, transparent pricing, and doing what's right for our customers, even when
+						it's not the most profitable option. Our recommendations are always based on what you truly need, not what
+						will generate the highest revenue.
+					</p>
+				</div>
+
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">EXCELLENCE</h3>
+					<p class="text-darkgray text-center">
+						We strive for excellence in everything we do, from the quality of our installations and repairs to the
+						cleanliness of our work areas and the professionalism of our staff. We're not satisfied until you're
+						completely happy with our work.
+					</p>
+				</div>
+
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">COMMUNITY</h3>
+					<p class="text-darkgray text-center">
+						We're proud to be part of the Central Texas community. We believe in giving back through charitable
+						initiatives, supporting local businesses, and providing employment opportunities that strengthen our local
+						economy.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Team -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR EXPERT TEAM</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our team of certified technicians brings years of experience and a commitment to excellence to every job.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="aspect-w-1 aspect-h-1 mb-6">
+						<img
+							src="/images/team/technician_347w.jpg"
+							alt="HVAC Technician at Alltek Services"
+							class="rounded-lg object-cover w-full h-64"
+							width="347"
+							height="256"
+						/>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Certified Technicians</h3>
+					<p class="text-darkgray mb-4">
+						Our technicians are NATE-certified and undergo continuous training to stay current with the latest HVAC
+						technologies and techniques. They're equipped to handle any heating or cooling challenge with skill and
+						precision.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							NATE Certification
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Ongoing Technical Training
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Background Checked
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Drug Tested
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="aspect-w-1 aspect-h-1 mb-6">
+						<img
+							src="/images/process/consultation_347w.jpg"
+							alt="HVAC Consultation with Alltek Services"
+							class="rounded-lg object-cover w-full h-64"
+							width="347"
+							height="256"
+						/>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Customer Service Team</h3>
+					<p class="text-darkgray mb-4">
+						Our customer service representatives are knowledgeable, friendly, and committed to ensuring your experience
+						with Alltek Services exceeds your expectations. They're here to answer your questions and coordinate our
+						services to meet your needs.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							24/7 Availability
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							HVAC Knowledge
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Prompt Response
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Courteous Service
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="aspect-w-1 aspect-h-1 mb-6">
+						<img
+							src="/images/team/technician_347w.jpg"
+							alt="HVAC Quality Parts at Alltek Services"
+							class="rounded-lg object-cover w-full h-64"
+							width="347"
+							height="256"
+						/>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-2">Management Team</h3>
+					<p class="text-darkgray mb-4">
+						Our leadership team brings 30 years of combined experience in the HVAC industry. They're dedicated to
+						maintaining the highest standards of service and ensuring that Alltek Services remains at the forefront of
+						HVAC excellence.
+					</p>
+					<ul class="space-y-2 text-darkgray">
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Industry Veterans
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Business Excellence
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Community Focused
+						</li>
+						<li class="flex items-start">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+							     viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd"
+								      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+								      clip-rule="evenodd"/>
+							</svg>
+							Quality Focused
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience Section -->
+	<Experience/>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-6 font-heading">READY TO EXPERIENCE THE ALLTEK DIFFERENCE?</h2>
+			<p class="text-xl mb-8 max-w-3xl mx-auto">
+				Contact us today to schedule a service appointment or to learn more about how we can help with your heating and
+				cooling needs.
+			</p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a
+					href="/contact"
+					class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Contact Us
+				</a>
+				<a
+					href="/services"
+					class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Explore Our Services
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>

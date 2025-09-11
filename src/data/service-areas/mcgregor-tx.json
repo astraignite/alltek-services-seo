@@ -1,0 +1,131 @@
+{
+  "cityName": "McGregor",
+  "citySlug": "mcgregor-tx",
+  "state": "TX",
+  "zipCodes": [
+    "00000"
+  ],
+  "countyName": "Bell County",
+  "latitude": 31.0557,
+  "longitude": -97.4647,
+  "population": 20000,
+  "description": "McGregor is a city in Bell County, Texas, United States.",
+  "services": [
+    {
+      "name": "AC Installation",
+      "slug": "ac-installation",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "AC Repair",
+      "slug": "ac-repair",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "AC Maintenance",
+      "slug": "ac-maintenance",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Emergency AC Repair",
+      "slug": "emergency-ac-repair",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Ductless Mini-Split Systems",
+      "slug": "ductless-mini-split",
+      "category": "air-conditioning"
+    },
+    {
+      "name": "Furnace Installation",
+      "slug": "furnace-installation",
+      "category": "heating"
+    },
+    {
+      "name": "Furnace Repair",
+      "slug": "furnace-repair",
+      "category": "heating"
+    },
+    {
+      "name": "Heat Pump Services",
+      "slug": "heat-pump-services",
+      "category": "heating"
+    },
+    {
+      "name": "Emergency Heating Repair",
+      "slug": "emergency-heating-repair",
+      "category": "heating"
+    },
+    {
+      "name": "Heating Maintenance",
+      "slug": "heating-maintenance",
+      "category": "heating"
+    },
+    {
+      "name": "HVAC Installation",
+      "slug": "hvac-installation",
+      "category": "installation"
+    },
+    {
+      "name": "HVAC Replacement",
+      "slug": "hvac-replacement",
+      "category": "installation"
+    },
+    {
+      "name": "Ductwork Installation",
+      "slug": "ductwork-installation",
+      "category": "installation"
+    },
+    {
+      "name": "Thermostat Installation",
+      "slug": "thermostat-installation",
+      "category": "installation"
+    },
+    {
+      "name": "Air Purification Systems",
+      "slug": "air-purification-systems",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Air Quality Testing",
+      "slug": "air-quality-testing",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Humidifiers & Dehumidifiers",
+      "slug": "humidifiers-dehumidifiers",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "Duct Cleaning",
+      "slug": "duct-cleaning",
+      "category": "indoor-air-quality"
+    },
+    {
+      "name": "UV Light Installation",
+      "slug": "uv-light-installation",
+      "category": "indoor-air-quality"
+    }
+  ],
+  "seo": {
+    "title": "HVAC Services in McGregor, TX | Alltek Services",
+    "metaDescription": "Professional HVAC services in McGregor, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving McGregor and surrounding areas.",
+    "keywords": [
+      "HVAC McGregor TX",
+      "air conditioning McGregor",
+      "heating services McGregor",
+      "furnace repair McGregor",
+      "AC installation McGregor",
+      "indoor air quality McGregor",
+      "HVAC contractor McGregor"
+    ],
+    "canonicalUrl": "https://www.alltek-services.com/service-areas/mcgregor-tx/",
+    "ogTitle": "HVAC Services in McGregor, TX | Alltek Services",
+    "ogDescription": "Professional HVAC services in McGregor, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving McGregor and surrounding areas.",
+    "ogImage": "https://www.alltek-services.com/images/optimized/fleet/service-fleet.webp",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "HVAC Services in McGregor, TX | Alltek Services",
+    "twitterDescription": "Professional HVAC services in McGregor, TX including air conditioning, heating, and indoor air quality solutions. Trusted local experts serving McGregor and surrounding areas.",
+    "twitterImage": "https://www.alltek-services.com/images/optimized/fleet/service-fleet.webp"
+  }
+}

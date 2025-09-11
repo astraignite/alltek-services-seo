@@ -1,0 +1,739 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import ComfortCare from '../../components/ComfortCare.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>HVAC Replacement in Belton, TX | Alltek Services</title>
+	<meta name="title" content="HVAC Replacement in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Professional HVAC replacement services in Belton, TX. Our expert technicians provide complete system replacements to improve comfort, efficiency, and reliability in your home."/>
+	<meta name="keywords"
+	      content="HVAC replacement Belton TX, heating and cooling replacement, AC replacement, furnace replacement, system upgrade, energy efficient HVAC, HVAC installation, heating system replacement, air conditioning replacement, Central Texas HVAC replacement"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/hvac-installation/hvac-replacement/"/>
+	<meta property="og:title" content="HVAC Replacement in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Professional HVAC replacement services in Belton, TX. Our expert technicians provide complete system replacements to improve comfort, efficiency, and reliability in your home."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/hvac-installation/heating-system-installation.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/hvac-installation/hvac-replacement/"/>
+	<meta property="twitter:title" content="HVAC Replacement in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Professional HVAC replacement services in Belton, TX. Our expert technicians provide complete system replacements to improve comfort, efficiency, and reliability in your home."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/hvac-installation/heating-system-installation.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/hvac-installation/hvac-replacement/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "HVAC Replacement",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "HVAC Replacement",
+			"description": "Professional HVAC replacement services for residential and commercial properties. Our comprehensive services include system assessment, removal of old equipment, and installation of new, energy-efficient heating and cooling systems.",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "HVAC Installation",
+					"item": "https://www.alltek-services.com/hvac-installation/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "HVAC Replacement",
+					"item": "https://www.alltek-services.com/hvac-installation/hvac-replacement/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/hvac-installation" class="text-darkgray hover:text-accent ml-1 md:ml-2">HVAC Installation</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">HVAC Replacement</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HVAC REPLACEMENT</h1>
+				<p class="text-xl mb-8">Expert HVAC replacement services to upgrade your home's comfort, efficiency, and
+					reliability in Belton, TX.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL HVAC REPLACEMENT</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						COMPREHENSIVE HEATING AND COOLING SYSTEM REPLACEMENT
+					</h3>
+					<p class="text-darkgray mb-4">
+						Is your HVAC system showing signs of age, requiring frequent repairs, or struggling to maintain comfortable
+						temperatures? At Alltek Services, we provide professional HVAC replacement services to help you upgrade to a
+						more efficient, reliable, and effective heating and cooling system.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our team of certified technicians has extensive experience replacing all types of HVAC systems, including
+						furnaces, air conditioners, heat pumps, and complete systems. We work with leading manufacturers to provide
+						you with high-quality, energy-efficient options that fit your specific needs and budget.
+					</p>
+					<p class="text-darkgray mb-8">
+						From helping you select the right replacement system to removing your old equipment and installing the new
+						system, our experts handle every aspect of the process with professionalism and attention to detail,
+						ensuring a smooth transition to improved comfort in your home.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule HVAC Replacement
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/services/hvac-replacement/hvac-replacement.jpg"
+						alt="Professional HVAC replacement service in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="608"
+						height="416"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Signs You Need HVAC Replacement -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">SIGNS YOU NEED HVAC REPLACEMENT</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Recognizing when it's time to replace your HVAC system can help you avoid costly emergency replacements and
+					extended periods of discomfort.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Age of System -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Aging System</h3>
+					<p class="text-darkgray mb-4">
+						Most HVAC systems have a lifespan of 10-15 years. If your system is approaching or has exceeded this age
+						range, it's likely operating at reduced efficiency and may be prone to more frequent breakdowns.
+					</p>
+				</div>
+
+				<!-- Frequent Repairs -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Frequent Repairs</h3>
+					<p class="text-darkgray mb-4">
+						If you're calling for repairs multiple times a year or facing a major repair that costs more than half the
+						price of a new system, replacement is often more cost-effective in the long run.
+					</p>
+				</div>
+
+				<!-- Rising Energy Bills -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Rising Energy Bills</h3>
+					<p class="text-darkgray mb-4">
+						If your energy bills are steadily increasing despite consistent usage, your HVAC system may be losing
+						efficiency. Newer models can be up to 50% more efficient, potentially saving you significant money on
+						utility costs.
+					</p>
+				</div>
+
+				<!-- Inconsistent Temperatures -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Inconsistent Temperatures</h3>
+					<p class="text-darkgray mb-4">
+						If some rooms are too hot while others are too cold, or if your system struggles to maintain the temperature
+						set on your thermostat, it may be time for a replacement that can provide more consistent comfort.
+					</p>
+				</div>
+
+				<!-- Unusual Noises or Odors -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 01-.707-7.07m-2.122 9.9a9 9 0 010-12.728"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Unusual Noises or Odors</h3>
+					<p class="text-darkgray mb-4">
+						Strange sounds like grinding, banging, or squealing, or unusual odors coming from your HVAC system can
+						indicate serious mechanical problems that may warrant replacement rather than repair.
+					</p>
+				</div>
+
+				<!-- Outdated Technology -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Outdated Technology</h3>
+					<p class="text-darkgray mb-4">
+						Older systems lack the advanced features and efficiency of modern HVAC technology. Upgrading can provide
+						benefits like smart thermostats, zoned cooling and heating, improved air quality, and significant energy
+						savings.
+					</p>
+				</div>
+			</div>
+
+			<div class="mt-12 text-center">
+				<p class="text-lg text-darkgray max-w-3xl mx-auto mb-8">
+					If you're experiencing any of these signs, our experts can help you evaluate your system and determine if
+					replacement is the right choice for your home and budget.
+				</p>
+				<a
+					href="/contact"
+					class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+				>
+					Schedule a Consultation
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our HVAC Replacement Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR HVAC REPLACEMENT PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a comprehensive, step-by-step process to ensure your new HVAC system is properly selected,
+					installed, and set up for optimal performance.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Initial Assessment</h3>
+								<p class="text-darkgray">
+									We begin with a thorough evaluation of your current system, home layout, insulation, and specific
+									comfort needs to determine the right replacement options.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Selection</h3>
+								<p class="text-darkgray">
+									Our experts help you choose the appropriate type, size, and efficiency rating for your new HVAC system
+									based on your home's requirements and your budget.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Removal of Old System</h3>
+								<p class="text-darkgray">
+									We carefully remove your existing HVAC equipment, ensuring proper disposal according to environmental
+									regulations and preparing the space for the new system.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Professional Installation</h3>
+								<p class="text-darkgray">
+									Our certified technicians install your new HVAC system according to manufacturer specifications and
+									industry best practices, ensuring proper connections and setup.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Testing</h3>
+								<p class="text-darkgray">
+									After installation, we thoroughly test your new HVAC system to ensure it's operating correctly,
+									efficiently, and safely before considering the job complete.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								6
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Customer Education</h3>
+								<p class="text-darkgray">
+									We provide detailed information on how to operate and maintain your new system, including thermostat
+									programming, filter changes, and maintenance recommendations.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/consulting_600w.jpg"
+						alt="HVAC replacement technician installing a new system in Belton, TX"
+						class="rounded-lg shadow-xl w-full h-auto object-cover mb-8"
+						width="600"
+						height="400"
+					/>
+					<div class="bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Commitment</h3>
+						<p class="text-darkgray">
+							We are committed to providing high-quality HVAC replacement services that meet or exceed industry
+							standards. Our certified technicians take pride in their workmanship and attention to detail, ensuring
+							your new heating and cooling system delivers reliable, efficient performance for years to come.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Benefits of HVAC Replacement -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">BENEFITS OF HVAC REPLACEMENT</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						WHY UPGRADING YOUR HVAC SYSTEM IS A SMART INVESTMENT
+					</h3>
+					<p class="text-darkgray mb-4">
+						Replacing your aging or inefficient HVAC system offers numerous benefits that can improve your comfort,
+						reduce your energy costs, and enhance your home's value. Modern HVAC systems incorporate advanced technology
+						and energy-efficient designs that provide superior performance compared to older models.
+					</p>
+					<p class="text-darkgray mb-4">
+						By investing in a new HVAC system, you can enjoy more consistent temperatures throughout your home, improved
+						indoor air quality, and quieter operation. Additionally, many new systems offer smart features that allow
+						for remote control and programming, helping you optimize comfort while minimizing energy usage.
+					</p>
+					<p class="text-darkgray mb-8">
+						Perhaps most importantly, replacing an aging HVAC system before it fails completely allows you to make a
+						thoughtful, informed decision rather than rushing to replace it during an emergency situation when options
+						may be limited and costs may be higher.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule HVAC Replacement
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Key Benefits</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Improved energy efficiency and lower utility bills</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Enhanced comfort with more consistent temperatures</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Better indoor air quality with improved filtration</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Quieter operation with advanced sound-dampening technology</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Smart features for remote control and programming</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Fewer repairs and lower maintenance costs</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Increased home value and marketability</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+								</svg>
+								<span>Potential tax credits and utility rebates</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- When to Replace Your HVAC System -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">WHEN TO REPLACE YOUR HVAC SYSTEM</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Timing your HVAC replacement right can save you money and prevent the inconvenience of unexpected system
+					failures.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Before Complete Failure -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Before Complete Failure</h3>
+					</div>
+					<p class="text-darkgray">
+						Ideally, replace your system before it fails completely. This allows you to research options, compare
+						prices, and schedule the replacement at a convenient time rather than during an emergency.
+					</p>
+				</div>
+
+				<!-- During Off-Season -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">During Off-Season</h3>
+					</div>
+					<p class="text-darkgray">
+						Spring and fall are often the best times to replace your HVAC system. HVAC companies are typically less busy
+						during these seasons, which may result in better pricing and more flexible scheduling.
+					</p>
+				</div>
+
+				<!-- When Repair Costs Mount -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">When Repair Costs Mount</h3>
+					</div>
+					<p class="text-darkgray">
+						Follow the $5,000 rule: multiply the age of your equipment by the repair cost. If it exceeds $5,000,
+						replacement is often more economical than repair. For example, if your 10-year-old system needs a $600
+						repair, that's $6,000—suggesting replacement is the better option.
+					</p>
+				</div>
+
+				<!-- During Home Renovations -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">During Home Renovations</h3>
+					</div>
+					<p class="text-darkgray">
+						If you're already renovating your home, it may be an ideal time to replace your HVAC system, especially if
+						the renovation involves changes to your home's layout, insulation, or ductwork.
+					</p>
+				</div>
+
+				<!-- Before Selling Your Home -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">Before Selling Your Home</h3>
+					</div>
+					<p class="text-darkgray">
+						A new HVAC system can be a significant selling point for potential buyers. It adds value to your home and
+						removes a major concern for buyers who might otherwise worry about having to replace an aging system soon
+						after purchase.
+					</p>
+				</div>
+
+				<!-- When Efficiency Declines -->
+				<div class="bg-lightgray p-6 rounded-lg">
+					<div class="flex items-center mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+						     viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+						<h3 class="text-lg font-bold text-primary">When Efficiency Declines</h3>
+					</div>
+					<p class="text-darkgray">
+						If your energy bills are consistently rising despite regular maintenance, it may indicate that your system's
+						efficiency is declining. Modern systems with higher SEER and AFUE ratings can significantly reduce your
+						energy consumption.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Comfort Care Section -->
+	<ComfortCare/>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Ready to Upgrade Your HVAC System?"
+		text="Contact Alltek Services today to schedule a consultation for your HVAC replacement. Our experts will help you select the perfect system for your home and budget, ensuring improved comfort, efficiency, and reliability for years to come."
+		button="Schedule a Consultation"
+	/>
+
+</main>
+
+<Footer/>
+</body>
+</html>

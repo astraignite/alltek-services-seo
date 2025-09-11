@@ -1,0 +1,598 @@
+---
+import '../../styles/global.css';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ServiceProcess from '../../components/ServiceProcess.astro';
+import GoogleHead from "../../components/GoogleHead.astro";
+import PagesCTA from "../../components/PagesCTA.astro";
+import settings from "../../settings";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="icon" type="image/png" href="/images/Logo.png"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="generator" content={Astro.generator}/>
+
+	<!-- Primary Meta Tags -->
+	<title>Heating Repair in Belton, TX | Alltek Services</title>
+	<meta name="title" content="Professional Heating Repair Services in Belton, TX | Alltek Services"/>
+	<meta name="description"
+	      content="Expert heating repair services in Belton, TX. Our NATE-certified technicians diagnose and fix all furnace, heat pump, and boiler issues quickly and efficiently. 24/7 scheduling available for Central Texas residents."/>
+	<meta name="keywords"
+	      content="heating repair Belton TX, furnace repair, heat pump repair, boiler repair, heating system not working, furnace troubleshooting, emergency heating repair, HVAC repair service, Central Texas heating repair, broken heater, furnace maintenance, heating system efficiency, gas furnace repair, electric furnace repair, heating system tune-up, NATE certified technicians, same-day heating repair, heating system inspection, thermostat replacement, blower motor repair"/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://www.alltek-services.com/heating-and-air/heating-repair/"/>
+	<meta property="og:title" content="Professional Heating Repair Services in Belton, TX | Alltek Services"/>
+	<meta property="og:description"
+	      content="Expert heating repair services in Belton, TX. Our NATE-certified technicians diagnose and fix all furnace, heat pump, and boiler issues quickly and efficiently. 24/7 scheduling available for Central Texas residents."/>
+	<meta property="og:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:url" content="https://www.alltek-services.com/heating-and-air/heating-repair/"/>
+	<meta property="twitter:title" content="Professional Heating Repair Services in Belton, TX | Alltek Services"/>
+	<meta property="twitter:description"
+	      content="Expert heating repair services in Belton, TX. Our NATE-certified technicians diagnose and fix all furnace, heat pump, and boiler issues quickly and efficiently. 24/7 scheduling available for Central Texas residents."/>
+	<meta property="twitter:image"
+	      content="https://www.alltek-services.com/images/optimized/heating-and-air/belton-tx-hvac-technician.webp"/>
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.alltek-services.com/heating-and-air/heating-repair/"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+
+	<!-- Structured Data for Service -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Heating Repair",
+			"provider": {
+				"@type": "HVACBusiness",
+				"name": "Alltek Services",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "1181 FM-2271 Hwy",
+					"addressLocality": "Belton",
+					"addressRegion": "TX",
+					"postalCode": "76513",
+					"addressCountry": "US"
+				},
+				"telephone": "+1-254-721-7049",
+				"image": "/images/Logo.png",
+				"priceRange": "$$"
+			},
+			"areaServed": {
+				"@type": "City",
+				"name": "Belton",
+				"sameAs": "https://en.wikipedia.org/wiki/Belton,_Texas"
+			},
+			"serviceType": "Heating Repair",
+			"description": "Professional heating repair services for all makes and models including gas furnaces, electric furnaces, heat pumps, and boilers. Our NATE-certified technicians diagnose and fix heating issues quickly and efficiently, with 24/7 scheduling available throughout Belton and Central Texas.",
+			"serviceOutput": {
+				"@type": "Thing",
+				"name": "Functioning Heating System"
+			},
+			"termsOfService": "https://www.alltek-services.com/terms/",
+			"offers": {
+				"@type": "Offer",
+				"availability": "https://schema.org/InStock",
+				"priceSpecification": {
+					"@type": "PriceSpecification",
+					"priceCurrency": "USD"
+				}
+			}
+		}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Home",
+					"item": "https://www.alltek-services.com/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Services",
+					"item": "https://www.alltek-services.com/services/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 3,
+					"name": "Heating and Air Services",
+					"item": "https://www.alltek-services.com/heating-and-air/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 4,
+					"name": "Heating Repair",
+					"item": "https://www.alltek-services.com/heating-and-air/heating-repair/"
+				}
+			]
+		}
+	</script>
+	<GoogleHead/>
+</head>
+
+<body class="bg-white">
+<Header/>
+
+<!-- Breadcrumbs -->
+<div class="bg-lightgray py-3">
+	<div class="container mx-auto px-4">
+		<nav class="flex" aria-label="Breadcrumb">
+			<ol class="inline-flex items-center space-x-1 md:space-x-3">
+				<li class="inline-flex items-center">
+					<a href="/" class="text-darkgray hover:text-accent inline-flex items-center">
+						<svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+						</svg>
+						Home
+					</a>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/services" class="text-darkgray hover:text-accent ml-1 md:ml-2">Services</a>
+					</div>
+				</li>
+				<li>
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<a href="/heating-and-air" class="text-darkgray hover:text-accent ml-1 md:ml-2">Heating and Air Services</a>
+					</div>
+				</li>
+				<li aria-current="page">
+					<div class="flex items-center">
+						<svg class="w-6 h-6 text-darkgray" fill="currentColor" viewBox="0 0 20 20"
+						     xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+							      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+							      clip-rule="evenodd"></path>
+						</svg>
+						<span class="text-accent font-medium ml-1 md:ml-2">Heating Repair</span>
+					</div>
+				</li>
+			</ol>
+		</nav>
+	</div>
+</div>
+
+<main>
+	<!-- Hero Section -->
+	<section class="py-16 md:py-24 bg-primary text-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold mb-6 font-heading">HEATING REPAIR</h1>
+				<p class="text-xl mb-8">Expert heating repair services to restore warmth and comfort to your home or business
+					quickly and efficiently.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Overview -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">PROFESSIONAL HEATING REPAIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						FAST, RELIABLE SOLUTIONS FOR ALL HEATING SYSTEM ISSUES
+					</h3>
+					<p class="text-darkgray mb-4">
+						When your heating system breaks down, especially during the cold Texas winter nights, you need prompt,
+						professional repair service. At Alltek Services, our team of NATE-certified technicians is equipped to
+						diagnose and repair any heating issue, regardless of the make or model of your furnace, heat pump, or
+						boiler. With extensive training in all major heating brands including Carrier, Trane, Lennox, and Rheem, we
+						deliver expert solutions for every heating challenge.
+					</p>
+					<p class="text-darkgray mb-4">
+						We understand that a malfunctioning heating system can be more than just an inconvenience—it can be a health
+						and safety concern, particularly for the elderly, young children, and pets. That's why we prioritize heating
+						repair calls and strive to provide same-day service whenever possible. Our commitment to your comfort and
+						safety drives our rapid response times and thorough repair processes.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our technicians arrive in fully stocked service vehicles, equipped with the tools and genuine manufacturer
+						parts needed to complete most repairs on the spot. We'll thoroughly diagnose the issue, explain the problem
+						and your options, and provide a transparent, upfront quote before beginning any work. This no-surprise
+						pricing approach has earned us the trust of homeowners throughout Belton and Central Texas.
+					</p>
+					<p class="text-darkgray mb-8">
+						From simple thermostat issues to complex furnace repairs, our heating specialists have the expertise to
+						restore your system's functionality and efficiency quickly. We also provide recommendations for preventing
+						future problems and maximizing your heating system's lifespan and performance.
+					</p>
+					<a
+						href="/contact"
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Schedule a Repair
+					</a>
+				</div>
+
+				<div>
+					<img
+						src="/images/hvac_technician_600w.jpg"
+						alt="NATE-certified HVAC technician performing professional furnace repair in a Belton, TX home"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Common Heating Problems -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">COMMON HEATING PROBLEMS WE REPAIR</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					Our experienced technicians can diagnose and repair a wide range of heating system issues, including:
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- Furnace Not Heating -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Heating System Not Working</h3>
+					<p class="text-darkgray mb-4">
+						If your furnace or heat pump isn't producing heat, it could be due to a faulty ignition system, pilot light
+						issues, broken heating elements, or thermostat problems. Our technicians will diagnose the issue and restore
+						your system's heating capacity using advanced diagnostic tools and manufacturer-approved repair techniques.
+					</p>
+				</div>
+
+				<!-- Strange Noises -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 017.072 0m-9.9-2.828a9 9 0 0112.728 0"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Unusual Noises</h3>
+					<p class="text-darkgray mb-4">
+						Banging, rattling, whistling, or grinding sounds from your heating system can indicate serious problems such
+						as loose or broken parts, motor issues, or airflow restrictions. Our experts can identify the source of the
+						noise and make the necessary repairs to prevent further damage and restore quiet operation to your heating
+						system.
+					</p>
+				</div>
+
+				<!-- Uneven Heating -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Uneven Heating</h3>
+					<p class="text-darkgray mb-4">
+						If some rooms are too cold while others are too warm, you may have issues with your ductwork, airflow, or
+						zoning system. Our technicians can identify the cause of uneven heating and implement solutions to ensure
+						consistent comfort throughout your home, including duct sealing, balancing, or zoning system adjustments for
+						optimal temperature control.
+					</p>
+				</div>
+
+				<!-- Electrical Issues -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Electrical Issues</h3>
+					<p class="text-darkgray mb-4">
+						Problems with wiring, circuit boards, or electrical components can cause your heating system to malfunction
+						or not turn on at all. Our technicians are trained to safely diagnose and repair electrical issues in your
+						heating system, from simple wiring problems to complex control board replacements, ensuring your system
+						operates safely and efficiently.
+					</p>
+				</div>
+
+				<!-- Frequent Cycling -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Frequent Cycling</h3>
+					<p class="text-darkgray mb-4">
+						If your heating system turns on and off frequently, it could be due to a clogged filter, improper thermostat
+						settings, or an oversized system. Our technicians will identify the cause of the cycling and implement the
+						appropriate solution, which may include filter replacement, thermostat calibration, or system adjustments to
+						improve efficiency and reduce wear on components.
+					</p>
+				</div>
+
+				<!-- Thermostat Problems -->
+				<div class="bg-white p-8 rounded-lg shadow-md">
+					<div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24"
+						     stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold text-primary mb-4 text-center">Thermostat Problems</h3>
+					<p class="text-darkgray mb-4">
+						Issues with your thermostat can cause your heating system to run continuously, not turn on, or not maintain
+						the desired temperature. We can repair or replace your thermostat to ensure proper communication with your
+						heating system. We offer a range of options from basic models to smart thermostats that can be controlled
+						remotely and programmed for optimal energy efficiency and comfort.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Repair Process -->
+	<section class="py-16 md:py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-12">
+				<div class="flex items-center justify-center mb-4">
+					<div class="w-10 h-1 bg-accent mr-4"></div>
+					<h2 class="text-3xl font-bold text-primary font-heading">OUR HEATING REPAIR PROCESS</h2>
+					<div class="w-10 h-1 bg-accent ml-4"></div>
+				</div>
+				<p class="text-lg text-darkgray max-w-3xl mx-auto">
+					We follow a thorough, systematic approach to ensure your heating system is repaired correctly the first time.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<ol class="space-y-8">
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								1
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Comprehensive Diagnosis</h3>
+								<p class="text-darkgray">
+									Our technicians perform a thorough inspection of your heating system to identify the root cause of the
+									problem, not just the symptoms.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								2
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Detailed Explanation</h3>
+								<p class="text-darkgray">
+									We explain the issue in plain language, discuss your repair options, and provide upfront pricing
+									before any work begins.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								3
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Professional Repair</h3>
+								<p class="text-darkgray">
+									Our certified technicians use quality parts and follow industry best practices to repair your heating
+									system correctly the first time.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								4
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">System Testing</h3>
+								<p class="text-darkgray">
+									After completing the repair, we thoroughly test your heating system to ensure it's operating
+									correctly, safely, and efficiently.
+								</p>
+							</div>
+						</li>
+						<li class="flex">
+							<div
+								class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center mr-4 font-bold">
+								5
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-primary mb-2">Preventative Recommendations</h3>
+								<p class="text-darkgray">
+									We provide advice on how to prevent future issues and maintain your heating system's performance and
+									efficiency.
+								</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div>
+					<img
+						src="/images/consulting_600w.jpg"
+						alt="HVAC technician performing comprehensive heating system diagnostics and repair in a Belton, TX residence"
+						class="rounded-lg shadow-xl w-full h-auto object-cover"
+						width="600"
+						height="400"
+					/>
+					<div class="mt-8 bg-lightgray p-6 rounded-lg border-l-4 border-accent">
+						<h3 class="text-xl font-bold text-primary mb-2">Our Guarantee</h3>
+						<p class="text-darkgray">
+							We stand behind our work with a 100% satisfaction guarantee. If you're not completely satisfied with our
+							heating repair service, we'll make it right at no additional cost. Our repairs are also backed by a
+							comprehensive warranty on both parts and labor for your peace of mind.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Emergency Repair -->
+	<section class="py-16 md:py-24 bg-lightgray">
+		<div class="container mx-auto px-4">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="flex items-center mb-4">
+						<div class="w-10 h-1 bg-accent mr-4"></div>
+						<h2 class="text-3xl font-bold text-primary font-heading">EMERGENCY HEATING REPAIR</h2>
+					</div>
+					<h3 class="text-xl font-semibold text-darkgray mb-6">
+						24/7 SCHEDULING WHEN YOU NEED IT MOST
+					</h3>
+					<p class="text-darkgray mb-4">
+						Heating emergencies don't follow a 9-to-5 schedule. That's why we offer 24/7 scheduling for your
+						convenience. While our service hours are Monday through Friday from 8:00 AM to 5:00 PM, you can call anytime
+						to schedule a repair.
+					</p>
+					<p class="text-darkgray mb-4">
+						When you call with an emergency, we prioritize your service call and schedule a technician as quickly as
+						possible. Our fully stocked service vehicles allow our technicians to complete most repairs on the spot,
+						minimizing downtime and restoring your comfort.
+					</p>
+					<p class="text-darkgray mb-4">
+						Our technicians are specially trained to handle urgent heating issues efficiently and effectively, from
+						carbon monoxide concerns to complete system failures during extreme weather events. We understand that
+						heating emergencies can be stressful and potentially dangerous, which is why we respond with urgency and
+						professionalism.
+					</p>
+					<p class="text-darkgray mb-8">
+						Don't suffer through the cold with a malfunctioning heating system. Call our scheduling line to book a
+						prompt, professional service appointment.
+					</p>
+					<a
+						href={`tel:${settings.phoneRaw}`}
+						class="inline-block bg-secondary hover:bg-secondary/90 text-white font-bold py-3 px-8 rounded-md transition-colors"
+					>
+						Call to Schedule Service
+					</a>
+				</div>
+
+				<div>
+					<div class="bg-white p-8 rounded-lg shadow-xl">
+						<h3 class="text-xl font-bold text-primary mb-6 text-center">Signs You Need Emergency Heating Repair</h3>
+						<ul class="space-y-4">
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+								</svg>
+								<span>Complete system failure during extreme cold</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+								</svg>
+								<span>Burning smell coming from your heating system</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+								</svg>
+								<span>Unusual sounds like grinding, screeching, or banging</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+								</svg>
+								<span>Gas odor or carbon monoxide detector alarm</span>
+							</li>
+							<li class="flex items-start">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent mr-3 flex-shrink-0" fill="none"
+								     viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+								</svg>
+								<span>Electrical issues like tripping breakers</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Process Section -->
+	<ServiceProcess/>
+
+	<!-- Call to Action -->
+	<PagesCTA
+		heading="Need Heating Repair?"
+		text="Don't suffer through the cold with a malfunctioning heating system. Contact Alltek Services today for prompt, professional heating repair service from our team of NATE-certified technicians serving Belton and Central Texas."
+		button="Schedule a Repair"
+	/>
+
+</main>
+
+<Footer/>
+
+<script>
+	// JavaScript for the page if needed
+</script>
+</body>
+</html>
